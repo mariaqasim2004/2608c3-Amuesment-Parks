@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Merciado Amusement Park | Seth Group Flagship Destination — 45 Acres of Magic &amp; Thrill</title>
+  <meta name="description" content="Welcome to Merciado Amusement Park, a 45-acre national landmark crafted over 5 dedicated years by Seth Group of Companies. Experience 40+ world-class rides, 6 themed wonderlands, exquisite dining, and spectacular live entertainment."/>
+  
+  <!-- Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#faf8ff",
+            "surface": "#faf8ff",
+            "surface-dim": "#d2d9f4",
+            "surface-bright": "#faf8ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f2f3ff",
+            "surface-container": "#eaedff",
+            "surface-container-high": "#e2e7ff",
+            "surface-container-highest": "#dae2fd",
+            "on-surface": "#131b2e",
+            "on-surface-variant": "#434655",
+            "primary": "#0031b1",
+            "primary-container": "#1246e2",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#c6ceff",
+            "secondary": "#b02f00",
+            "secondary-container": "#ff5722",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#541100",
+            "tertiary": "#553e00",
+            "tertiary-container": "#725500",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#ffc949",
+            "outline": "#747687",
+            "outline-variant": "#c4c5d8",
+            "primary-fixed": "#dde1ff",
+            "primary-fixed-dim": "#b8c3ff",
+            "secondary-fixed": "#ffdbd1",
+            "secondary-fixed-dim": "#ffb5a0",
+            "tertiary-fixed": "#ffdf9e",
+            "tertiary-fixed-dim": "#fabd00"
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter-sm": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin-sm": "1rem",
+            "margin": "2rem"
+          },
+          fontFamily: {
+            "headline-lg": ["Outfit", "sans-serif"],
+            "headline-md": ["Outfit", "sans-serif"],
+            "headline-sm": ["Outfit", "sans-serif"],
+            "display-hero": ["Outfit", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Global Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen antialiased flex flex-col justify-between">
+
+  <!-- ================= TOP PARK STATUS BAR ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.06)] border-b border-outline-variant/30">
+    <div class="bg-surface-container-high px-gutter-sm lg:px-gutter py-1.5 text-center text-xs border-b border-outline-variant/20">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-3 font-label-md text-on-surface-variant mx-auto sm:mx-0">
+          <span class="flex h-2.5 w-2.5 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          </span>
+          <span class="font-semibold text-on-surface">Park Open Today: 10:00 AM – 10:00 PM</span>
+          <span class="opacity-30">|</span>
+          <span class="hidden sm:inline">Weather: 26°C Clear Skies</span>
+          <span class="opacity-30 hidden sm:inline">|</span>
+          <span class="font-bold text-primary flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">verified</span> 45-Acre National Landmark
+          </span>
+        </div>
+        <div class="hidden md:flex items-center gap-4 font-label-sm text-on-surface-variant">
+          <span class="flex items-center gap-1 text-tertiary-container font-semibold">
+            <span class="material-symbols-outlined text-[16px]">military_tech</span> Seth Group Flagship Enterprise
+          </span>
+          <span class="opacity-30">|</span>
+          <span class="flex items-center gap-1 text-emerald-700 font-semibold">
+            <span class="material-symbols-outlined text-[16px]">bolt</span> 99.98% Ride Uptime
+          </span>
+          <span class="opacity-30">|</span>
+          <a class="hover:text-primary transition-colors font-medium" href="tickets.html#fastpass">Guest FastPass: Active</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <div class="h-20 max-w-7xl mx-auto px-gutter-sm lg:px-gutter flex items-center justify-between gap-4">
+      <!-- Brand Logo -->
+      <a class="flex items-center gap-3 group shrink-0" href="index.html">
+        <img alt="Merciado Park Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XuoE2-h6lUG9ePnmBdWmSZaTSndIYQhmnKgkx1ISq_fzOiQm0Otc2JI0IWZ0HHYC63DbXbWVF2pLk3tv2WfpUOhV3f219IB6jR1D79DTflSLZm4QPbaqMaXidC4kPKHumI-hq1I_Nx15dGuH_d2EVNRdFQ4Zw0bZqmGrZmYQHa01rGVcBIqVUnx4aDT8o6W0Sw5WW4zr5YRdjMUzXxPyhbxlKaWc5vfTJuqJ1uRs8"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-primary font-extrabold leading-none tracking-tight group-hover:text-primary-container transition-colors">Merciado</span>
+          <span class="font-label-sm text-[11px] text-on-surface-variant font-bold tracking-widest uppercase">Amusement Park</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden xl:flex items-center gap-1 2xl:gap-2">
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="index.html">Home</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="zones.html">Zones &amp; Attractions</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="restaurants.html">Dining</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="entertainment.html">Entertainment</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="tickets.html">Tickets &amp; Prices</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="gallery.html">Gallery</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="about.html">About Us</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="contact.html">Contact Us</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="sitemap.html">Sitemap</a>
+      </nav>
+
+      <!-- Right Action CTAs -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <!-- Account Button -->
+        <a id="navUserBtn" class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-sm border border-outline-variant/30" href="account.html">
+          <span class="material-symbols-outlined text-[19px] text-primary">person</span>
+          <span class="hidden sm:inline">Log In</span>
+        </a>
+
+        <!-- Book Tickets CTA Button -->
+        <a class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md text-label-md font-bold shadow-[0_8px_20px_-4px_rgba(255,87,34,0.45)] hover:shadow-[0_12px_28px_-4px_rgba(255,87,34,0.6)] hover:scale-105 transition-all" href="tickets.html">
+          <span class="material-symbols-outlined text-[20px]">confirmation_number</span>
+          <span class="whitespace-nowrap">Book Tickets</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobileMenuToggle" aria-label="Toggle Navigation Menu" class="xl:hidden w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OUT DRAWER -->
+  <div id="mobileNavBackdrop" class="hidden fixed inset-0 z-50 bg-on-surface/60 backdrop-blur-sm transition-opacity"></div>
+  <div id="mobileNavDrawer" class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-surface-container-lowest shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div class="p-5 flex items-center justify-between border-b border-outline-variant/30">
+      <div class="flex items-center gap-2">
+        <span class="font-headline-sm text-primary font-bold">Merciado Menu</span>
+      </div>
+      <button id="closeMobileNav" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high">
+        <span class="material-symbols-outlined text-[22px]">close</span>
+      </button>
+    </div>
+
+    <div class="flex-1 overflow-y-auto p-5 space-y-1">
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="index.html">
+        <span class="material-symbols-outlined text-primary">home</span> Home
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="zones.html">
+        <span class="material-symbols-outlined text-secondary">explore</span> Zones &amp; Attractions
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="restaurants.html">
+        <span class="material-symbols-outlined text-tertiary-container">restaurant</span> Dining &amp; Food
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="entertainment.html">
+        <span class="material-symbols-outlined text-secondary-container">celebration</span> Live Entertainment
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="tickets.html">
+        <span class="material-symbols-outlined text-primary-container">confirmation_number</span> Tickets &amp; Prices
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="gallery.html">
+        <span class="material-symbols-outlined text-primary">photo_library</span> Park Gallery
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="about.html">
+        <span class="material-symbols-outlined text-tertiary">history_edu</span> About Seth Group
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="contact.html">
+        <span class="material-symbols-outlined text-secondary">contact_support</span> Contact Us
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="disclaimer.html">
+        <span class="material-symbols-outlined text-outline">gavel</span> Disclaimer &amp; Safety
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="sitemap.html">
+        <span class="material-symbols-outlined text-primary">account_tree</span> Sitemap
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="account.html">
+        <span class="material-symbols-outlined text-primary">person</span> Guest Portal / My Account
+      </a>
+    </div>
+
+    <div class="p-5 border-t border-outline-variant/30 bg-surface-container-low">
+      <a class="w-full flex items-center justify-center gap-2 py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold shadow-lg text-center" href="tickets.html">
+        <span class="material-symbols-outlined">confirmation_number</span> Book Tickets Online
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="w-full pt-20">
+
+    <!-- 1. HERO SECTION WITH EXPANDED CANVAS & LIVE STATS -->
+    <section class="relative w-full -mt-20 overflow-hidden bg-primary pb-space-xl">
+      <!-- Atmospheric Ambient Glows -->
+      <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-secondary-container/30 blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/3 -right-24 w-[32rem] h-[32rem] rounded-full bg-primary-fixed-dim/20 blur-3xl pointer-events-none"></div>
+
+      <!-- Main Visual Hero Container -->
+      <div class="relative w-full h-[640px] lg:h-[760px] bg-cover bg-center flex items-end" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDs4GYCy213B3If0OSyTHwv9KWsXk2Rm-BZ4NvJ3u3vsJvna5B8qPxLiQ3cGD15Tzu_xXSxu_vYrOb6oU5Z2eFK4PC3CXNeQ8mx_U-veqatwR-MtgwP-srnIP8u8xacCfPMWV8gGRD2jGWA6op-idpbjNgWhFWiTSCxg0P_7HLO9Fc1Wnp-t2DTyATKgVA3Fh4huT4_pkIx2Wxc-HIoh1flXhYfEp1uWKGzrFmsTyk')">
+        <div class="absolute inset-0 bg-gradient-to-t from-on-surface via-primary/75 to-primary/40 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/80 via-transparent to-surface"></div>
+
+        <!-- Hero Header Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-gutter-sm lg:px-gutter w-full pb-28 pt-36 text-center lg:text-left flex flex-col items-center lg:items-start">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-on-primary mb-4 shadow-sm border border-white/20">
+            <span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim animate-spin" style="animation-duration: 9s;">arrow_back_ios_new</span>
+            <span class="font-label-sm uppercase tracking-wider text-tertiary-fixed font-bold">Seth Group Flagship Project</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+            <span class="font-label-sm text-surface-container-highest">Now Open Daily</span>
+          </div>
+
+          <h1 class="font-display-hero text-4xl sm:text-5xl lg:text-6xl text-on-primary max-w-4xl tracking-tight leading-[1.08] font-black drop-shadow-sm">
+            Experience Wonder Across <span class="text-transparent bg-clip-text bg-gradient-to-r from-tertiary-fixed via-secondary-fixed to-secondary-container">45 Acres</span> of Pure Magic &amp; Thrill
+          </h1>
+
+          <p class="mt-4 font-body-lg text-body-lg text-primary-fixed max-w-2xl font-medium drop-shadow">
+            Proudly Developed over 5 Dedicated Years by Seth Group of Companies — The Nation's Landmark Amusement Destination featuring 40+ premier rides, 6 immersive wonderlands, and timeless family memories.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+            <a class="px-8 py-4 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-lg shadow-[0_10px_25px_rgba(255,87,34,0.5)] hover:scale-105 transition-transform flex items-center gap-2.5 font-bold" href="tickets.html">
+              <span class="material-symbols-outlined text-[22px]">confirmation_number</span>
+              <span>Reserve FastPass Tickets</span>
+            </a>
+            <a class="px-8 py-4 rounded-full bg-surface-container-lowest/20 backdrop-blur-lg border border-white/30 text-on-primary hover:bg-surface-container-lowest/35 transition-all font-label-lg flex items-center gap-2 font-semibold" href="zones.html">
+              <span class="material-symbols-outlined text-[22px]">explore</span>
+              <span>Explore 6 Wonderlands</span>
+            </a>
+            <a class="px-6 py-4 rounded-full bg-surface-container-lowest/15 backdrop-blur-md border border-white/20 text-on-primary hover:bg-surface-container-lowest/25 transition-all font-label-md flex items-center gap-2" href="about.html">
+              <span class="material-symbols-outlined text-[20px]">military_tech</span>
+              <span>Our 5-Year Journey</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATS STRIP OVERLAY -->
+      <div class="relative z-20 max-w-7xl mx-auto px-gutter-sm lg:px-gutter -mt-16">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-surface-container-lowest shadow-2xl rounded-2xl p-5 lg:p-7 border border-outline-variant/30">
+          <div class="flex items-center gap-4 p-2">
+            <div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center shrink-0 shadow-inner">
+              <span class="material-symbols-outlined text-primary text-[32px]">terrain</span>
+            </div>
+            <div>
+              <div class="font-headline-md text-3xl font-extrabold text-primary leading-none">45 Acres</div>
+              <div class="font-label-sm text-on-surface-variant uppercase tracking-wider mt-1 font-bold">Sprawling Parkland</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-2">
+            <div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center shrink-0 shadow-inner">
+              <span class="material-symbols-outlined text-secondary text-[32px]">roller_coaster</span>
+            </div>
+            <div>
+              <div class="font-headline-md text-3xl font-extrabold text-secondary leading-none">40+ Rides</div>
+              <div class="font-label-sm text-on-surface-variant uppercase tracking-wider mt-1 font-bold">World-Class Circuit</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-2">
+            <div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center shrink-0 shadow-inner">
+              <span class="material-symbols-outlined text-tertiary-container text-[32px]">castle</span>
+            </div>
+            <div>
+              <div class="font-headline-md text-3xl font-extrabold text-on-surface leading-none">6 Lands</div>
+              <div class="font-label-sm text-on-surface-variant uppercase tracking-wider mt-1 font-bold">Themed Wonderlands</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-2">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-100 flex items-center justify-center shrink-0 shadow-inner">
+              <span class="material-symbols-outlined text-emerald-700 text-[32px]">verified_user</span>
+            </div>
+            <div>
+              <div class="font-headline-md text-3xl font-extrabold text-emerald-700 leading-none">99.98%</div>
+              <div class="font-label-sm text-on-surface-variant uppercase tracking-wider mt-1 font-bold">Operating Uptime</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK-BOOKING FLOATING BAR -->
+      <div class="relative z-20 max-w-7xl mx-auto px-gutter-sm lg:px-gutter mt-6" id="booking-engine">
+        <div class="bg-surface-container rounded-2xl p-5 lg:p-6 shadow-xl border border-outline-variant/30">
+          <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+            
+            <!-- Calendar Date -->
+            <div class="flex-1 bg-surface-container-lowest p-3.5 rounded-xl flex items-center gap-3 border border-outline-variant/20 shadow-sm">
+              <span class="material-symbols-outlined text-primary text-[26px]">calendar_today</span>
+              <div class="flex flex-col flex-1">
+                <label class="font-label-sm text-xs text-on-surface-variant font-bold uppercase tracking-wider">Select Visit Date</label>
+                <input id="quickDateInput" class="font-title-md font-semibold text-on-surface bg-transparent outline-none cursor-pointer" type="date"/>
+              </div>
+            </div>
+
+            <!-- Pass Category -->
+            <div class="flex-1 bg-surface-container-lowest p-3.5 rounded-xl flex items-center gap-3 border border-outline-variant/20 shadow-sm">
+              <span class="material-symbols-outlined text-secondary-container text-[26px]">local_activity</span>
+              <div class="flex flex-col flex-1">
+                <label class="font-label-sm text-xs text-on-surface-variant font-bold uppercase tracking-wider">Pass Category</label>
+                <select id="quickPassSelect" class="font-title-md font-semibold text-on-surface bg-transparent outline-none cursor-pointer">
+                  <option value="weekday">Weekday General Pass ($39/adult)</option>
+                  <option value="weekend">Weekend Special Pass ($54/adult)</option>
+                  <option value="family">Family 4-Pack Saver ($119 weekday / $159 weekend)</option>
+                  <option value="vip">VIP FastPass Unlimited Pass ($79)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Guest Stepper -->
+            <div class="flex-1 bg-surface-container-lowest p-3.5 rounded-xl flex items-center justify-between gap-3 border border-outline-variant/20 shadow-sm">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-tertiary-container text-[26px]">group</span>
+                <div class="flex flex-col">
+                  <label class="font-label-sm text-xs text-on-surface-variant font-bold uppercase tracking-wider">Guests</label>
+                  <span id="quickGuestCount" class="font-title-md font-semibold text-on-surface">2 Guests</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button type="button" onclick="adjustQuickGuests(-1)" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center font-bold text-on-surface transition-colors">-</button>
+                <button type="button" onclick="adjustQuickGuests(1)" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center font-bold text-on-surface transition-colors">+</button>
+              </div>
+            </div>
+
+            <!-- Submit Button to Booking Page -->
+            <button onclick="goToTicketsBooking()" class="lg:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-lg font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-[20px]">search</span>
+              <span class="whitespace-nowrap">Check Availability</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. DISCOVER OUR 6 THEMED WONDERLANDS -->
+    <section class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter py-20" id="zones">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <div class="inline-flex items-center gap-2 text-primary font-label-md font-bold uppercase tracking-wider mb-2">
+            <span class="material-symbols-outlined text-[20px]">explore</span> 45 Acres of Immersive Worlds
+          </div>
+          <h2 class="font-headline-lg text-3xl sm:text-4xl text-on-surface font-extrabold tracking-tight">
+            Discover Our 6 Themed Wonderlands
+          </h2>
+          <p class="font-body-lg text-on-surface-variant mt-2 max-w-2xl">
+            Each zone is crafted with cinematic detailing, custom-engineered soundscapes, and thrills tailored for every generation.
+          </p>
+        </div>
+        <a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-lg font-bold transition-all shadow-sm" href="zones.html">
+          <span>View All 40+ Attractions</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+
+      <!-- 6 Zones Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Zone 1: Adrenaline Peak -->
+        <div class="group relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-lg hover-elevate border border-outline-variant/30 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMBTxNnnlpiQPNBQiUdoGRc3YwByU-JeqbU7koxU6CXMAqlk-x1760y3dEknmUaN-f5kX8ZJbYw0uQo-V9UjD9wYqG23q76W4v4F53R9m4H1Zp2Q3" alt="Adrenaline Peak Hypercoaster" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-secondary-container text-on-secondary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow">
+              <span class="material-symbols-outlined text-[14px]">bolt</span> Extreme Thrill
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <h3 class="font-headline-sm text-2xl font-bold text-white">Adrenaline Peak</h3>
+              <p class="text-xs text-white/80">Home of the Viper Hypercoaster &amp; Titan Sky Drop</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-on-surface-variant line-clamp-3">
+              Defy gravity with 4 G-force hypercoasters, 250-foot free falls, and high-speed multi-inversion adrenaline rush designed for genuine daredevils.
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span class="font-bold text-primary">8 High-Intensity Rides</span>
+              <a href="zones.html#zone-adrenaline" class="font-bold text-secondary flex items-center gap-1 hover:underline">
+                Explore Zone <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zone 2: Neptune's Tidal Bay -->
+        <div class="group relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-lg hover-elevate border border-outline-variant/30 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7mJIl1BrhI1n0LpSSKJoJHnNR7M_lyBpapfNP7v_driAH_G_rKqFpG64z52Xk_t11dYk" alt="Neptune's Tidal Bay Water Coaster" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-primary-container text-on-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow">
+              <span class="material-symbols-outlined text-[14px]">waves</span> Aquatic Thrills
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <h3 class="font-headline-sm text-2xl font-bold text-white">Neptune's Tidal Bay</h3>
+              <p class="text-xs text-white/80">Poseidon's Maelstrom &amp; Crystal Wave Lagoon</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-on-surface-variant line-clamp-3">
+              Dive into an aquatic paradise featuring towering water coaster cascades, tempestuous raft rapids, and a massive crystalline turquoise wave pool.
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span class="font-bold text-primary">7 Water Attractions</span>
+              <a href="zones.html#zone-neptune" class="font-bold text-secondary flex items-center gap-1 hover:underline">
+                Explore Zone <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zone 3: Jurassic Prime Safari -->
+        <div class="group relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-lg hover-elevate border border-outline-variant/30 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPwKW4H8dQqVWbbzrWKqMGaabUMnzCiZf7FUsz_RfWB2slay-9Nlq2jFk" alt="Jurassic Prime Safari Animatronics" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow">
+              <span class="material-symbols-outlined text-[14px]">pets</span> Prehistoric Adventure
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <h3 class="font-headline-sm text-2xl font-bold text-white">Jurassic Prime Safari</h3>
+              <p class="text-xs text-white/80">T-Rex Encounter &amp; Cretaceous Expedition</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-on-surface-variant line-clamp-3">
+              Encounter life-sized biomechanical dinosaurs across a prehistoric jungle expedition featuring suspended family coasters and river safaris.
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span class="font-bold text-primary">6 Safari Expeditions</span>
+              <a href="zones.html#zone-jurassic" class="font-bold text-secondary flex items-center gap-1 hover:underline">
+                Explore Zone <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zone 4: Enchanted Fantasy Realm -->
+        <div class="group relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-lg hover-elevate border border-outline-variant/30 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDosnoriQTpXQv4P8gNCZ23Nh-kONeagGVHv0MSQygpx9e8lL-r" alt="Enchanted Fantasy Castle" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow">
+              <span class="material-symbols-outlined text-[14px]">auto_awesome</span> Family &amp; Magic
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <h3 class="font-headline-sm text-2xl font-bold text-white">Enchanted Fantasy Realm</h3>
+              <p class="text-xs text-white/80">Starlight Castle &amp; Whimsical Pixie Glen</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-on-surface-variant line-clamp-3">
+              Step into a storybook wonderland crowned by the illuminated Starlight Castle, glowing antique carousels, and gentle fairy-tale boat journeys.
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span class="font-bold text-primary">8 Family Wonder Rides</span>
+              <a href="zones.html#zone-fantasy" class="font-bold text-secondary flex items-center gap-1 hover:underline">
+                Explore Zone <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zone 5: Cyber Neon Metropolis -->
+        <div class="group relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-lg hover-elevate border border-outline-variant/30 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuClKavOA4RW-Y372nVJkHOg560l06lYf60HmnADxeqY0J-nvK" alt="Cyber Neon Metropolis" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-cyan-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow">
+              <span class="material-symbols-outlined text-[14px]">sports_esports</span> VR &amp; Sci-Fi
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <h3 class="font-headline-sm text-2xl font-bold text-white">Cyber Neon Metropolis</h3>
+              <p class="text-xs text-white/80">Quantum Velocity VR Coaster &amp; Laser Arena</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-on-surface-variant line-clamp-3">
+              Travel to Year 2099 with hyper-speed VR launched coasters, multi-tier laser combat domes, and cyberpunk neon street food pavilions.
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span class="font-bold text-primary">6 Sci-Fi Attractions</span>
+              <a href="zones.html#zone-cyber" class="font-bold text-secondary flex items-center gap-1 hover:underline">
+                Explore Zone <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zone 6: Carnival Fiesta Plaza -->
+        <div class="group relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-lg hover-elevate border border-outline-variant/30 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuChdOylMHaC85ZamcpbXOZwrj8WJbOTg9ylwhCU0pl5v5m6tN" alt="Carnival Fiesta Ferris Wheel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-amber-500 text-on-surface px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow">
+              <span class="material-symbols-outlined text-[14px]">festival</span> Celebration Plaza
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <h3 class="font-headline-sm text-2xl font-bold text-white">Carnival Fiesta Plaza</h3>
+              <p class="text-xs text-white/80">Grand Lumina Wheel &amp; Vintage Bumper Pavilion</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-on-surface-variant line-clamp-3">
+              Immerse yourself in nostalgic festival joy with the 60-meter Grand Lumina Ferris Wheel, artisan confectionery, and lively midway prize games.
+            </p>
+            <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+              <span class="font-bold text-primary">7 Classic Festivities</span>
+              <a href="zones.html#zone-carnival" class="font-bold text-secondary flex items-center gap-1 hover:underline">
+                Explore Zone <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. SIGNATURE HEADLINER THRILL RIDES SPOTLIGHT -->
+    <section class="bg-surface-container-low py-20 border-y border-outline-variant/20">
+      <div class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-secondary font-label-md font-bold uppercase tracking-wider">Unmatched Adrenaline</span>
+          <h2 class="font-headline-lg text-3xl sm:text-4xl text-on-surface font-extrabold mt-2">
+            Signature Headliner Thrills
+          </h2>
+          <p class="font-body-lg text-on-surface-variant mt-3">
+            Engineered with German magnetic propulsion and Swiss precision, these are the flagship coasters putting Merciado on the global map.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Ride 1: Viper Hypercoaster -->
+          <div class="bg-surface-container-lowest rounded-2xl p-5 shadow-md border border-outline-variant/30 flex flex-col justify-between hover-elevate">
+            <div>
+              <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZBSPr6MPlBjYlHS4BUbdG2802CA3fKu0Ps4iNCIPHU1u3zp" alt="Viper Hypercoaster" class="w-full h-full object-cover"/>
+                <span class="absolute top-3 left-3 bg-red-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">Thrill: 5/5</span>
+                <span class="absolute bottom-3 right-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> 15m Wait
+                </span>
+              </div>
+              <h3 class="font-headline-sm text-xl font-bold text-on-surface">Viper Hypercoaster</h3>
+              <p class="text-xs text-on-surface-variant mt-1">125 km/h • 54m Drop • 4 Inversions</p>
+              <p class="text-xs text-on-surface-variant/80 mt-2 line-clamp-2">The fastest launched coaster in the nation with zero-G barrel rolls.</p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="text-xs font-semibold text-primary">Min: 140 cm</span>
+              <button onclick="toggleWishlist('ride-viper', 'Viper Hypercoaster', 'Adrenaline Peak')" data-wishlist-id="ride-viper" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:text-secondary transition-colors" title="Save to Itinerary">
+                <span class="material-symbols-outlined text-[18px]">favorite_border</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Ride 2: Titan Sky Drop -->
+          <div class="bg-surface-container-lowest rounded-2xl p-5 shadow-md border border-outline-variant/30 flex flex-col justify-between hover-elevate">
+            <div>
+              <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOAsGC8dc4gtRgwEa1z5Euv5Ygmfxj6Tx26U46CKhWAZTQVC" alt="Titan Sky Drop" class="w-full h-full object-cover"/>
+                <span class="absolute top-3 left-3 bg-red-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">Thrill: 5/5</span>
+                <span class="absolute bottom-3 right-3 bg-amber-500 text-on-surface text-[11px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-on-surface animate-pulse"></span> 25m Wait
+                </span>
+              </div>
+              <h3 class="font-headline-sm text-xl font-bold text-on-surface">Titan Sky Drop</h3>
+              <p class="text-xs text-on-surface-variant mt-1">82m Tower • Free Fall 3.4 Sec</p>
+              <p class="text-xs text-on-surface-variant/80 mt-2 line-clamp-2">Pinnacle vertical drop tower overlooking the entire 45-acre park resort.</p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="text-xs font-semibold text-primary">Min: 135 cm</span>
+              <button onclick="toggleWishlist('ride-titan', 'Titan Sky Drop', 'Adrenaline Peak')" data-wishlist-id="ride-titan" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:text-secondary transition-colors" title="Save to Itinerary">
+                <span class="material-symbols-outlined text-[18px]">favorite_border</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Ride 3: Poseidon's Maelstrom -->
+          <div class="bg-surface-container-lowest rounded-2xl p-5 shadow-md border border-outline-variant/30 flex flex-col justify-between hover-elevate">
+            <div>
+              <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLnz7vNKAmGNSdnSySyqb_rIsdQ9o3CbId0Ows0JMb_HVv_g" alt="Poseidon's Maelstrom" class="w-full h-full object-cover"/>
+                <span class="absolute top-3 left-3 bg-primary text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">Thrill: 4/5</span>
+                <span class="absolute bottom-3 right-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> 10m Wait
+                </span>
+              </div>
+              <h3 class="font-headline-sm text-xl font-bold text-on-surface">Poseidon's Maelstrom</h3>
+              <p class="text-xs text-on-surface-variant mt-1">Huge Splashdown • 25m Drop</p>
+              <p class="text-xs text-on-surface-variant/80 mt-2 line-clamp-2">Monstrous water coaster plunging through misty pirate ship caves.</p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="text-xs font-semibold text-primary">Min: 120 cm</span>
+              <button onclick="toggleWishlist('ride-poseidon', 'Poseidon Maelstrom', 'Neptune Bay')" data-wishlist-id="ride-poseidon" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:text-secondary transition-colors" title="Save to Itinerary">
+                <span class="material-symbols-outlined text-[18px]">favorite_border</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Ride 4: Grand Lumina Ferris Wheel -->
+          <div class="bg-surface-container-lowest rounded-2xl p-5 shadow-md border border-outline-variant/30 flex flex-col justify-between hover-elevate">
+            <div>
+              <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtEigSbIJ-tBQZg-7rbSE0A1e2gi_zTizuzQ0Gt0ljQe9Y-j" alt="Grand Lumina Ferris Wheel" class="w-full h-full object-cover"/>
+                <span class="absolute top-3 left-3 bg-amber-500 text-on-surface text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">Family</span>
+                <span class="absolute bottom-3 right-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> Walk-On
+                </span>
+              </div>
+              <h3 class="font-headline-sm text-xl font-bold text-on-surface">Grand Lumina Wheel</h3>
+              <p class="text-xs text-on-surface-variant mt-1">60m Height • 36 Air-Conditioned Pods</p>
+              <p class="text-xs text-on-surface-variant/80 mt-2 line-clamp-2">Panoramic vistas stretching to the city horizon with evening LED shows.</p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="text-xs font-semibold text-primary">All Ages</span>
+              <button onclick="toggleWishlist('ride-lumina', 'Grand Lumina Wheel', 'Carnival Fiesta')" data-wishlist-id="ride-lumina" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:text-secondary transition-colors" title="Save to Itinerary">
+                <span class="material-symbols-outlined text-[18px]">favorite_border</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SETH GROUP 5-YEAR HERITAGE & QUALITY PROMISE -->
+    <section class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter py-20">
+      <div class="bg-gradient-to-br from-primary to-primary-container rounded-3xl p-8 sm:p-12 lg:p-16 text-on-primary shadow-2xl relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-tertiary-fixed text-xs font-bold uppercase tracking-wider border border-white/20">
+              <span class="material-symbols-outlined text-[16px]">verified</span> Seth Groups of Companies
+            </div>
+            <h2 class="font-headline-lg text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
+              A 5-Year Masterpiece Created with National Pride
+            </h2>
+            <p class="text-primary-fixed font-body-lg text-base sm:text-lg leading-relaxed">
+              Merciado Amusement Park is the realization of a monumental 5-year developmental vision by the Seth Group of Companies. Spanning 45 pristine acres, it sets an unprecedented international benchmark in structural safety, hospitality engineering, and cinematic wonder.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
+              <div class="p-3.5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15">
+                <div class="font-headline-sm text-2xl font-bold text-tertiary-fixed">5 Years</div>
+                <div class="text-xs text-white/80 mt-0.5">Meticulous Engineering</div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15">
+                <div class="font-headline-sm text-2xl font-bold text-tertiary-fixed">45 Acres</div>
+                <div class="text-xs text-white/80 mt-0.5">Master Plan Reserve</div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15 col-span-2 sm:col-span-1">
+                <div class="font-headline-sm text-2xl font-bold text-tertiary-fixed">100%</div>
+                <div class="text-xs text-white/80 mt-0.5">ISO 9001 Certified</div>
+              </div>
+            </div>
+
+            <div class="pt-4 flex flex-wrap gap-4">
+              <a href="about.html" class="px-7 py-3.5 rounded-full bg-surface-container-lowest text-primary font-label-md font-bold hover:bg-surface-container transition-all shadow-md flex items-center gap-2">
+                <span>Read Full Story</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+              <a href="contact.html" class="px-7 py-3.5 rounded-full bg-white/15 hover:bg-white/25 text-white font-label-md font-semibold transition-all border border-white/30 flex items-center gap-2">
+                <span>Corporate &amp; Edu Visits</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHbaEvnspwK0s5iETVZ3sG41PeCyOnStPV7c7-_drbfELKpA" alt="Family celebrating at Merciado" class="w-full h-80 object-cover"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
+                <div>
+                  <span class="text-xs font-bold text-tertiary-fixed uppercase">National Landmark</span>
+                  <div class="text-lg font-bold text-white">Welcoming 1.4 Million Happy Guests Every Year</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. TICKET PRICING COMPARISON BAR (WEEKDAY VS WEEKEND VS FAMILY PACK) -->
+    <section class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter py-14" id="pricing">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-primary font-label-md font-bold uppercase tracking-wider">Clear &amp; Fair Rates</span>
+        <h2 class="font-headline-lg text-3xl sm:text-4xl text-on-surface font-extrabold mt-1">
+          Simple, Transparent Park Passes
+        </h2>
+        <p class="font-body-lg text-on-surface-variant mt-2">
+          Dynamic rates engineered with weekday specials, weekend carnivals, and bundled family value.
+        </p>
+
+        <!-- Toggle Controls -->
+        <div class="inline-flex bg-surface-container p-1.5 rounded-full mt-6 shadow-inner border border-outline-variant/30">
+          <button id="homeTierWeekdayBtn" onclick="switchHomePricingTier('weekday')" class="px-6 py-2 rounded-full font-label-md font-bold transition-all bg-primary text-on-primary shadow-sm">
+            Weekday Pass
+          </button>
+          <button id="homeTierWeekendBtn" onclick="switchHomePricingTier('weekend')" class="px-6 py-2 rounded-full font-label-md font-bold transition-all text-on-surface-variant hover:text-on-surface">
+            Weekend Special
+          </button>
+        </div>
+      </div>
+
+      <!-- Comparison Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- Pass 1: Adult General Pass -->
+        <div class="bg-surface-container-lowest rounded-2xl p-7 shadow-lg border border-outline-variant/30 flex flex-col justify-between hover-elevate">
+          <div>
+            <span class="px-3 py-1 rounded-full bg-primary-fixed text-primary text-xs font-bold uppercase tracking-wider">Ages 12+</span>
+            <h3 class="font-headline-sm text-2xl font-bold text-on-surface mt-3">General Adult Pass</h3>
+            <p class="text-sm text-on-surface-variant mt-1">Full 1-day unlimited admission to all 40+ rides and live shows.</p>
+            
+            <div class="mt-6 flex items-baseline gap-1">
+              <span id="homePriceAdult" class="font-headline-lg text-5xl font-black text-primary">$39</span>
+              <span class="text-sm text-on-surface-variant font-medium">/ person</span>
+            </div>
+            <div id="homeAdultTierLabel" class="text-xs text-emerald-700 font-semibold mt-1">Weekday Discount Active</div>
+
+            <ul class="mt-6 space-y-3 text-sm text-on-surface-variant">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Unlimited access to all 6 zones</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> All rollercoasters &amp; water rides</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Starlight Parade &amp; Fireworks</li>
+              <li class="flex items-center gap-2 text-on-surface-variant/60"><span class="material-symbols-outlined text-[18px]">remove</span> FastPass VIP line access</li>
+            </ul>
+          </div>
+
+          <a href="tickets.html" class="mt-8 w-full py-3.5 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-md font-bold text-center transition-colors">
+            Select Pass
+          </a>
+        </div>
+
+        <!-- Pass 2: Junior / Senior Pass -->
+        <div class="bg-surface-container-lowest rounded-2xl p-7 shadow-lg border border-outline-variant/30 flex flex-col justify-between hover-elevate">
+          <div>
+            <span class="px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary-container text-xs font-bold uppercase tracking-wider">Kids &amp; Seniors</span>
+            <h3 class="font-headline-sm text-2xl font-bold text-on-surface mt-3">Junior / Senior Pass</h3>
+            <p class="text-sm text-on-surface-variant mt-1">Under 12 years or 60+ years. Free entry for toddlers under 3.</p>
+            
+            <div class="mt-6 flex items-baseline gap-1">
+              <span id="homePriceJunior" class="font-headline-lg text-5xl font-black text-on-surface">$29</span>
+              <span class="text-sm text-on-surface-variant font-medium">/ person</span>
+            </div>
+            <div id="homeJuniorTierLabel" class="text-xs text-emerald-700 font-semibold mt-1">Weekday Discount Active</div>
+
+            <ul class="mt-6 space-y-3 text-sm text-on-surface-variant">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Kids wonderland attractions</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Character meet &amp; greet access</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Gentle boat &amp; carousel circuits</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Starlight Parade reserved seating</li>
+            </ul>
+          </div>
+
+          <a href="tickets.html" class="mt-8 w-full py-3.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md font-bold text-center transition-colors">
+            Select Pass
+          </a>
+        </div>
+
+        <!-- Pass 3: Family 4-Pack Bundle (HIGHEST VALUE) -->
+        <div class="bg-gradient-to-b from-secondary-fixed/30 to-surface-container-lowest rounded-2xl p-7 shadow-xl border-2 border-secondary-container flex flex-col justify-between hover-elevate relative">
+          <div class="absolute -top-3.5 right-6 bg-secondary-container text-on-secondary px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow">
+            Best Family Value
+          </div>
+
+          <div>
+            <span class="px-3 py-1 rounded-full bg-secondary-fixed text-secondary text-xs font-bold uppercase tracking-wider">2 Adults + 2 Kids</span>
+            <h3 class="font-headline-sm text-2xl font-bold text-on-surface mt-3">Family 4-Pack Saver</h3>
+            <p class="text-sm text-on-surface-variant mt-1">The ultimate bundle for families, including meal coupons &amp; photo pass.</p>
+            
+            <div class="mt-6 flex items-baseline gap-1">
+              <span id="homePriceFamily" class="font-headline-lg text-5xl font-black text-secondary">$119</span>
+              <span class="text-sm text-on-surface-variant font-medium">/ 4 guests</span>
+            </div>
+            <div id="homeFamilySaveLabel" class="text-xs text-secondary font-bold mt-1">Instant Save $17 vs Individual Passes</div>
+
+            <ul class="mt-6 space-y-3 text-sm text-on-surface-variant">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> 4 Full-Day All-Zone Admissions</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> 1 Free Digital Family Souvenir Photo</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> 10% Off All Dining &amp; Food Outlets</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Free Climate Locker Voucher</li>
+            </ul>
+          </div>
+
+          <a href="tickets.html" class="mt-8 w-full py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold text-center shadow-md hover:shadow-lg transition-all">
+            Book Family Bundle
+          </a>
+        </div>
+
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="tickets.html" class="inline-flex items-center gap-2 text-primary font-bold hover:underline text-sm">
+          <span>See all pass categories, seasonal fastpasses, and school group discounts</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 6. SPECTACULAR ENTERTAINMENT & DINING TEASER -->
+    <section class="bg-surface-container py-20">
+      <div class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          
+          <!-- Entertainment Teaser -->
+          <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-lg border border-outline-variant/30 space-y-6">
+            <div class="inline-flex items-center gap-2 text-secondary font-label-md font-bold uppercase tracking-wider">
+              <span class="material-symbols-outlined text-[20px]">celebration</span> Nightly Magic
+            </div>
+            <h3 class="font-headline-md text-3xl font-extrabold text-on-surface">Spectacular Evening Shows</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              When dusk falls over Merciado, 500,000 synchronized LEDs illuminate the Starlight Parade, followed by the nation's grandest fireworks and choreographed drone symphony above Starlight Castle.
+            </p>
+            <div class="relative h-60 rounded-2xl overflow-hidden shadow-md">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcqI8DX7s16wVhDw3kO4re9CvxPnlqpoRW-FL5ikkZfwUHtf" alt="Fireworks over Castle" class="w-full h-full object-cover"/>
+              <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[16px] text-tertiary-fixed">schedule</span> Daily at 9:00 PM • Included with Ticket
+              </div>
+            </div>
+            <div class="pt-2">
+              <a href="entertainment.html" class="inline-flex items-center gap-2 font-bold text-primary hover:underline">
+                <span>View Full Show Schedule &amp; Timings</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Dining Teaser -->
+          <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-lg border border-outline-variant/30 space-y-6">
+            <div class="inline-flex items-center gap-2 text-tertiary-container font-label-md font-bold uppercase tracking-wider">
+              <span class="material-symbols-outlined text-[20px]">restaurant</span> Feast &amp; Savor
+            </div>
+            <h3 class="font-headline-md text-3xl font-extrabold text-on-surface">World-Class Themed Dining</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              From medieval feasts at The Grand Sovereign Banquet to cyberpunk robotic diners, artisanal ice cream parlors, and authentic international cuisines — dining is an adventure of its own.
+            </p>
+            <div class="relative h-60 rounded-2xl overflow-hidden shadow-md">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmkozmBKgqxQ6lSqm1qhianDuTi-8kck_ysMkkDkEUUzl8Ys" alt="Pirate Tavern Restaurant" class="w-full h-full object-cover"/>
+              <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[16px] text-tertiary-fixed">eco</span> Halal, Vegan &amp; Allergy-Safe Options
+              </div>
+            </div>
+            <div class="pt-2">
+              <a href="restaurants.html" class="inline-flex items-center gap-2 font-bold text-primary hover:underline">
+                <span>Explore Restaurants &amp; Reserve Tables</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. GUEST REVIEWS & SOCIAL MEDIA WALL -->
+    <section class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter py-20">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-primary font-label-md font-bold uppercase tracking-wider">Loved by Over 1.4 Million Visitors</span>
+        <h2 class="font-headline-lg text-3xl sm:text-4xl text-on-surface font-extrabold mt-1">
+          Moments of Pure Celebration
+        </h2>
+        <p class="font-body-lg text-on-surface-variant mt-2">
+          Real stories from families, thrill-seekers, and international tourists who have made Merciado their favorite destination.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <!-- Review 1 -->
+        <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 mb-3">
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+            </div>
+            <p class="text-sm text-on-surface-variant italic">
+              "The Viper Hypercoaster is genuinely world-class! We've visited parks in Orlando and Singapore, and Merciado matches their scale and hospitality. The Seth Group truly delivered a national treasure."
+            </p>
+          </div>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center">RW</div>
+            <div>
+              <div class="text-sm font-bold text-on-surface">Rohit &amp; Priya W.</div>
+              <div class="text-xs text-on-surface-variant">Family Passholder • Mumbai</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 mb-3">
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+            </div>
+            <p class="text-sm text-on-surface-variant italic">
+              "Neptune's Tidal Bay wave pool and water coaster were the highlight of our weekend! So clean, zero safety worries, and the FastPass upgrade was worth every single dollar."
+            </p>
+          </div>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-secondary-fixed text-secondary font-bold flex items-center justify-center">SL</div>
+            <div>
+              <div class="text-sm font-bold text-on-surface">Sarah Lin</div>
+              <div class="text-xs text-on-surface-variant">Tourist • London, UK</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 mb-3">
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+              <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+            </div>
+            <p class="text-sm text-on-surface-variant italic">
+              "The Starlight Parade and fireworks took our breath away. Seeing my kids' faces when they met Princess Celeste and Leo the Lion was pure magic. We are already booking our return trip."
+            </p>
+          </div>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-tertiary-fixed text-tertiary-container font-bold flex items-center justify-center">MK</div>
+            <div>
+              <div class="text-sm font-bold text-on-surface">Manish Kapoor</div>
+              <div class="text-xs text-on-surface-variant">Annual Passport Member</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Photo Grid Strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3">
+        <div class="h-32 rounded-xl overflow-hidden shadow-sm">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw3laTWaPT84PUtiCFWjMNb6MwvogRRz0Ht_TnlBWLo4hB6j" alt="Ice Cream at Merciado" class="w-full h-full object-cover hover:scale-110 transition-transform"/>
+        </div>
+        <div class="h-32 rounded-xl overflow-hidden shadow-sm">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD8zBs591HnPmEqKYDBwaW-_VpgYYlas-yLFwi6yNttzga14" alt="Teenagers laughing on coaster" class="w-full h-full object-cover hover:scale-110 transition-transform"/>
+        </div>
+        <div class="h-32 rounded-xl overflow-hidden shadow-sm">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIW6bdPxCGXQu105irWpYNDpNrOmtOgVZHcYhMOKP8uVg_-Y" alt="Whitewater raft ride" class="w-full h-full object-cover hover:scale-110 transition-transform"/>
+        </div>
+        <div class="h-32 rounded-xl overflow-hidden shadow-sm">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCVTbnV77G-4z3Jn8yvx3H4-k1MQGy24mG6yrlYdcZgICw_D" alt="Kids with Mascot" class="w-full h-full object-cover hover:scale-110 transition-transform"/>
+        </div>
+        <div class="h-32 rounded-xl overflow-hidden shadow-sm">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9CNj55PYDg2674pCeZdTNmNDx7v5W1H2WGiFFJjxUxStXp_" alt="Water coaster wave" class="w-full h-full object-cover hover:scale-110 transition-transform"/>
+        </div>
+        <div class="h-32 rounded-xl overflow-hidden shadow-sm">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-rKJWXBdGNu1Q4U8JVly2qsDQUpM2tBCCJqVk5JS1VYf_7_" alt="Glowing antique carousel" class="w-full h-full object-cover hover:scale-110 transition-transform"/>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="gallery.html" class="text-xs font-bold text-primary hover:underline">
+          View all 40+ high-resolution photos in our Park Gallery →
+        </a>
+      </div>
+    </section>
+
+    <!-- 8. NEWSLETTER & FAST PASS VIP CLUB SIGNUP -->
+    <section class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter pb-20">
+      <div class="bg-gradient-to-r from-on-surface via-primary to-primary-container rounded-3xl p-8 sm:p-12 text-on-primary shadow-2xl relative overflow-hidden">
+        <div class="relative z-10 max-w-2xl mx-auto text-center space-y-4">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-tertiary-fixed text-xs font-bold uppercase tracking-wider">
+            <span class="material-symbols-outlined text-[16px]">stars</span> VIP Explorer Club
+          </div>
+          <h2 class="font-headline-lg text-3xl sm:text-4xl font-black text-white">
+            Unlock 15% Off Your Next Visit &amp; Early FastPass Alerts
+          </h2>
+          <p class="text-white/80 text-sm sm:text-base">
+            Join over 85,000 members receiving secret weekend deals, seasonal festival invites, and queue-skip privileges.
+          </p>
+
+          <form onsubmit="handleNewsletter(event)" class="mt-6 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <input id="newsletterEmail" type="email" required placeholder="Enter your email address" class="flex-1 px-5 py-3.5 rounded-full bg-white text-on-surface placeholder:text-on-surface-variant/60 font-body-md focus:outline-none focus:ring-2 focus:ring-secondary-container shadow-inner"/>
+            <button type="submit" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold shadow-lg hover:scale-105 transition-all">
+              Claim 15% Off
+            </button>
+          </form>
+
+          <div id="newsletterSuccess" class="hidden mt-3 text-xs text-tertiary-fixed font-bold">
+            🎉 Coupon code MERCIADO15 copied! Apply at checkout for instant savings.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= GLOBAL COMPREHENSIVE FOOTER ================= -->
+  <footer class="bg-on-surface text-on-surface-variant pt-16 pb-12 border-t border-outline-variant/20">
+    <div class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Col 1: Brand & Heritage -->
+        <div class="lg:col-span-2 space-y-4">
+          <a class="flex items-center gap-3" href="index.html">
+            <img alt="Merciado Park Logo" class="h-9 w-auto brightness-200" src="https://lh3.googleusercontent.com/aida/AEtjO1XuoE2-h6lUG9ePnmBdWmSZaTSndIYQhmnKgkx1ISq_fzOiQm0Otc2JI0IWZ0HHYC63DbXbWVF2pLk3tv2WfpUOhV3f219IB6jR1D79DTflSLZm4QPbaqMaXidC4kPKHumI-hq1I_Nx15dGuH_d2EVNRdFQ4Zw0bZqmGrZmYQHa01rGVcBIqVUnx4aDT8o6W0Sw5WW4zr5YRdjMUzXxPyhbxlKaWc5vfTJuqJ1uRs8"/>
+            <div class="flex flex-col">
+              <span class="font-headline-sm text-2xl text-white font-extrabold leading-none">Merciado</span>
+              <span class="text-[10px] text-tertiary-fixed uppercase tracking-widest font-bold">Amusement Park</span>
+            </div>
+          </a>
+          <p class="text-sm text-white/70 max-w-sm leading-relaxed">
+            A crowning 45-acre national achievement developed over 5 dedicated years by Seth Group of Companies. Delivering safe, world-class entertainment with 99.98% operational uptime.
+          </p>
+          <div class="pt-2 flex items-center gap-3">
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">public</span>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">play_circle</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Park Exploration -->
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">The 6 Wonderlands</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="zones.html#zone-adrenaline" class="hover:text-tertiary-fixed transition-colors">Adrenaline Peak</a></li>
+            <li><a href="zones.html#zone-neptune" class="hover:text-tertiary-fixed transition-colors">Neptune's Tidal Bay</a></li>
+            <li><a href="zones.html#zone-jurassic" class="hover:text-tertiary-fixed transition-colors">Jurassic Prime Safari</a></li>
+            <li><a href="zones.html#zone-fantasy" class="hover:text-tertiary-fixed transition-colors">Enchanted Fantasy Realm</a></li>
+            <li><a href="zones.html#zone-cyber" class="hover:text-tertiary-fixed transition-colors">Cyber Neon Metropolis</a></li>
+            <li><a href="zones.html#zone-carnival" class="hover:text-tertiary-fixed transition-colors">Carnival Fiesta Plaza</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Experiences & Tickets -->
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">Plan Your Visit</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="tickets.html" class="hover:text-tertiary-fixed transition-colors">Tickets &amp; Pricing Calculator</a></li>
+            <li><a href="tickets.html#tierSelector" class="hover:text-tertiary-fixed transition-colors">Weekday vs Weekend Passes</a></li>
+            <li><a href="tickets.html#familyBundle" class="hover:text-tertiary-fixed transition-colors">Family 4-Pack Saver</a></li>
+            <li><a href="restaurants.html" class="hover:text-tertiary-fixed transition-colors">Themed Dining &amp; Banquets</a></li>
+            <li><a href="entertainment.html" class="hover:text-tertiary-fixed transition-colors">Live Shows &amp; Parades</a></li>
+            <li><a href="gallery.html" class="hover:text-tertiary-fixed transition-colors">Park Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Corporate & Support -->
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">Company &amp; Legal</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="about.html" class="hover:text-tertiary-fixed transition-colors">About Us &amp; Seth Group</a></li>
+            <li><a href="contact.html" class="hover:text-tertiary-fixed transition-colors">Contact Support &amp; Helpdesk</a></li>
+            <li><a href="disclaimer.html" class="hover:text-tertiary-fixed transition-colors">Disclaimer &amp; Safety Rules</a></li>
+            <li><a href="disclaimer.html#refund" class="hover:text-tertiary-fixed transition-colors">Rain Guarantee &amp; Refund Policy</a></li>
+            <li><a href="sitemap.html" class="hover:text-tertiary-fixed transition-colors">Complete Website Sitemap</a></li>
+            <li><a href="account.html" class="hover:text-tertiary-fixed transition-colors">Guest Member Portal</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/60">
+        <div class="flex items-center gap-3">
+          <span class="flex items-center gap-1 text-emerald-400 font-semibold">
+            <span class="material-symbols-outlined text-[15px]">verified</span> ISO 9001:2015 &amp; ASTM F24 Certified
+          </span>
+          <span>•</span>
+          <span>Triple Daily Structural Inspection</span>
+        </div>
+        <p class="text-center md:text-right">
+          © 2026 Merciado Amusement Park. Built &amp; Operated with Pride by Seth Groups of Companies. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top floating button -->
+  <div id="back-to-top" title="Back to Top">
+    <span class="material-symbols-outlined text-[24px]">keyboard_arrow_up</span>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Client Script for Interactive Controls -->
+  <script src="assets/js/common.js"></script>
+  <script>
+    // Quick booking guest stepper
+    let quickGuests = 2;
+    function adjustQuickGuests(delta) {
+      quickGuests = Math.max(1, Math.min(15, quickGuests + delta));
+      document.getElementById('quickGuestCount').textContent = `${quickGuests} Guest${quickGuests > 1 ? 's' : ''}`;
+    }
+
+    // Set today's date in quick date input
+    const today = new Date();
+    const dateInput = document.getElementById('quickDateInput');
+    if (dateInput) {
+      dateInput.value = today.toISOString().split('T')[0];
+    }
+
+    function goToTicketsBooking() {
+      const date = document.getElementById('quickDateInput').value;
+      const pass = document.getElementById('quickPassSelect').value;
+      window.location.href = `tickets.html?date=${encodeURIComponent(date)}&pass=${encodeURIComponent(pass)}&guests=${quickGuests}`;
+    }
+
+    // Homepage pricing toggle
+    function switchHomePricingTier(tier) {
+      const weekdayBtn = document.getElementById('homeTierWeekdayBtn');
+      const weekendBtn = document.getElementById('homeTierWeekendBtn');
+      const adultPrice = document.getElementById('homePriceAdult');
+      const juniorPrice = document.getElementById('homePriceJunior');
+      const familyPrice = document.getElementById('homePriceFamily');
+      const adultLabel = document.getElementById('homeAdultTierLabel');
+      const juniorLabel = document.getElementById('homeJuniorTierLabel');
+      const familySaveLabel = document.getElementById('homeFamilySaveLabel');
+
+      if (tier === 'weekday') {
+        weekdayBtn.className = 'px-6 py-2 rounded-full font-label-md font-bold transition-all bg-primary text-on-primary shadow-sm';
+        weekendBtn.className = 'px-6 py-2 rounded-full font-label-md font-bold transition-all text-on-surface-variant hover:text-on-surface';
+        adultPrice.textContent = '$39';
+        juniorPrice.textContent = '$29';
+        familyPrice.textContent = '$119';
+        adultLabel.textContent = 'Weekday Discount Active';
+        juniorLabel.textContent = 'Weekday Discount Active';
+        familySaveLabel.textContent = 'Instant Save $17 vs Individual Passes';
+      } else {
+        weekendBtn.className = 'px-6 py-2 rounded-full font-label-md font-bold transition-all bg-primary text-on-primary shadow-sm';
+        weekdayBtn.className = 'px-6 py-2 rounded-full font-label-md font-bold transition-all text-on-surface-variant hover:text-on-surface';
+        adultPrice.textContent = '$54';
+        juniorPrice.textContent = '$39';
+        familyPrice.textContent = '$159';
+        adultLabel.textContent = 'Weekend Special Tier';
+        juniorLabel.textContent = 'Weekend Special Tier';
+        familySaveLabel.textContent = 'Instant Save $27 vs Individual Passes';
+      }
+    }
+  </script>
+</body>
+</html>
+

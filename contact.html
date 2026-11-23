@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Contact Us &amp; Guest Support | Merciado Amusement Park — We're Here to Help</title>
+  <meta name="description" content="Get in touch with Merciado Amusement Park guest concierge, ticket assistance, lost and found, and group event bookings. Location map and travel directions."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#faf8ff",
+            "surface": "#faf8ff",
+            "surface-dim": "#d2d9f4",
+            "surface-bright": "#faf8ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f2f3ff",
+            "surface-container": "#eaedff",
+            "surface-container-high": "#e2e7ff",
+            "surface-container-highest": "#dae2fd",
+            "on-surface": "#131b2e",
+            "on-surface-variant": "#434655",
+            "primary": "#0031b1",
+            "primary-container": "#1246e2",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#c6ceff",
+            "secondary": "#b02f00",
+            "secondary-container": "#ff5722",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#541100",
+            "tertiary": "#553e00",
+            "tertiary-container": "#725500",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#ffc949",
+            "outline": "#747687",
+            "outline-variant": "#c4c5d8",
+            "primary-fixed": "#dde1ff",
+            "primary-fixed-dim": "#b8c3ff",
+            "secondary-fixed": "#ffdbd1",
+            "secondary-fixed-dim": "#ffb5a0",
+            "tertiary-fixed": "#ffdf9e",
+            "tertiary-fixed-dim": "#fabd00"
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter-sm": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin-sm": "1rem",
+            "margin": "2rem"
+          },
+          fontFamily: {
+            "headline-lg": ["Outfit", "sans-serif"],
+            "headline-md": ["Outfit", "sans-serif"],
+            "headline-sm": ["Outfit", "sans-serif"],
+            "display-hero": ["Outfit", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen antialiased flex flex-col justify-between">
+
+  <!-- ================= TOP PARK STATUS BAR ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.06)] border-b border-outline-variant/30">
+    <div class="bg-surface-container-high px-gutter-sm lg:px-gutter py-1.5 text-center text-xs border-b border-outline-variant/20">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-3 font-label-md text-on-surface-variant mx-auto sm:mx-0">
+          <span class="flex h-2.5 w-2.5 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          </span>
+          <span class="font-semibold text-on-surface">Park Open Today: 10:00 AM – 10:00 PM</span>
+          <span class="opacity-30">|</span>
+          <span class="hidden sm:inline">Weather: 26°C Clear Skies</span>
+          <span class="opacity-30">|</span>
+          <span class="font-bold text-primary flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">verified</span> 45-Acre National Landmark
+          </span>
+        </div>
+        <div class="hidden md:flex items-center gap-4 font-label-sm text-on-surface-variant">
+          <span class="flex items-center gap-1 text-tertiary-container font-semibold">
+            <span class="material-symbols-outlined text-[16px]">military_tech</span> Seth Group Flagship Enterprise
+          </span>
+          <span class="opacity-30">|</span>
+          <span class="text-secondary font-bold">24/7 Helpline: 1800-MERCIADO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <div class="h-20 max-w-7xl mx-auto px-gutter-sm lg:px-gutter flex items-center justify-between gap-4">
+      <a class="flex items-center gap-3 group shrink-0" href="index.html">
+        <img alt="Merciado Park Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XuoE2-h6lUG9ePnmBdWmSZaTSndIYQhmnKgkx1ISq_fzOiQm0Otc2JI0IWZ0HHYC63DbXbWVF2pLk3tv2WfpUOhV3f219IB6jR1D79DTflSLZm4QPbaqMaXidC4kPKHumI-hq1I_Nx15dGuH_d2EVNRdFQ4Zw0bZqmGrZmYQHa01rGVcBIqVUnx4aDT8o6W0Sw5WW4zr5YRdjMUzXxPyhbxlKaWc5vfTJuqJ1uRs8"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-primary font-extrabold leading-none tracking-tight group-hover:text-primary-container transition-colors">Merciado</span>
+          <span class="font-label-sm text-[11px] text-on-surface-variant font-bold tracking-widest uppercase">Amusement Park</span>
+        </div>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-1 2xl:gap-2">
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="index.html">Home</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="zones.html">Zones &amp; Attractions</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="restaurants.html">Dining</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="entertainment.html">Entertainment</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="tickets.html">Tickets &amp; Prices</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="gallery.html">Gallery</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="about.html">About Us</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-sm" href="contact.html">Contact Us</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="sitemap.html">Sitemap</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a id="navUserBtn" class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-sm border border-outline-variant/30" href="account.html">
+          <span class="material-symbols-outlined text-[19px] text-primary">person</span>
+          <span class="hidden sm:inline">Log In</span>
+        </a>
+        <a class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md text-label-md font-bold shadow-[0_8px_20px_-4px_rgba(255,87,34,0.45)] hover:shadow-[0_12px_28px_-4px_rgba(255,87,34,0.6)] hover:scale-105 transition-all" href="tickets.html">
+          <span class="material-symbols-outlined text-[20px]">confirmation_number</span>
+          <span class="whitespace-nowrap">Book Tickets</span>
+        </a>
+        <button id="mobileMenuToggle" aria-label="Toggle Navigation Menu" class="xl:hidden w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OUT DRAWER -->
+  <div id="mobileNavBackdrop" class="hidden fixed inset-0 z-50 bg-on-surface/60 backdrop-blur-sm transition-opacity"></div>
+  <div id="mobileNavDrawer" class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-surface-container-lowest shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div class="p-5 flex items-center justify-between border-b border-outline-variant/30">
+      <div class="flex items-center gap-2">
+        <span class="font-headline-sm text-primary font-bold">Merciado Menu</span>
+      </div>
+      <button id="closeMobileNav" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high">
+        <span class="material-symbols-outlined text-[22px]">close</span>
+      </button>
+    </div>
+
+    <div class="flex-1 overflow-y-auto p-5 space-y-1">
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="index.html">
+        <span class="material-symbols-outlined text-primary">home</span> Home
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="zones.html">
+        <span class="material-symbols-outlined text-secondary">explore</span> Zones &amp; Attractions
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="restaurants.html">
+        <span class="material-symbols-outlined text-tertiary-container">restaurant</span> Dining &amp; Food
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="entertainment.html">
+        <span class="material-symbols-outlined text-secondary-container">celebration</span> Live Entertainment
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="tickets.html">
+        <span class="material-symbols-outlined text-primary-container">confirmation_number</span> Tickets &amp; Prices
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="gallery.html">
+        <span class="material-symbols-outlined text-primary">photo_library</span> Park Gallery
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="about.html">
+        <span class="material-symbols-outlined text-tertiary">history_edu</span> About Seth Group
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-primary bg-primary-fixed/30 font-bold transition-colors" href="contact.html">
+        <span class="material-symbols-outlined text-secondary">contact_support</span> Contact Us
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="disclaimer.html">
+        <span class="material-symbols-outlined text-outline">gavel</span> Disclaimer &amp; Safety
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="sitemap.html">
+        <span class="material-symbols-outlined text-primary">account_tree</span> Sitemap
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="account.html">
+        <span class="material-symbols-outlined text-primary">person</span> Guest Portal / My Account
+      </a>
+    </div>
+
+    <div class="p-5 border-t border-outline-variant/30 bg-surface-container-low">
+      <a class="w-full flex items-center justify-center gap-2 py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold shadow-lg text-center" href="tickets.html">
+        <span class="material-symbols-outlined">confirmation_number</span> Book Tickets Online
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="w-full pt-20">
+    
+    <!-- HERO SECTION -->
+    <section class="relative w-full overflow-hidden bg-primary py-16 sm:py-24 text-on-primary">
+      <div class="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-overlay" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDs4GYCy213B3If0OSyTHwv9KWsXk2Rm-BZ4NvJ3u3vsJvna5B8qPxLiQ3cGD15Tzu_xXSxu_vYrOb6oU5Z2eFK4PC3CXNeQ8mx_U-veqatwR-MtgwP-srnIP8u8xacCfPMWV8gGRD2jGWA6op-idpbjNgWhFWiTSCxg0P_7HLO9Fc1Wnp-t2DTyATKgVA3Fh4huT4_pkIx2Wxc-HIoh1flXhYfEp1uWKGzrFmsTyk')"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-gutter-sm lg:px-gutter text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-4 border border-white/20">
+          <span class="material-symbols-outlined text-[16px]">support_agent</span> Guest Hospitality &amp; Support
+        </div>
+        <h1 class="font-display-hero text-4xl sm:text-5xl lg:text-6xl font-black text-white max-w-3xl leading-tight">
+          We're Here to Make Your Visit Flawless
+        </h1>
+        <p class="mt-4 font-body-lg text-primary-fixed max-w-2xl font-medium">
+          Have questions about tickets, lost items, school excursions, or accessibility services? Our park concierge is dedicated to providing immediate assistance.
+        </p>
+      </div>
+    </section>
+
+    <!-- DEPARTMENT CONTACT CARDS -->
+    <section class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter py-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between hover-elevate">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-3">
+              <span class="material-symbols-outlined text-[26px]">confirmation_number</span>
+            </div>
+            <h3 class="font-headline-sm text-lg font-bold">Ticketing &amp; Passes</h3>
+            <p class="text-xs text-on-surface-variant mt-1">Pass rescheduling, refunds, corporate vouchers &amp; FastPass status.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs font-bold text-primary">
+            +1 800-MER-TICKETS<br/>
+            <span class="font-normal text-on-surface-variant">tickets@merciado.com</span>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between hover-elevate">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary mb-3">
+              <span class="material-symbols-outlined text-[26px]">groups</span>
+            </div>
+            <h3 class="font-headline-sm text-lg font-bold">Schools &amp; Corporate</h3>
+            <p class="text-xs text-on-surface-variant mt-1">Edu-tours, private park buyouts, banquet bookings &amp; group bus parking.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs font-bold text-secondary">
+            +1 800-MER-GROUPS<br/>
+            <span class="font-normal text-on-surface-variant">corporate@merciado.com</span>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between hover-elevate">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-700 mb-3">
+              <span class="material-symbols-outlined text-[26px]">medical_services</span>
+            </div>
+            <h3 class="font-headline-sm text-lg font-bold">First Aid &amp; Security</h3>
+            <p class="text-xs text-on-surface-variant mt-1">24/7 on-site medical center, lost children assistance &amp; emergency dispatch.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs font-bold text-emerald-700">
+            Emergency Desk: Ext 991<br/>
+            <span class="font-normal text-on-surface-variant">safety@merciado.com</span>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between hover-elevate">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-amber-800 mb-3">
+              <span class="material-symbols-outlined text-[26px]">find_in_page</span>
+            </div>
+            <h3 class="font-headline-sm text-lg font-bold">Lost &amp; Found</h3>
+            <p class="text-xs text-on-surface-variant mt-1">Inquire about misplaced phones, cameras, sunglasses, and personal lockers.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs font-bold text-amber-800">
+            Guest Services Gate B<br/>
+            <span class="font-normal text-on-surface-variant">lostfound@merciado.com</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CONTACT FORM & LOCATION MAP -->
+    <section class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter pb-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Contact Form -->
+        <div class="lg:col-span-7 bg-surface-container-lowest p-8 sm:p-10 rounded-3xl shadow-xl border border-outline-variant/30">
+          <div class="mb-6">
+            <span class="text-primary font-label-md font-bold uppercase tracking-wider text-xs">Direct Inquiry</span>
+            <h2 class="font-headline-lg text-2xl sm:text-3xl font-extrabold text-on-surface mt-1">Send Us a Message</h2>
+            <p class="text-xs sm:text-sm text-on-surface-variant mt-1">
+              Our hospitality team responds within 2 business hours.
+            </p>
+          </div>
+
+          <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Your Full Name</label>
+                <input type="text" required placeholder="Alexander Wright" id="contactName" class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"/>
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Email Address</label>
+                <input type="email" required placeholder="alex@example.com" id="contactEmail" class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"/>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Phone Number</label>
+                <input type="tel" placeholder="+1 (555) 234-5678" id="contactPhone" class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"/>
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Inquiry Category</label>
+                <select id="contactCategory" class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary">
+                  <option>Ticket Booking &amp; Rescheduling</option>
+                  <option>School Edu-Tour / Bulk Group Pass</option>
+                  <option>Corporate Outing &amp; Private Buyout</option>
+                  <option>Lost &amp; Found Item Inquiry</option>
+                  <option>Special Accessibility Accommodations</option>
+                  <option>Guest Feedback &amp; Compliments</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Your Message or Booking Reference</label>
+              <textarea required rows="4" placeholder="How can we assist with your upcoming visit?" id="contactMessage" class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-medium text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-lg font-bold shadow-lg hover:scale-[1.02] transition-transform">
+              Transmit Message to Concierge
+            </button>
+          </form>
+        </div>
+
+        <!-- Location & Getting Here -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-xl border border-outline-variant/30 space-y-5">
+            <span class="text-secondary font-label-md font-bold uppercase tracking-wider text-xs">Park Location</span>
+            <h3 class="font-headline-sm text-2xl font-bold text-on-surface">Getting to Merciado</h3>
+            
+            <div class="space-y-4 text-xs text-on-surface-variant">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">location_on</span>
+                <div>
+                  <span class="font-bold text-on-surface block text-sm">Physical Address</span>
+                  Merciado Amusement Park, Sector 45, Seth Expressway Blvd, Metro Gateway South.
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">subway</span>
+                <div>
+                  <span class="font-bold text-on-surface block text-sm">By Metro Rail</span>
+                  Direct covered air-conditioned pedestrian skywalk from <strong>Merciado Central Metro Station (Blue Line)</strong>.
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">directions_car</span>
+                <div>
+                  <span class="font-bold text-on-surface block text-sm">By Private Vehicle</span>
+                  Exit 14 off National Expressway. 8,000 shaded parking slots with free EV ultra-fast charging bays.
+                </div>
+              </div>
+            </div>
+
+            <div class="h-48 rounded-2xl overflow-hidden shadow-inner border border-outline-variant/30 relative flex items-center justify-center bg-surface-container">
+              <div class="text-center p-4">
+                <span class="material-symbols-outlined text-primary text-[44px]">map</span>
+                <div class="text-xs font-bold text-on-surface mt-1">Interactive 45-Acre Resort Navigator</div>
+                <div class="text-[10px] text-on-surface-variant">GPS Coordinates: 28.5355° N, 77.3910° E</div>
+                <a href="zones.html" class="mt-2 inline-block px-4 py-1.5 rounded-full bg-primary text-on-primary text-xs font-bold">Open Park Map</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS ACCORDION -->
+    <section class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter pb-20">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="text-primary font-label-md font-bold uppercase tracking-wider text-xs">Help Center</span>
+          <h2 class="font-headline-lg text-3xl font-extrabold text-on-surface mt-1">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="space-y-3">
+          <!-- FAQ 1 -->
+          <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left flex items-center justify-between font-bold text-on-surface text-sm sm:text-base">
+              <span>What are the daily operating hours of the park?</span>
+              <span id="faqIcon-1" class="material-symbols-outlined text-primary transition-transform">expand_more</span>
+            </button>
+            <div id="faqContent-1" class="hidden px-6 pb-4 text-xs sm:text-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/10 pt-2">
+              Merciado is open daily from 10:00 AM to 10:00 PM. On Friday, Saturday, and national holiday weekends, operations extend until 11:30 PM with midnight starlight coaster sessions.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left flex items-center justify-between font-bold text-on-surface text-sm sm:text-base">
+              <span>What is the difference between Weekday, Weekend, and Family passes?</span>
+              <span id="faqIcon-2" class="material-symbols-outlined text-primary transition-transform">expand_more</span>
+            </button>
+            <div id="faqContent-2" class="hidden px-6 pb-4 text-xs sm:text-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/10 pt-2">
+              Weekday passes (Mon-Fri) offer a reduced admission rate of $39 per adult. Weekend passes are $54 per adult and include extra parade sessions. The Family 4-Pack bundle covers 2 Adults + 2 Kids for $119 on weekdays and $159 on weekends, saving you up to $27.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left flex items-center justify-between font-bold text-on-surface text-sm sm:text-base">
+              <span>What happens if it rains heavily during my visit?</span>
+              <span id="faqIcon-3" class="material-symbols-outlined text-primary transition-transform">expand_more</span>
+            </button>
+            <div id="faqContent-3" class="hidden px-6 pb-4 text-xs sm:text-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/10 pt-2">
+              Under our <strong>Seth Group Rain Guarantee Policy</strong>, if severe inclement weather forces outdoor coaster operations to suspend for more than 90 consecutive minutes, all guests receive a complimentary Return Pass valid for 12 months.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(4)" class="w-full px-6 py-4 text-left flex items-center justify-between font-bold text-on-surface text-sm sm:text-base">
+              <span>Are strollers, lockers, and wheelchairs available for rent?</span>
+              <span id="faqIcon-4" class="material-symbols-outlined text-primary transition-transform">expand_more</span>
+            </button>
+            <div id="faqContent-4" class="hidden px-6 pb-4 text-xs sm:text-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/10 pt-2">
+              Yes, climate-controlled keyless lockers, single/double strollers, and motorized wheelchairs are available immediately inside the Gate A arrival concourse.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= GLOBAL COMPREHENSIVE FOOTER ================= -->
+  <footer class="bg-on-surface text-on-surface-variant pt-16 pb-12 border-t border-outline-variant/20">
+    <div class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <a class="flex items-center gap-3" href="index.html">
+            <img alt="Merciado Park Logo" class="h-9 w-auto brightness-200" src="https://lh3.googleusercontent.com/aida/AEtjO1XuoE2-h6lUG9ePnmBdWmSZaTSndIYQhmnKgkx1ISq_fzOiQm0Otc2JI0IWZ0HHYC63DbXbWVF2pLk3tv2WfpUOhV3f219IB6jR1D79DTflSLZm4QPbaqMaXidC4kPKHumI-hq1I_Nx15dGuH_d2EVNRdFQ4Zw0bZqmGrZmYQHa01rGVcBIqVUnx4aDT8o6W0Sw5WW4zr5YRdjMUzXxPyhbxlKaWc5vfTJuqJ1uRs8"/>
+            <div class="flex flex-col">
+              <span class="font-headline-sm text-2xl text-white font-extrabold leading-none">Merciado</span>
+              <span class="text-[10px] text-tertiary-fixed uppercase tracking-widest font-bold">Amusement Park</span>
+            </div>
+          </a>
+          <p class="text-sm text-white/70 max-w-sm leading-relaxed">
+            A crowning 45-acre national achievement developed over 5 dedicated years by Seth Group of Companies. Delivering safe, world-class entertainment with 99.98% operational uptime.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">The 6 Wonderlands</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="zones.html#zone-adrenaline" class="hover:text-tertiary-fixed transition-colors">Adrenaline Peak</a></li>
+            <li><a href="zones.html#zone-neptune" class="hover:text-tertiary-fixed transition-colors">Neptune's Tidal Bay</a></li>
+            <li><a href="zones.html#zone-jurassic" class="hover:text-tertiary-fixed transition-colors">Jurassic Prime Safari</a></li>
+            <li><a href="zones.html#zone-fantasy" class="hover:text-tertiary-fixed transition-colors">Enchanted Fantasy Realm</a></li>
+            <li><a href="zones.html#zone-cyber" class="hover:text-tertiary-fixed transition-colors">Cyber Neon Metropolis</a></li>
+            <li><a href="zones.html#zone-carnival" class="hover:text-tertiary-fixed transition-colors">Carnival Fiesta Plaza</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">Plan Your Visit</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="tickets.html" class="hover:text-tertiary-fixed transition-colors">Tickets &amp; Pricing Calculator</a></li>
+            <li><a href="tickets.html#tierSelector" class="hover:text-tertiary-fixed transition-colors">Weekday vs Weekend Passes</a></li>
+            <li><a href="tickets.html#familyBundle" class="hover:text-tertiary-fixed transition-colors">Family 4-Pack Saver</a></li>
+            <li><a href="restaurants.html" class="hover:text-tertiary-fixed transition-colors">Themed Dining &amp; Banquets</a></li>
+            <li><a href="entertainment.html" class="hover:text-tertiary-fixed transition-colors">Live Shows &amp; Parades</a></li>
+            <li><a href="gallery.html" class="hover:text-tertiary-fixed transition-colors">Park Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">Company &amp; Legal</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="about.html" class="hover:text-tertiary-fixed transition-colors">About Us &amp; Seth Group</a></li>
+            <li><a href="contact.html" class="hover:text-tertiary-fixed transition-colors">Contact Support &amp; Helpdesk</a></li>
+            <li><a href="disclaimer.html" class="hover:text-tertiary-fixed transition-colors">Disclaimer &amp; Safety Rules</a></li>
+            <li><a href="sitemap.html" class="hover:text-tertiary-fixed transition-colors">Complete Website Sitemap</a></li>
+            <li><a href="account.html" class="hover:text-tertiary-fixed transition-colors">Guest Member Portal</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/60">
+        <div class="flex items-center gap-3">
+          <span class="flex items-center gap-1 text-emerald-400 font-semibold">
+            <span class="material-symbols-outlined text-[15px]">verified</span> ISO 9001:2015 &amp; ASTM F24 Certified
+          </span>
+          <span>•</span>
+          <span>Triple Daily Structural Inspection</span>
+        </div>
+        <p class="text-center md:text-right">
+          © 2026 Merciado Amusement Park. Built &amp; Operated with Pride by Seth Groups of Companies. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="back-to-top" title="Back to Top"><span class="material-symbols-outlined text-[24px]">keyboard_arrow_up</span></div>
+  <div id="toast-container"></div>
+
+  <script src="assets/js/common.js"></script>
+  <script>
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value;
+      const cat = document.getElementById('contactCategory').value;
+      const ref = 'TKT-' + Math.floor(1000 + Math.random() * 9000);
+
+      showToast(\`Thank you \${name}! Your inquiry for \${cat} (Ref: #\${ref}) has been received. Our concierge will contact you shortly.\`, 'gold', 6000);
+      e.target.reset();
+    }
+
+    function toggleFaq(id) {
+      const content = document.getElementById(\`faqContent-\${id}\`);
+      const icon = document.getElementById(\`faqIcon-\${id}\`);
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+  </script>
+</body>
+</html>
+

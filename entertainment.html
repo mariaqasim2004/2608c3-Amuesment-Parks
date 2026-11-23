@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Live Entertainment, Shows &amp; Parades | Merciado Amusement Park — Spectacular Productions</title>
+  <meta name="description" content="Experience world-class live entertainment at Merciado Amusement Park: Carnival Lumina Starlight Parade, Celestial Fireworks, Buccaneer Stunt Spectacular, and Character Meet &amp; Greets."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#faf8ff",
+            "surface": "#faf8ff",
+            "surface-dim": "#d2d9f4",
+            "surface-bright": "#faf8ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f2f3ff",
+            "surface-container": "#eaedff",
+            "surface-container-high": "#e2e7ff",
+            "surface-container-highest": "#dae2fd",
+            "on-surface": "#131b2e",
+            "on-surface-variant": "#434655",
+            "primary": "#0031b1",
+            "primary-container": "#1246e2",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#c6ceff",
+            "secondary": "#b02f00",
+            "secondary-container": "#ff5722",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#541100",
+            "tertiary": "#553e00",
+            "tertiary-container": "#725500",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#ffc949",
+            "outline": "#747687",
+            "outline-variant": "#c4c5d8",
+            "primary-fixed": "#dde1ff",
+            "primary-fixed-dim": "#b8c3ff",
+            "secondary-fixed": "#ffdbd1",
+            "secondary-fixed-dim": "#ffb5a0",
+            "tertiary-fixed": "#ffdf9e",
+            "tertiary-fixed-dim": "#fabd00"
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter-sm": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin-sm": "1rem",
+            "margin": "2rem"
+          },
+          fontFamily: {
+            "headline-lg": ["Outfit", "sans-serif"],
+            "headline-md": ["Outfit", "sans-serif"],
+            "headline-sm": ["Outfit", "sans-serif"],
+            "display-hero": ["Outfit", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen antialiased flex flex-col justify-between">
+
+  <!-- ================= TOP PARK STATUS BAR ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.06)] border-b border-outline-variant/30">
+    <div class="bg-surface-container-high px-gutter-sm lg:px-gutter py-1.5 text-center text-xs border-b border-outline-variant/20">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-3 font-label-md text-on-surface-variant mx-auto sm:mx-0">
+          <span class="flex h-2.5 w-2.5 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          </span>
+          <span class="font-semibold text-on-surface">Park Open Today: 10:00 AM – 10:00 PM</span>
+          <span class="opacity-30">|</span>
+          <span class="hidden sm:inline">Weather: 26°C Clear Skies</span>
+          <span class="opacity-30">|</span>
+          <span class="font-bold text-primary flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">verified</span> 45-Acre National Landmark
+          </span>
+        </div>
+        <div class="hidden md:flex items-center gap-4 font-label-sm text-on-surface-variant">
+          <span class="flex items-center gap-1 text-tertiary-container font-semibold">
+            <span class="material-symbols-outlined text-[16px]">celebration</span> Tonight: Starlight Parade (8:30 PM) &amp; Fireworks (9:15 PM)
+          </span>
+          <span class="opacity-30">|</span>
+          <a class="hover:text-primary transition-colors font-medium" href="tickets.html">Shows Included Free with Ticket</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <div class="h-20 max-w-7xl mx-auto px-gutter-sm lg:px-gutter flex items-center justify-between gap-4">
+      <a class="flex items-center gap-3 group shrink-0" href="index.html">
+        <img alt="Merciado Park Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XuoE2-h6lUG9ePnmBdWmSZaTSndIYQhmnKgkx1ISq_fzOiQm0Otc2JI0IWZ0HHYC63DbXbWVF2pLk3tv2WfpUOhV3f219IB6jR1D79DTflSLZm4QPbaqMaXidC4kPKHumI-hq1I_Nx15dGuH_d2EVNRdFQ4Zw0bZqmGrZmYQHa01rGVcBIqVUnx4aDT8o6W0Sw5WW4zr5YRdjMUzXxPyhbxlKaWc5vfTJuqJ1uRs8"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-primary font-extrabold leading-none tracking-tight group-hover:text-primary-container transition-colors">Merciado</span>
+          <span class="font-label-sm text-[11px] text-on-surface-variant font-bold tracking-widest uppercase">Amusement Park</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden xl:flex items-center gap-1 2xl:gap-2">
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="index.html">Home</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="zones.html">Zones &amp; Attractions</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="restaurants.html">Dining</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-sm" href="entertainment.html">Entertainment</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="tickets.html">Tickets &amp; Prices</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="gallery.html">Gallery</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="about.html">About Us</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="contact.html">Contact Us</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="sitemap.html">Sitemap</a>
+      </nav>
+
+      <!-- Right Action CTAs -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a id="navUserBtn" class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-sm border border-outline-variant/30" href="account.html">
+          <span class="material-symbols-outlined text-[19px] text-primary">person</span>
+          <span class="hidden sm:inline">Log In</span>
+        </a>
+        <a class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md text-label-md font-bold shadow-[0_8px_20px_-4px_rgba(255,87,34,0.45)] hover:shadow-[0_12px_28px_-4px_rgba(255,87,34,0.6)] hover:scale-105 transition-all" href="tickets.html">
+          <span class="material-symbols-outlined text-[20px]">confirmation_number</span>
+          <span class="whitespace-nowrap">Book Tickets</span>
+        </a>
+        <button id="mobileMenuToggle" aria-label="Toggle Navigation Menu" class="xl:hidden w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OUT DRAWER -->
+  <div id="mobileNavBackdrop" class="hidden fixed inset-0 z-50 bg-on-surface/60 backdrop-blur-sm transition-opacity"></div>
+  <div id="mobileNavDrawer" class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-surface-container-lowest shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div class="p-5 flex items-center justify-between border-b border-outline-variant/30">
+      <div class="flex items-center gap-2">
+        <span class="font-headline-sm text-primary font-bold">Merciado Menu</span>
+      </div>
+      <button id="closeMobileNav" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high">
+        <span class="material-symbols-outlined text-[22px]">close</span>
+      </button>
+    </div>
+
+    <div class="flex-1 overflow-y-auto p-5 space-y-1">
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="index.html">
+        <span class="material-symbols-outlined text-primary">home</span> Home
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="zones.html">
+        <span class="material-symbols-outlined text-secondary">explore</span> Zones &amp; Attractions
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="restaurants.html">
+        <span class="material-symbols-outlined text-tertiary-container">restaurant</span> Dining &amp; Food
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-primary bg-primary-fixed/30 font-bold transition-colors" href="entertainment.html">
+        <span class="material-symbols-outlined text-secondary-container">celebration</span> Live Entertainment
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="tickets.html">
+        <span class="material-symbols-outlined text-primary-container">confirmation_number</span> Tickets &amp; Prices
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="gallery.html">
+        <span class="material-symbols-outlined text-primary">photo_library</span> Park Gallery
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="about.html">
+        <span class="material-symbols-outlined text-tertiary">history_edu</span> About Seth Group
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="contact.html">
+        <span class="material-symbols-outlined text-secondary">contact_support</span> Contact Us
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="disclaimer.html">
+        <span class="material-symbols-outlined text-outline">gavel</span> Disclaimer &amp; Safety
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="sitemap.html">
+        <span class="material-symbols-outlined text-primary">account_tree</span> Sitemap
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="account.html">
+        <span class="material-symbols-outlined text-primary">person</span> Guest Portal / My Account
+      </a>
+    </div>
+
+    <div class="p-5 border-t border-outline-variant/30 bg-surface-container-low">
+      <a class="w-full flex items-center justify-center gap-2 py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold shadow-lg text-center" href="tickets.html">
+        <span class="material-symbols-outlined">confirmation_number</span> Book Tickets Online
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="w-full pt-20">
+    
+    <!-- HERO SECTION -->
+    <section class="relative w-full overflow-hidden bg-on-surface py-16 sm:py-24 text-white">
+      <div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcqI8DX7s16wVhDw3kO4re9CvxPnlqpoRW-FL5ikkZfwUHtf')"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-on-surface via-on-surface/80 to-transparent"></div>
+      
+      <div class="relative z-10 max-w-7xl mx-auto px-gutter-sm lg:px-gutter text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-4 border border-white/20">
+          <span class="material-symbols-outlined text-[16px]">celebration</span> World-Class Theatrical Spectacles
+        </div>
+        <h1 class="font-display-hero text-4xl sm:text-5xl lg:text-6xl font-black text-white max-w-3xl leading-tight">
+          Spectacular Shows, Parades &amp; Fireworks
+        </h1>
+        <p class="mt-4 font-body-lg text-white/80 max-w-2xl font-medium">
+          Every day at Merciado culminates in world-class Broadway-caliber spectacles, death-defying high-dive stunt shows, illuminated night parades with 500,000 LEDs, and pyrotechnic symphonies.
+        </p>
+
+        <!-- Live Countdown to Next Event -->
+        <div class="mt-8 inline-flex items-center gap-4 bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20">
+          <span class="material-symbols-outlined text-secondary-container text-[30px] animate-bounce">alarm</span>
+          <div class="text-left">
+            <div class="text-xs text-white/70 uppercase tracking-wider font-bold">Next Flagship Spectacle</div>
+            <div class="text-lg font-bold text-white">Carnival Lumina Starlight Parade starts in <span id="paradeCountdown" class="text-secondary-fixed font-black">02h 45m</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE SHOWS SECTION FROM DESIGN -->
+    <section class="w-full bg-surface-container-low py-space-xl px-gutter-sm lg:px-gutter">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-[16px]">theaters</span>
+            Daily Stage Schedule • Today's Cast
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Spectacular Live Shows</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">High-diving theatrics, grand Broadway illusions, illuminated floats, and the night pyrotechnic finale.</p>
+</div>
+<!-- Quick Day Plan Counter Feedback -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-xs pl-space-md pr-space-md rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">event_available</span>
+<span class="font-label-md text-label-md text-on-surface"><span class="font-bold text-primary" id="plan-count">0</span> Shows Added to My Day</span>
+<a class="font-label-sm text-label-sm text-secondary uppercase font-bold hover:underline" href="#schedule-view">View Itinerary</a>
+</div>
+</div>
+<!-- Timeline Schedule Stack -->
+<div class="space-y-space-md">
+<!-- Show 1: 11:30 AM -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md lg:p-space-lg shadow-sm hover:shadow-lg transition-all flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-20 h-20 rounded-2xl bg-primary-fixed flex flex-col items-center justify-center shrink-0 text-center shadow-inner">
+<span class="font-headline-sm text-headline-sm text-primary leading-none">11:30</span>
+<span class="font-label-sm text-label-sm text-on-primary-fixed uppercase font-bold mt-1">AM</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-bold">Duration: 35 Min</span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">bolt</span> FastPass Lane Open
+                </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">Acrobatic Marvels of the Jungle</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 mt-1">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[16px]">stadium</span> Safari Amphitheater</span>
+<span>•</span>
+<span class="text-on-surface-variant">Best Sightline: Tier B Center Rows</span>
+</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end">
+<button class="day-plan-btn flex-1 lg:flex-none px-space-lg py-space-sm rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md transition-all flex items-center justify-center gap-1 shadow-sm" onclick="toggleDayPlan(this, 'Acrobatic Marvels (11:30 AM)')">
+<span class="material-symbols-outlined text-[18px]">add_circle</span> Add to My Day Plan
+            </button>
+</div>
+</div>
+<!-- Show 2: 02:00 PM -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md lg:p-space-lg shadow-sm hover:shadow-lg transition-all flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-20 h-20 rounded-2xl bg-secondary-fixed flex flex-col items-center justify-center shrink-0 text-center shadow-inner">
+<span class="font-headline-sm text-headline-sm text-secondary leading-none">02:00</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed uppercase font-bold mt-1">PM</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-bold">Duration: 40 Min</span>
+<span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">water</span> Splash Zone Warning
+                </span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">bolt</span> FastPass Lane Open
+                </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">Neptune's High-Dive Splash Extravaganza</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 mt-1">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[16px]">pool</span> Aquatic Arena</span>
+<span>•</span>
+<span class="text-on-surface-variant">Best Sightline: Rows 5–12 for dry seating</span>
+</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end">
+<button class="day-plan-btn flex-1 lg:flex-none px-space-lg py-space-sm rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md transition-all flex items-center justify-center gap-1 shadow-sm" onclick="toggleDayPlan(this, 'Neptune Splash (02:00 PM)')">
+<span class="material-symbols-outlined text-[18px]">add_circle</span> Add to My Day Plan
+            </button>
+</div>
+</div>
+<!-- Show 3: 04:30 PM -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md lg:p-space-lg shadow-sm hover:shadow-lg transition-all flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-20 h-20 rounded-2xl bg-surface-container-highest flex flex-col items-center justify-center shrink-0 text-center shadow-inner">
+<span class="font-headline-sm text-headline-sm text-primary leading-none">04:30</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold mt-1">PM</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-bold">Duration: 45 Min</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">air</span> Indoor Air Conditioned
+                </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">Mystic Illusions &amp; Magic Show</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 mt-1">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[16px]">theater_comedy</span> Grand Opera Hall</span>
+<span>•</span>
+<span class="text-on-surface-variant">Best Sightline: Dress Circle Balcony</span>
+</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end">
+<button class="day-plan-btn flex-1 lg:flex-none px-space-lg py-space-sm rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md transition-all flex items-center justify-center gap-1 shadow-sm" onclick="toggleDayPlan(this, 'Mystic Illusions (04:30 PM)')">
+<span class="material-symbols-outlined text-[18px]">add_circle</span> Add to My Day Plan
+            </button>
+</div>
+</div>
+<!-- Show 4: 07:30 PM (Grand Parade - Featured Highlight) -->
+<div class="bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-2xl p-space-md lg:p-space-lg shadow-xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-64 h-64 bg-secondary-container/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start sm:items-center gap-space-md relative z-10">
+<div class="w-20 h-20 rounded-2xl bg-surface-container-lowest text-primary flex flex-col items-center justify-center shrink-0 text-center shadow-lg">
+<span class="font-headline-sm text-headline-sm leading-none">07:30</span>
+<span class="font-label-sm text-label-sm uppercase font-bold mt-1">PM</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-bold">50 Min Run</span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[13px]">flare</span> 80+ Dancers &amp; LED Floats
+                </span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">military_tech</span> VIP Reserved Kerb
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">The Grand Starlight Parade</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container flex items-center gap-2 mt-1">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">festival</span> Main Street Promenade</span>
+<span>•</span>
+<span>Best Sightline: Clocktower Plaza curbside</span>
+</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end relative z-10">
+<button class="day-plan-btn flex-1 lg:flex-none px-space-lg py-space-sm rounded-full bg-surface-container-lowest text-primary hover:bg-surface-container-low font-label-md text-label-md transition-all flex items-center justify-center gap-1 shadow-md font-bold" onclick="toggleDayPlan(this, 'Grand Parade (07:30 PM)')">
+<span class="material-symbols-outlined text-[18px]">add_circle</span> Add to My Day Plan
+            </button>
+</div>
+</div>
+<!-- Show 5: 09:30 PM (Pyrotechnic Fireworks Finale) -->
+<div class="bg-inverse-surface text-inverse-on-surface rounded-2xl p-space-md lg:p-space-lg shadow-xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-48 h-48 bg-secondary/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start sm:items-center gap-space-md relative z-10">
+<div class="w-20 h-20 rounded-2xl bg-secondary-container text-on-secondary flex flex-col items-center justify-center shrink-0 text-center shadow-lg">
+<span class="font-headline-sm text-headline-sm leading-none">09:30</span>
+<span class="font-label-sm text-label-sm uppercase font-bold mt-1">PM</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-white font-label-sm text-label-sm font-bold">25 Min Finale</span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">auto_awesome</span> Sky Lasers &amp; Water Fountains
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white">Symphony of Lights &amp; Fireworks Finale</h3>
+<p class="font-body-sm text-body-sm text-surface-container-high flex items-center gap-2 mt-1">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">waves</span> Central Sky Lake</span>
+<span>•</span>
+<span>Best Sightline: Cloud Terrace &amp; Boardwalk Pier</span>
+</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end relative z-10">
+<button class="day-plan-btn flex-1 lg:flex-none px-space-lg py-space-sm rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md transition-all flex items-center justify-center gap-1 shadow-md font-bold" onclick="toggleDayPlan(this, 'Fireworks Finale (09:30 PM)')">
+<span class="material-symbols-outlined text-[18px]">add_circle</span> Add to My Day Plan
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+    <!-- MEET PARK ROYALTY SECTION FROM DESIGN -->
+    <section class="max-w-7xl mx-auto w-full px-gutter-sm lg:px-gutter py-space-xl">
+<div class="mb-space-lg text-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider flex items-center justify-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+        Character Encounters
+      </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Meet Park Royalty</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Capture joyful memories with Merci the Lion and Stella the Star Fairy at dedicated scenic pavilions.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Mascot 1: Merci the Lion -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md hover:shadow-xl transition-all flex flex-col sm:flex-row items-center gap-space-lg">
+<div class="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A friendly cheerful cartoon royal mascot lion named Merci wearing a golden crown and velvet cape posing warmly with children inside a sunlit amusement park castle gazebo, vibrant bright photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADkmyhy13_qbPqLp6c0dYSs6PGIeHX8xewRL5DjfIPIUKW_PkUOHnRUJisOkJ8slK6JT9F47vKlKIyX1so91O91OE_OnGia9sxBMiSzc17tiB6UvBlIxAx9o3Ghnfp1-ITDhZmW_9OvpLdbUdyed-Eu2shO-EGfPFPo3xH38BZYbMD9Okekm23giSyd5PNpHr7SpBZ6Quxjzg8BO6Moefr3uD3DKheahtzWS7NpYU"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Park Monarch</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">Castle Pavilion</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Merci the Lion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-md">
+              High-fives, royal stickers, and commemorative family portraits. Photopass photographers on site.
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl mb-space-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase mb-1">Today's Appearance Slots:</div>
+<div class="flex flex-wrap gap-1.5 font-label-md text-label-md text-primary font-bold">
+<span class="px-2 py-1 rounded bg-surface-container-lowest shadow-sm">10:30 AM</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest shadow-sm">01:15 PM</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest shadow-sm">05:00 PM</span>
+</div>
+</div>
+<button class="w-full py-space-xs rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm transition-all shadow-sm">
+            Set Reminder in Merciado App
+          </button>
+</div>
+</div>
+<!-- Mascot 2: Stella the Star Fairy -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md hover:shadow-xl transition-all flex flex-col sm:flex-row items-center gap-space-lg">
+<div class="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A magical radiant fairy character named Stella with glowing star wings, pastel shimmer gown, smiling kindly and creating glitter sparkles with young park visitors inside an enchanted fantasy garden pavilion, cinematic warm sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1E0Y1sygpWIS_zQvdYerEF52jnLerE1n0m39NSP1zICDhrtYdjr_iPBoME1e15AoCIE5-3B54zQUjcoUfftV_fkZ-iDwJ5GuxjA_8rYIvvzWBujTUOPAan_4vkKaUzLJABSfPsyKHNHJDzP3DAhcZk4oxdibWoVMUm14QBH0gvLn7Odz-5InHpjIsClUFtVJICRLWAH1Uyulsuln8mb5_yn8yrl6Jh5rpyeM-wXY"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Realm Guardian</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">Enchanted Arbor</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Stella the Star Fairy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-md">
+              Sprinkles star wishes, signs adventure autograph books, and bestows glitter wands for kids.
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl mb-space-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase mb-1">Today's Appearance Slots:</div>
+<div class="flex flex-wrap gap-1.5 font-label-md text-label-md text-primary font-bold">
+<span class="px-2 py-1 rounded bg-surface-container-lowest shadow-sm">11:00 AM</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest shadow-sm">03:30 PM</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest shadow-sm">06:15 PM</span>
+</div>
+</div>
+<button class="w-full py-space-xs rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm transition-all shadow-sm">
+            Set Reminder in Merciado App
+          </button>
+</div>
+</div>
+</div>
+</section>
+
+    <!-- VIP SHOW PASS UPGRADE BANNER -->
+    <section class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter py-16">
+      <div class="bg-gradient-to-r from-primary to-primary-container rounded-3xl p-8 lg:p-12 text-on-primary shadow-xl relative overflow-hidden">
+        <div class="max-w-2xl space-y-4">
+          <span class="px-3.5 py-1 rounded-full bg-white/20 text-tertiary-fixed text-xs font-bold uppercase tracking-wider">FastPass Show Reserve</span>
+          <h3 class="font-headline-lg text-3xl sm:text-4xl font-extrabold text-white">Reserve Guaranteed Front-Row Seating</h3>
+          <p class="text-white/80 text-sm sm:text-base leading-relaxed">
+            Upgrade your day pass with VIP Show Privileges: Skip general queue lines, access premium center-stage amphitheater seating, and receive exclusive character meet &amp; greet photo fast-tracks.
+          </p>
+          <div class="pt-4 flex flex-wrap gap-4">
+            <button onclick="openShowSeatModal('Carnival Lumina Starlight Parade')" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold shadow-lg hover:scale-105 transition-all">
+              Reserve VIP Center Seats
+            </button>
+            <a href="tickets.html#fastpass" class="px-7 py-3.5 rounded-full bg-white/15 hover:bg-white/25 text-white font-label-md font-semibold border border-white/30 transition-all">
+              Learn About VIP Passes
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SHOW SEAT RESERVATION MODAL -->
+  <div id="showSeatModal" class="hidden fixed inset-0 z-50 items-center justify-center bg-on-surface/60 backdrop-blur-md p-4">
+    <div class="bg-surface-container-lowest rounded-2xl w-full max-w-lg p-6 sm:p-8 shadow-2xl relative border border-outline-variant/30 animate-soft-float">
+      <button onclick="closeShowSeatModal()" class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface p-2 rounded-full hover:bg-surface-container">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <div class="mb-5">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-secondary text-xs font-bold uppercase mb-2">
+          <span class="material-symbols-outlined text-[15px]">event_seat</span> Preferred Show Seating
+        </div>
+        <h3 id="reserveShowTitle" class="font-headline-sm text-2xl font-bold text-on-surface">Carnival Lumina Starlight Parade</h3>
+        <p class="text-xs text-on-surface-variant mt-1">Guaranteed reserved viewing zone at Starlight Castle Plaza.</p>
+      </div>
+
+      <form onsubmit="handleShowReservation(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Performance Session</label>
+          <select required id="reserveShowSession" class="w-full px-3 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold">
+            <option>Today • 08:30 PM (Evening Extravaganza)</option>
+            <option>Today • 09:15 PM (Fireworks Viewing Zone)</option>
+            <option>Tomorrow • 04:00 PM (Buccaneer Stunt Show)</option>
+            <option>Tomorrow • 06:00 PM (Royal Fairytale Broadway)</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Reserved Seats</label>
+            <select required id="reserveSeatQty" class="w-full px-3 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold">
+              <option>1 Seat</option>
+              <option selected>2 Seats</option>
+              <option>4 Seats (Family)</option>
+              <option>6 Seats</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Access Tier</label>
+            <select id="reserveSeatTier" class="w-full px-3 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold">
+              <option>Complimentary General Reserve</option>
+              <option>VIP Front-Row Zone (+$10)</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Guest Name &amp; Contact</label>
+          <div class="grid grid-cols-2 gap-2">
+            <input type="text" required placeholder="Guest Name" id="showGuestName" value="Alexander Wright" class="px-3 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm"/>
+            <input type="email" required placeholder="Email Address" id="showGuestEmail" value="alex@example.com" class="px-3 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm"/>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold shadow-lg hover:scale-[1.02] transition-transform">
+          Confirm Show Seat Reservation
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= GLOBAL COMPREHENSIVE FOOTER ================= -->
+  <footer class="bg-on-surface text-on-surface-variant pt-16 pb-12 border-t border-outline-variant/20">
+    <div class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <a class="flex items-center gap-3" href="index.html">
+            <img alt="Merciado Park Logo" class="h-9 w-auto brightness-200" src="https://lh3.googleusercontent.com/aida/AEtjO1XuoE2-h6lUG9ePnmBdWmSZaTSndIYQhmnKgkx1ISq_fzOiQm0Otc2JI0IWZ0HHYC63DbXbWVF2pLk3tv2WfpUOhV3f219IB6jR1D79DTflSLZm4QPbaqMaXidC4kPKHumI-hq1I_Nx15dGuH_d2EVNRdFQ4Zw0bZqmGrZmYQHa01rGVcBIqVUnx4aDT8o6W0Sw5WW4zr5YRdjMUzXxPyhbxlKaWc5vfTJuqJ1uRs8"/>
+            <div class="flex flex-col">
+              <span class="font-headline-sm text-2xl text-white font-extrabold leading-none">Merciado</span>
+              <span class="text-[10px] text-tertiary-fixed uppercase tracking-widest font-bold">Amusement Park</span>
+            </div>
+          </a>
+          <p class="text-sm text-white/70 max-w-sm leading-relaxed">
+            A crowning 45-acre national achievement developed over 5 dedicated years by Seth Group of Companies. Delivering safe, world-class entertainment with 99.98% operational uptime.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">The 6 Wonderlands</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="zones.html#zone-adrenaline" class="hover:text-tertiary-fixed transition-colors">Adrenaline Peak</a></li>
+            <li><a href="zones.html#zone-neptune" class="hover:text-tertiary-fixed transition-colors">Neptune's Tidal Bay</a></li>
+            <li><a href="zones.html#zone-jurassic" class="hover:text-tertiary-fixed transition-colors">Jurassic Prime Safari</a></li>
+            <li><a href="zones.html#zone-fantasy" class="hover:text-tertiary-fixed transition-colors">Enchanted Fantasy Realm</a></li>
+            <li><a href="zones.html#zone-cyber" class="hover:text-tertiary-fixed transition-colors">Cyber Neon Metropolis</a></li>
+            <li><a href="zones.html#zone-carnival" class="hover:text-tertiary-fixed transition-colors">Carnival Fiesta Plaza</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">Plan Your Visit</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="tickets.html" class="hover:text-tertiary-fixed transition-colors">Tickets &amp; Pricing Calculator</a></li>
+            <li><a href="tickets.html#tierSelector" class="hover:text-tertiary-fixed transition-colors">Weekday vs Weekend Passes</a></li>
+            <li><a href="tickets.html#familyBundle" class="hover:text-tertiary-fixed transition-colors">Family 4-Pack Saver</a></li>
+            <li><a href="restaurants.html" class="hover:text-tertiary-fixed transition-colors">Themed Dining &amp; Banquets</a></li>
+            <li><a href="entertainment.html" class="hover:text-tertiary-fixed transition-colors">Live Shows &amp; Parades</a></li>
+            <li><a href="gallery.html" class="hover:text-tertiary-fixed transition-colors">Park Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">Company &amp; Legal</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="about.html" class="hover:text-tertiary-fixed transition-colors">About Us &amp; Seth Group</a></li>
+            <li><a href="contact.html" class="hover:text-tertiary-fixed transition-colors">Contact Support &amp; Helpdesk</a></li>
+            <li><a href="disclaimer.html" class="hover:text-tertiary-fixed transition-colors">Disclaimer &amp; Safety Rules</a></li>
+            <li><a href="sitemap.html" class="hover:text-tertiary-fixed transition-colors">Complete Website Sitemap</a></li>
+            <li><a href="account.html" class="hover:text-tertiary-fixed transition-colors">Guest Member Portal</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/60">
+        <div class="flex items-center gap-3">
+          <span class="flex items-center gap-1 text-emerald-400 font-semibold">
+            <span class="material-symbols-outlined text-[15px]">verified</span> ISO 9001:2015 &amp; ASTM F24 Certified
+          </span>
+          <span>•</span>
+          <span>Triple Daily Structural Inspection</span>
+        </div>
+        <p class="text-center md:text-right">
+          © 2026 Merciado Amusement Park. Built &amp; Operated with Pride by Seth Groups of Companies. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="back-to-top" title="Back to Top"><span class="material-symbols-outlined text-[24px]">keyboard_arrow_up</span></div>
+  <div id="toast-container"></div>
+
+  <script src="assets/js/common.js"></script>
+  <script>
+    function openShowSeatModal(showTitle) {
+      document.getElementById('reserveShowTitle').textContent = showTitle || 'Carnival Lumina Starlight Parade';
+      const modal = document.getElementById('showSeatModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeShowSeatModal() {
+      const modal = document.getElementById('showSeatModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function handleShowReservation(e) {
+      e.preventDefault();
+      const title = document.getElementById('reserveShowTitle').textContent;
+      const session = document.getElementById('reserveShowSession').value;
+      const qty = document.getElementById('reserveSeatQty').value;
+      const code = 'SHOW-' + Math.floor(1000 + Math.random() * 9000);
+
+      closeShowSeatModal();
+      showToast(`${qty} reserved for "${title}" (${session})! Pass Code: ${code}`, 'gold', 6000);
+    }
+  </script>
+</body>
+</html>

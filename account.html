@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Guest Account Portal &amp; FastPass Wallet | Merciado Amusement Park</title>
+  <meta name="description" content="Manage your Merciado tickets, FastPass digital wristband, booked passes, and VIP loyalty rewards in your guest member portal."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#faf8ff",
+            "surface": "#faf8ff",
+            "surface-dim": "#d2d9f4",
+            "surface-bright": "#faf8ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f2f3ff",
+            "surface-container": "#eaedff",
+            "surface-container-high": "#e2e7ff",
+            "surface-container-highest": "#dae2fd",
+            "on-surface": "#131b2e",
+            "on-surface-variant": "#434655",
+            "primary": "#0031b1",
+            "primary-container": "#1246e2",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#c6ceff",
+            "secondary": "#b02f00",
+            "secondary-container": "#ff5722",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#541100",
+            "tertiary": "#553e00",
+            "tertiary-container": "#725500",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#ffc949",
+            "outline": "#747687",
+            "outline-variant": "#c4c5d8",
+            "primary-fixed": "#dde1ff",
+            "primary-fixed-dim": "#b8c3ff",
+            "secondary-fixed": "#ffdbd1",
+            "secondary-fixed-dim": "#ffb5a0",
+            "tertiary-fixed": "#ffdf9e",
+            "tertiary-fixed-dim": "#fabd00"
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter-sm": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin-sm": "1rem",
+            "margin": "2rem"
+          },
+          fontFamily: {
+            "headline-lg": ["Outfit", "sans-serif"],
+            "headline-md": ["Outfit", "sans-serif"],
+            "headline-sm": ["Outfit", "sans-serif"],
+            "display-hero": ["Outfit", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen antialiased flex flex-col justify-between">
+
+  <!-- ================= TOP PARK STATUS BAR ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.06)] border-b border-outline-variant/30">
+    <div class="bg-surface-container-high px-gutter-sm lg:px-gutter py-1.5 text-center text-xs border-b border-outline-variant/20">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-3 font-label-md text-on-surface-variant mx-auto sm:mx-0">
+          <span class="flex h-2.5 w-2.5 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          </span>
+          <span class="font-semibold text-on-surface">Park Open Today: 10:00 AM – 10:00 PM</span>
+          <span class="opacity-30">|</span>
+          <span class="hidden sm:inline">Weather: 26°C Clear Skies</span>
+          <span class="opacity-30">|</span>
+          <span class="font-bold text-primary flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">verified</span> 45-Acre National Landmark
+          </span>
+        </div>
+        <div class="hidden md:flex items-center gap-4 font-label-sm text-on-surface-variant">
+          <span class="flex items-center gap-1 text-tertiary-container font-semibold">
+            <span class="material-symbols-outlined text-[16px]">military_tech</span> Seth Group Flagship Enterprise
+          </span>
+          <span class="opacity-30">|</span>
+          <span class="text-secondary font-bold">FastPass Wristband Sync: Enabled</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <div class="h-20 max-w-7xl mx-auto px-gutter-sm lg:px-gutter flex items-center justify-between gap-4">
+      <a class="flex items-center gap-3 group shrink-0" href="index.html">
+        <img alt="Merciado Park Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XuoE2-h6lUG9ePnmBdWmSZaTSndIYQhmnKgkx1ISq_fzOiQm0Otc2JI0IWZ0HHYC63DbXbWVF2pLk3tv2WfpUOhV3f219IB6jR1D79DTflSLZm4QPbaqMaXidC4kPKHumI-hq1I_Nx15dGuH_d2EVNRdFQ4Zw0bZqmGrZmYQHa01rGVcBIqVUnx4aDT8o6W0Sw5WW4zr5YRdjMUzXxPyhbxlKaWc5vfTJuqJ1uRs8"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-primary font-extrabold leading-none tracking-tight group-hover:text-primary-container transition-colors">Merciado</span>
+          <span class="font-label-sm text-[11px] text-on-surface-variant font-bold tracking-widest uppercase">Amusement Park</span>
+        </div>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-1 2xl:gap-2">
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="index.html">Home</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="zones.html">Zones &amp; Attractions</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="restaurants.html">Dining</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="entertainment.html">Entertainment</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="tickets.html">Tickets &amp; Prices</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="gallery.html">Gallery</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="about.html">About Us</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="contact.html">Contact Us</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="sitemap.html">Sitemap</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a id="navUserBtn" class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-sm" href="account.html">
+          <span class="material-symbols-outlined text-[19px]">person</span>
+          <span class="hidden sm:inline">Guest Portal</span>
+        </a>
+        <a class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md text-label-md font-bold shadow-[0_8px_20px_-4px_rgba(255,87,34,0.45)] hover:shadow-[0_12px_28px_-4px_rgba(255,87,34,0.6)] hover:scale-105 transition-all" href="tickets.html">
+          <span class="material-symbols-outlined text-[20px]">confirmation_number</span>
+          <span class="whitespace-nowrap">Book Tickets</span>
+        </a>
+        <button id="mobileMenuToggle" aria-label="Toggle Navigation Menu" class="xl:hidden w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OUT DRAWER -->
+  <div id="mobileNavBackdrop" class="hidden fixed inset-0 z-50 bg-on-surface/60 backdrop-blur-sm transition-opacity"></div>
+  <div id="mobileNavDrawer" class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-surface-container-lowest shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div class="p-5 flex items-center justify-between border-b border-outline-variant/30">
+      <div class="flex items-center gap-2">
+        <span class="font-headline-sm text-primary font-bold">Merciado Menu</span>
+      </div>
+      <button id="closeMobileNav" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high">
+        <span class="material-symbols-outlined text-[22px]">close</span>
+      </button>
+    </div>
+
+    <div class="flex-1 overflow-y-auto p-5 space-y-1">
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="index.html">
+        <span class="material-symbols-outlined text-primary">home</span> Home
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="zones.html">
+        <span class="material-symbols-outlined text-secondary">explore</span> Zones &amp; Attractions
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="restaurants.html">
+        <span class="material-symbols-outlined text-tertiary-container">restaurant</span> Dining &amp; Food
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="entertainment.html">
+        <span class="material-symbols-outlined text-secondary-container">celebration</span> Live Entertainment
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="tickets.html">
+        <span class="material-symbols-outlined text-primary-container">confirmation_number</span> Tickets &amp; Prices
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="gallery.html">
+        <span class="material-symbols-outlined text-primary">photo_library</span> Park Gallery
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="about.html">
+        <span class="material-symbols-outlined text-tertiary">history_edu</span> About Seth Group
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="contact.html">
+        <span class="material-symbols-outlined text-secondary">contact_support</span> Contact Us
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="disclaimer.html">
+        <span class="material-symbols-outlined text-outline">gavel</span> Disclaimer &amp; Safety
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="sitemap.html">
+        <span class="material-symbols-outlined text-primary">account_tree</span> Sitemap
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-primary bg-primary-fixed/30 font-bold transition-colors" href="account.html">
+        <span class="material-symbols-outlined text-primary">person</span> Guest Portal / My Account
+      </a>
+    </div>
+
+    <div class="p-5 border-t border-outline-variant/30 bg-surface-container-low">
+      <a class="w-full flex items-center justify-center gap-2 py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold shadow-lg text-center" href="tickets.html">
+        <span class="material-symbols-outlined">confirmation_number</span> Book Tickets Online
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="w-full pt-20">
+    
+    <!-- HERO SECTION -->
+    <section class="relative w-full overflow-hidden bg-primary py-14 sm:py-20 text-on-primary">
+      <div class="relative z-10 max-w-7xl mx-auto px-gutter-sm lg:px-gutter text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-4 border border-white/20">
+          <span class="material-symbols-outlined text-[16px]">account_circle</span> Guest Passholder Hub
+        </div>
+        <h1 class="font-display-hero text-3xl sm:text-4xl lg:text-5xl font-black text-white max-w-3xl leading-tight">
+          Guest Portal &amp; FastPass Wallet
+        </h1>
+        <p class="mt-3 font-body-lg text-primary-fixed max-w-2xl font-medium">
+          Manage your booked park passes, monitor FastPass digital queue status, view saved itineraries, and redeem Seth VIP loyalty points.
+        </p>
+      </div>
+    </section>
+
+    <!-- ACCOUNT AUTH / DASHBOARD CONTAINER -->
+    <section class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter py-16">
+      
+      <!-- LOGGED OUT VIEW: LOGIN / REGISTER FORMS -->
+      <div id="authView" class="max-w-xl mx-auto bg-surface-container-lowest p-8 sm:p-10 rounded-3xl shadow-xl border border-outline-variant/30">
+        
+        <div class="flex bg-surface-container p-1 rounded-full mb-8">
+          <button id="tabLoginBtn" onclick="toggleAuthTab('login')" class="flex-1 py-2.5 rounded-full font-label-md font-bold bg-primary text-on-primary shadow-sm transition-all">
+            Sign In
+          </button>
+          <button id="tabRegisterBtn" onclick="toggleAuthTab('register')" class="flex-1 py-2.5 rounded-full font-label-md font-bold text-on-surface-variant hover:text-on-surface transition-all">
+            Create Account
+          </button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="pageLoginForm" onsubmit="handlePageLogin(event)" class="space-y-4">
+          <div class="text-center mb-6">
+            <h3 class="font-headline-sm text-2xl font-bold text-on-surface">Welcome Back</h3>
+            <p class="text-xs text-on-surface-variant mt-1">Sign in with your registered email to access tickets.</p>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Email Address</label>
+            <input type="email" required id="pageLoginEmail" value="alexander.wright@example.com" class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"/>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Password</label>
+            <input type="password" required id="pageLoginPassword" value="merciado2026" class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"/>
+          </div>
+
+          <div class="flex items-center justify-between text-xs text-on-surface-variant">
+            <label class="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" checked class="rounded text-primary"/>
+              <span>Remember me</span>
+            </label>
+            <a href="#" onclick="showToast('Password reset link sent to your email!', 'gold')" class="text-primary hover:underline">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-lg font-bold shadow-lg hover:scale-[1.02] transition-transform">
+            Sign In to My Account
+          </button>
+
+          <!-- Quick Demo Account Fill Button -->
+          <div class="pt-4 border-t border-outline-variant/20 text-center">
+            <button type="button" onclick="quickDemoLogin()" class="px-4 py-2 rounded-full bg-surface-container text-xs font-bold text-primary hover:bg-surface-container-high transition-colors">
+              ⚡ Quick 1-Click Demo Login (Alexander Wright)
+            </button>
+          </div>
+        </form>
+
+        <!-- Register Form -->
+        <form id="pageRegisterForm" onsubmit="handlePageRegister(event)" class="hidden space-y-4">
+          <div class="text-center mb-6">
+            <h3 class="font-headline-sm text-2xl font-bold text-on-surface">Join the VIP Explorer Club</h3>
+            <p class="text-xs text-emerald-700 font-bold mt-1">🎁 Receive 100 Welcome Points upon registration!</p>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Full Name</label>
+            <input type="text" required placeholder="Alexander Wright" id="pageRegName" class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"/>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Email Address</label>
+            <input type="email" required placeholder="alex@merciado.com" id="pageRegEmail" class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"/>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Mobile Phone (For Ticket SMS)</label>
+            <input type="tel" placeholder="+1 (555) 234-5678" id="pageRegPhone" class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"/>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Create Secure Password</label>
+            <input type="password" required placeholder="Minimum 6 characters" id="pageRegPassword" class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"/>
+          </div>
+
+          <div class="flex items-center gap-2 text-xs text-on-surface-variant">
+            <input type="checkbox" required checked id="pageRegAgree" class="rounded text-primary"/>
+            <label for="pageRegAgree">I agree to the <a href="disclaimer.html" class="text-primary underline">Park Rules, Safety Disclaimers &amp; Terms</a></label>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-label-lg font-bold shadow-lg hover:scale-[1.02] transition-transform">
+            Create Free Account &amp; Claim 100 Points
+          </button>
+        </form>
+
+      </div>
+
+      <!-- LOGGED IN VIEW: PROFILE & TICKETS DASHBOARD -->
+      <div id="dashboardView" class="hidden space-y-10">
+        
+        <!-- User Top Card & Wristband Simulator -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          
+          <!-- User Profile Identity Card -->
+          <div class="lg:col-span-8 bg-surface-container-lowest p-6 sm:p-8 rounded-3xl shadow-lg border border-outline-variant/30 flex flex-col justify-between">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary-container text-on-primary flex items-center justify-center font-headline-md text-2xl font-bold shadow-md">
+                  <span id="userAvatarText">AW</span>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <h2 id="userNameDisplay" class="font-headline-sm text-2xl font-bold text-on-surface">Alexander Wright</h2>
+                    <span id="userTierBadge" class="px-3 py-0.5 rounded-full bg-secondary-fixed text-secondary text-[11px] font-bold uppercase tracking-wider">Seth VIP Passholder</span>
+                  </div>
+                  <div class="text-xs text-on-surface-variant mt-0.5">
+                    Member ID: <span id="userIdDisplay" class="font-mono font-bold text-primary">MER-928410</span> • Joined: <span id="userJoinDate">March 2026</span>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="handleLogout()" class="px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-xs font-bold text-on-surface-variant hover:text-secondary transition-colors flex items-center gap-1.5 border border-outline-variant/20">
+                <span class="material-symbols-outlined text-[16px]">logout</span> Sign Out
+              </button>
+            </div>
+
+            <!-- Loyalty Metrics -->
+            <div class="grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-outline-variant/20">
+              <div class="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/20">
+                <div class="text-[11px] text-on-surface-variant uppercase font-bold">Loyalty Points</div>
+                <div id="userPointsDisplay" class="font-headline-md text-2xl font-black text-primary mt-0.5">620 pts</div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/20">
+                <div class="text-[11px] text-on-surface-variant uppercase font-bold">Booked Passes</div>
+                <div id="userPassesCount" class="font-headline-md text-2xl font-black text-secondary mt-0.5">1 Pass</div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/20">
+                <div class="text-[11px] text-on-surface-variant uppercase font-bold">Saved Rides</div>
+                <div id="userSavedCount" class="font-headline-md text-2xl font-black text-tertiary-container mt-0.5">3 Rides</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital FastPass Wristband Widget -->
+          <div class="lg:col-span-4 bg-gradient-to-br from-on-surface to-primary p-6 sm:p-7 rounded-3xl shadow-xl text-white flex flex-col justify-between border border-white/10 relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-36 h-36 rounded-full bg-secondary-container/30 blur-2xl pointer-events-none"></div>
+            
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-bold tracking-widest text-tertiary-fixed uppercase">Digital RFID Wristband</span>
+                <span class="flex items-center gap-1 text-[11px] text-emerald-400 font-bold">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Live Synced
+                </span>
+              </div>
+              <h3 class="font-headline-sm text-xl font-bold mt-2 text-white">Merciado SmartBand™</h3>
+              <p class="text-xs text-white/70 mt-1">Tap phone at any turnstile or FastPass priority queue.</p>
+            </div>
+
+            <div class="my-6 p-4 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 flex items-center justify-between">
+              <div>
+                <div class="text-[10px] text-white/70 uppercase font-bold">FastPass Line Access</div>
+                <div class="text-sm font-bold text-white">Unlimited All 40+ Rides</div>
+              </div>
+              <span class="material-symbols-outlined text-secondary-container text-[32px]">contactless</span>
+            </div>
+
+            <div class="text-[10px] text-white/60 flex items-center justify-between">
+              <span>NFC / Apple Wallet / Google Pay Ready</span>
+              <span>Sector 45 Hub</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- DASHBOARD TABS (TICKETS, SAVED RIDES, REWARDS) -->
+        <div>
+          <div class="flex border-b border-outline-variant/30 mb-6 gap-6">
+            <button id="dashTabTicketsBtn" onclick="switchDashboardTab('tickets')" class="pb-3 font-label-md text-base font-bold text-primary border-b-2 border-primary transition-all flex items-center gap-2">
+              <span class="material-symbols-outlined text-[20px]">confirmation_number</span> My Booked Passes
+            </button>
+            <button id="dashTabSavedBtn" onclick="switchDashboardTab('saved')" class="pb-3 font-label-md text-base font-bold text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2">
+              <span class="material-symbols-outlined text-[20px]">favorite</span> Saved Rides
+            </button>
+            <button id="dashTabRewardsBtn" onclick="switchDashboardTab('rewards')" class="pb-3 font-label-md text-base font-bold text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2">
+              <span class="material-symbols-outlined text-[20px]">stars</span> VIP Rewards
+            </button>
+          </div>
+
+          <!-- TAB 1: TICKETS CONTAINER -->
+          <div id="dashTabTickets" class="space-y-4">
+            <div id="ticketsListContainer" class="space-y-4">
+              <!-- Dynamically Populated by JS -->
+            </div>
+            
+            <div id="noTicketsBox" class="hidden text-center py-12 bg-surface-container-lowest rounded-2xl border border-dashed border-outline-variant/40 p-8">
+              <span class="material-symbols-outlined text-outline text-[48px]">confirmation_number</span>
+              <h4 class="font-headline-sm text-lg font-bold text-on-surface mt-2">No Active Tickets Found</h4>
+              <p class="text-xs text-on-surface-variant mt-1">Book online to enjoy weekday specials and family packs.</p>
+              <a href="tickets.html" class="mt-4 inline-block px-6 py-2.5 rounded-full bg-primary text-on-primary font-bold text-xs shadow">
+                Book Your First Pass
+              </a>
+            </div>
+          </div>
+
+          <!-- TAB 2: SAVED RIDES (WISHLIST) -->
+          <div id="dashTabSaved" class="hidden">
+            <div id="savedRidesContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Dynamically Populated by JS -->
+            </div>
+
+            <div id="noSavedBox" class="hidden text-center py-12 bg-surface-container-lowest rounded-2xl border border-dashed border-outline-variant/40 p-8">
+              <span class="material-symbols-outlined text-outline text-[48px]">favorite_border</span>
+              <h4 class="font-headline-sm text-lg font-bold text-on-surface mt-2">No Saved Rides Yet</h4>
+              <p class="text-xs text-on-surface-variant mt-1">Browse our 40+ attractions and click the heart icon to save them to your itinerary.</p>
+              <a href="zones.html" class="mt-4 inline-block px-6 py-2.5 rounded-full bg-secondary-container text-on-secondary font-bold text-xs shadow">
+                Explore 6 Wonderlands
+              </a>
+            </div>
+          </div>
+
+          <!-- TAB 3: VIP REWARDS -->
+          <div id="dashTabRewards" class="hidden">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              
+              <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between">
+                <div>
+                  <span class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 text-[10px] font-bold uppercase">150 Points</span>
+                  <h4 class="font-headline-sm text-lg font-bold mt-2">Artisan Gelato Swirl</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Redeem for a giant waffle cone at Fiesta Confectionery.</p>
+                </div>
+                <button onclick="redeemReward('Artisan Gelato Swirl', 150)" class="mt-4 w-full py-2 rounded-full bg-primary text-on-primary text-xs font-bold hover:bg-primary-container transition-colors">
+                  Claim Reward
+                </button>
+              </div>
+
+              <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between">
+                <div>
+                  <span class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 text-[10px] font-bold uppercase">250 Points</span>
+                  <h4 class="font-headline-sm text-lg font-bold mt-2">Souvenir Refill Tumbler</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Free refills on all soda and iced drinks across the park.</p>
+                </div>
+                <button onclick="redeemReward('Souvenir Refill Tumbler', 250)" class="mt-4 w-full py-2 rounded-full bg-primary text-on-primary text-xs font-bold hover:bg-primary-container transition-colors">
+                  Claim Reward
+                </button>
+              </div>
+
+              <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between">
+                <div>
+                  <span class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 text-[10px] font-bold uppercase">400 Points</span>
+                  <h4 class="font-headline-sm text-lg font-bold mt-2">50% FastPass Discount</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Upgrade any general admission pass to Unlimited FastPass.</p>
+                </div>
+                <button onclick="redeemReward('50% FastPass Voucher', 400)" class="mt-4 w-full py-2 rounded-full bg-primary text-on-primary text-xs font-bold hover:bg-primary-container transition-colors">
+                  Claim Reward
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ================= GLOBAL COMPREHENSIVE FOOTER ================= -->
+  <footer class="bg-on-surface text-on-surface-variant pt-16 pb-12 border-t border-outline-variant/20">
+    <div class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <a class="flex items-center gap-3" href="index.html">
+            <img alt="Merciado Park Logo" class="h-9 w-auto brightness-200" src="https://lh3.googleusercontent.com/aida/AEtjO1XuoE2-h6lUG9ePnmBdWmSZaTSndIYQhmnKgkx1ISq_fzOiQm0Otc2JI0IWZ0HHYC63DbXbWVF2pLk3tv2WfpUOhV3f219IB6jR1D79DTflSLZm4QPbaqMaXidC4kPKHumI-hq1I_Nx15dGuH_d2EVNRdFQ4Zw0bZqmGrZmYQHa01rGVcBIqVUnx4aDT8o6W0Sw5WW4zr5YRdjMUzXxPyhbxlKaWc5vfTJuqJ1uRs8"/>
+            <div class="flex flex-col">
+              <span class="font-headline-sm text-2xl text-white font-extrabold leading-none">Merciado</span>
+              <span class="text-[10px] text-tertiary-fixed uppercase tracking-widest font-bold">Amusement Park</span>
+            </div>
+          </a>
+          <p class="text-sm text-white/70 max-w-sm leading-relaxed">
+            A crowning 45-acre national achievement developed over 5 dedicated years by Seth Group of Companies. Delivering safe, world-class entertainment with 99.98% operational uptime.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">The 6 Wonderlands</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="zones.html#zone-adrenaline" class="hover:text-tertiary-fixed transition-colors">Adrenaline Peak</a></li>
+            <li><a href="zones.html#zone-neptune" class="hover:text-tertiary-fixed transition-colors">Neptune's Tidal Bay</a></li>
+            <li><a href="zones.html#zone-jurassic" class="hover:text-tertiary-fixed transition-colors">Jurassic Prime Safari</a></li>
+            <li><a href="zones.html#zone-fantasy" class="hover:text-tertiary-fixed transition-colors">Enchanted Fantasy Realm</a></li>
+            <li><a href="zones.html#zone-cyber" class="hover:text-tertiary-fixed transition-colors">Cyber Neon Metropolis</a></li>
+            <li><a href="zones.html#zone-carnival" class="hover:text-tertiary-fixed transition-colors">Carnival Fiesta Plaza</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">Plan Your Visit</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="tickets.html" class="hover:text-tertiary-fixed transition-colors">Tickets &amp; Pricing Calculator</a></li>
+            <li><a href="tickets.html#tierSelector" class="hover:text-tertiary-fixed transition-colors">Weekday vs Weekend Passes</a></li>
+            <li><a href="tickets.html#familyBundle" class="hover:text-tertiary-fixed transition-colors">Family 4-Pack Saver</a></li>
+            <li><a href="restaurants.html" class="hover:text-tertiary-fixed transition-colors">Themed Dining &amp; Banquets</a></li>
+            <li><a href="entertainment.html" class="hover:text-tertiary-fixed transition-colors">Live Shows &amp; Parades</a></li>
+            <li><a href="gallery.html" class="hover:text-tertiary-fixed transition-colors">Park Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">Company &amp; Legal</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="about.html" class="hover:text-tertiary-fixed transition-colors">About Us &amp; Seth Group</a></li>
+            <li><a href="contact.html" class="hover:text-tertiary-fixed transition-colors">Contact Support &amp; Helpdesk</a></li>
+            <li><a href="disclaimer.html" class="hover:text-tertiary-fixed transition-colors">Disclaimer &amp; Safety Rules</a></li>
+            <li><a href="sitemap.html" class="hover:text-tertiary-fixed transition-colors">Complete Website Sitemap</a></li>
+            <li><a href="account.html" class="hover:text-tertiary-fixed transition-colors">Guest Member Portal</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/60">
+        <div class="flex items-center gap-3">
+          <span class="flex items-center gap-1 text-emerald-400 font-semibold">
+            <span class="material-symbols-outlined text-[15px]">verified</span> ISO 9001:2015 &amp; ASTM F24 Certified
+          </span>
+          <span>•</span>
+          <span>Triple Daily Structural Inspection</span>
+        </div>
+        <p class="text-center md:text-right">
+          © 2026 Merciado Amusement Park. Built &amp; Operated with Pride by Seth Groups of Companies. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="back-to-top" title="Back to Top"><span class="material-symbols-outlined text-[24px]">keyboard_arrow_up</span></div>
+  <div id="toast-container"></div>
+
+  <script src="assets/js/common.js"></script>
+  <script>
+    function toggleAuthTab(tab) {
+      const loginForm = document.getElementById('pageLoginForm');
+      const regForm = document.getElementById('pageRegisterForm');
+      const loginBtn = document.getElementById('tabLoginBtn');
+      const regBtn = document.getElementById('tabRegisterBtn');
+
+      if (tab === 'login') {
+        loginForm.classList.remove('hidden');
+        regForm.classList.add('hidden');
+        loginBtn.className = 'flex-1 py-2.5 rounded-full font-label-md font-bold bg-primary text-on-primary shadow-sm transition-all';
+        regBtn.className = 'flex-1 py-2.5 rounded-full font-label-md font-bold text-on-surface-variant hover:text-on-surface transition-all';
+      } else {
+        loginForm.classList.add('hidden');
+        regForm.classList.remove('hidden');
+        regBtn.className = 'flex-1 py-2.5 rounded-full font-label-md font-bold bg-primary text-on-primary shadow-sm transition-all';
+        loginBtn.className = 'flex-1 py-2.5 rounded-full font-label-md font-bold text-on-surface-variant hover:text-on-surface transition-all';
+      }
+    }
+
+    function checkAuthState() {
+      const user = getStoredUser();
+      const authView = document.getElementById('authView');
+      const dashView = document.getElementById('dashboardView');
+
+      if (user) {
+        authView.classList.add('hidden');
+        dashView.classList.remove('hidden');
+        populateDashboard(user);
+      } else {
+        authView.classList.remove('hidden');
+        dashView.classList.add('hidden');
+      }
+    }
+
+    function populateDashboard(user) {
+      document.getElementById('userNameDisplay').textContent = user.name;
+      document.getElementById('userAvatarText').textContent = user.name.split(' ').map(n=>n[0]).join('').slice(0,2).toUpperCase();
+      document.getElementById('userIdDisplay').textContent = user.memberId || 'MER-928410';
+      document.getElementById('userTierBadge').textContent = user.tier || 'Seth VIP Passholder';
+      document.getElementById('userJoinDate').textContent = user.joinDate || 'March 2026';
+      document.getElementById('userPointsDisplay').textContent = `${user.points || 620} pts`;
+
+      renderTicketsTab();
+      renderSavedRidesTab();
+    }
+
+    function renderTicketsTab() {
+      const ticketsContainer = document.getElementById('ticketsListContainer');
+      const noTickets = document.getElementById('noTicketsBox');
+      const tickets = JSON.parse(localStorage.getItem('merciado_tickets') || '[]');
+      
+      const countEl = document.getElementById('userPassesCount');
+      if (countEl) countEl.textContent = `${tickets.length} Pass${tickets.length !== 1 ? 'es' : ''}`;
+
+      if (tickets.length === 0) {
+        ticketsContainer.innerHTML = '';
+        noTickets.classList.remove('hidden');
+        return;
+      }
+
+      noTickets.classList.add('hidden');
+      ticketsContainer.innerHTML = tickets.map((t, idx) => `
+        <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center font-bold">
+              <span class="material-symbols-outlined text-[24px]">qr_code</span>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-on-surface text-base">${t.tier || 'Park Admission'}</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold">${t.ref}</span>
+              </div>
+              <div class="text-xs text-on-surface-variant mt-0.5">
+                Visit Date: <span class="font-semibold text-secondary">${t.date}</span> • Guests: <span class="font-semibold">${t.guests || 2}</span> • Paid: <span class="font-bold text-primary">${t.amount || '$97.52'}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 w-full md:w-auto">
+            <button onclick="printUserPass('${t.ref}', '${t.name}', '${t.date}', '${t.tier}', '${t.amount}')" class="flex-1 md:flex-initial px-4 py-2 rounded-full bg-primary text-on-primary text-xs font-bold hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-1">
+              <span class="material-symbols-outlined text-[16px]">print</span> Print Pass
+            </button>
+            <button onclick="cancelTicket('${t.ref}')" class="px-3 py-2 rounded-full bg-surface-container hover:bg-red-50 text-xs font-semibold text-red-600 transition-colors">
+              Reschedule
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function printUserPass(ref, name, date, tier, amount) {
+      window.print();
+    }
+
+    function cancelTicket(ref) {
+      showToast(`Reschedule request for ${ref} initiated. Select new date on Tickets page.`, 'gold', 5000);
+      setTimeout(() => { window.location.href = 'tickets.html'; }, 1500);
+    }
+
+    function renderSavedRidesTab() {
+      const savedContainer = document.getElementById('savedRidesContainer');
+      const noSaved = document.getElementById('noSavedBox');
+      const list = JSON.parse(localStorage.getItem('merciado_wishlist') || '[]');
+
+      const countEl = document.getElementById('userSavedCount');
+      if (countEl) countEl.textContent = `${list.length} Ride${list.length !== 1 ? 's' : ''}`;
+
+      if (list.length === 0) {
+        savedContainer.innerHTML = '';
+        noSaved.classList.remove('hidden');
+        return;
+      }
+
+      noSaved.classList.add('hidden');
+      savedContainer.innerHTML = list.map(item => `
+        <div class="bg-surface-container-lowest p-5 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-primary font-bold">
+              <span>${item.zone || 'Adrenaline Peak'}</span>
+              <button onclick="toggleWishlist('${item.id}', '${item.name}', '${item.zone}'); renderSavedRidesTab();" class="text-secondary hover:scale-110">
+                <span class="material-symbols-outlined text-[18px]">delete</span>
+              </button>
+            </div>
+            <h4 class="font-headline-sm text-lg font-bold text-on-surface mt-1">${item.name}</h4>
+            <p class="text-xs text-on-surface-variant mt-1">Bookmarked on ${item.date || 'Today'}</p>
+          </div>
+          <a href="zones.html" class="mt-4 text-xs font-bold text-primary hover:underline flex items-center gap-1">
+            View Ride Specifications →
+          </a>
+        </div>
+      `).join('');
+    }
+
+    function switchDashboardTab(tab) {
+      const ticketsDiv = document.getElementById('dashTabTickets');
+      const savedDiv = document.getElementById('dashTabSaved');
+      const rewardsDiv = document.getElementById('dashTabRewards');
+
+      const ticketsBtn = document.getElementById('dashTabTicketsBtn');
+      const savedBtn = document.getElementById('dashTabSavedBtn');
+      const rewardsBtn = document.getElementById('dashTabRewardsBtn');
+
+      [ticketsDiv, savedDiv, rewardsDiv].forEach(d => d.classList.add('hidden'));
+      [ticketsBtn, savedBtn, rewardsBtn].forEach(b => {
+        b.className = 'pb-3 font-label-md text-base font-bold text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2';
+      });
+
+      if (tab === 'tickets') {
+        ticketsDiv.classList.remove('hidden');
+        ticketsBtn.className = 'pb-3 font-label-md text-base font-bold text-primary border-b-2 border-primary transition-all flex items-center gap-2';
+      } else if (tab === 'saved') {
+        savedDiv.classList.remove('hidden');
+        savedBtn.className = 'pb-3 font-label-md text-base font-bold text-primary border-b-2 border-primary transition-all flex items-center gap-2';
+      } else {
+        rewardsDiv.classList.remove('hidden');
+        rewardsBtn.className = 'pb-3 font-label-md text-base font-bold text-primary border-b-2 border-primary transition-all flex items-center gap-2';
+      }
+    }
+
+    function handlePageLogin(e) {
+      e.preventDefault();
+      const email = document.getElementById('pageLoginEmail').value;
+      const name = email.split('@')[0].replace('.', ' ');
+      const capName = name.charAt(0).toUpperCase() + name.slice(1);
+
+      const user = {
+        name: capName || 'Alexander Wright',
+        email: email,
+        tier: 'Seth VIP Passholder',
+        memberId: 'MER-' + Math.floor(100000 + Math.random() * 900000),
+        points: 620,
+        joinDate: 'March 2026',
+        isLogged: true
+      };
+
+      setStoredUser(user);
+      checkAuthState();
+      showToast(`Welcome back, ${user.name}! Accessing your guest portal.`, 'success');
+    }
+
+    function handlePageRegister(e) {
+      e.preventDefault();
+      const name = document.getElementById('pageRegName').value;
+      const email = document.getElementById('pageRegEmail').value;
+
+      const newUser = {
+        name: name,
+        email: email,
+        tier: 'Seth Silver Explorer',
+        memberId: 'MER-' + Math.floor(100000 + Math.random() * 900000),
+        points: 100,
+        joinDate: 'Today',
+        isLogged: true
+      };
+
+      setStoredUser(newUser);
+      checkAuthState();
+      showToast(`Account created! 100 bonus loyalty points added, ${name}!`, 'gold', 5000);
+    }
+
+    function quickDemoLogin() {
+      const demoUser = {
+        name: 'Alexander Wright',
+        email: 'alexander.wright@example.com',
+        tier: 'Seth VIP Passholder',
+        memberId: 'MER-849201',
+        points: 620,
+        joinDate: 'Jan 2026',
+        isLogged: true
+      };
+
+      // Also ensure a default sample pass exists if none
+      if (!localStorage.getItem('merciado_tickets')) {
+        localStorage.setItem('merciado_tickets', JSON.stringify([
+          {
+            ref: 'MER-2026-98319-X',
+            date: 'Wed, Oct 15, 2025',
+            name: 'Alexander Wright',
+            email: 'alexander.wright@example.com',
+            tier: 'Weekday Special Tier',
+            guests: 3,
+            amount: '$97.52',
+            bookedAt: 'Today'
+          }
+        ]));
+      }
+
+      setStoredUser(demoUser);
+      checkAuthState();
+      showToast('Logged in as Alexander Wright (VIP Passholder)!', 'success');
+    }
+
+    function handleLogout() {
+      setStoredUser(null);
+      checkAuthState();
+      showToast('Signed out of guest member portal.', 'coral');
+    }
+
+    function redeemReward(rewardName, cost) {
+      const user = getStoredUser();
+      if (!user) return;
+      if ((user.points || 0) < cost) {
+        showToast(`You need ${cost} points for ${rewardName}. Keep riding to earn more!`, 'coral');
+        return;
+      }
+
+      user.points -= cost;
+      setStoredUser(user);
+      document.getElementById('userPointsDisplay').textContent = `${user.points} pts`;
+      showToast(`Success! You redeemed "${rewardName}". Voucher code: VOUCH-${Math.floor(1000+Math.random()*9000)}`, 'gold', 6000);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      checkAuthState();
+    });
+  </script>
+</body>
+</html>
+

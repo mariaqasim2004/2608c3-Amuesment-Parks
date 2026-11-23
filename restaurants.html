@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Dining &amp; Themed Restaurants | Merciado Amusement Park — 45-Acre Culinary Journey</title>
+  <meta name="description" content="Discover 8+ themed restaurants, artisan confectionery, and international cuisines across Merciado Amusement Park. Reserve a table or order ahead online."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#faf8ff",
+            "surface": "#faf8ff",
+            "surface-dim": "#d2d9f4",
+            "surface-bright": "#faf8ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f2f3ff",
+            "surface-container": "#eaedff",
+            "surface-container-high": "#e2e7ff",
+            "surface-container-highest": "#dae2fd",
+            "on-surface": "#131b2e",
+            "on-surface-variant": "#434655",
+            "primary": "#0031b1",
+            "primary-container": "#1246e2",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#c6ceff",
+            "secondary": "#b02f00",
+            "secondary-container": "#ff5722",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#541100",
+            "tertiary": "#553e00",
+            "tertiary-container": "#725500",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#ffc949",
+            "outline": "#747687",
+            "outline-variant": "#c4c5d8",
+            "primary-fixed": "#dde1ff",
+            "primary-fixed-dim": "#b8c3ff",
+            "secondary-fixed": "#ffdbd1",
+            "secondary-fixed-dim": "#ffb5a0",
+            "tertiary-fixed": "#ffdf9e",
+            "tertiary-fixed-dim": "#fabd00"
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter-sm": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin-sm": "1rem",
+            "margin": "2rem"
+          },
+          fontFamily: {
+            "headline-lg": ["Outfit", "sans-serif"],
+            "headline-md": ["Outfit", "sans-serif"],
+            "headline-sm": ["Outfit", "sans-serif"],
+            "display-hero": ["Outfit", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen antialiased flex flex-col justify-between">
+
+  <!-- ================= TOP PARK STATUS BAR ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.06)] border-b border-outline-variant/30">
+    <div class="bg-surface-container-high px-gutter-sm lg:px-gutter py-1.5 text-center text-xs border-b border-outline-variant/20">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-3 font-label-md text-on-surface-variant mx-auto sm:mx-0">
+          <span class="flex h-2.5 w-2.5 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          </span>
+          <span class="font-semibold text-on-surface">Park Open Today: 10:00 AM – 10:00 PM</span>
+          <span class="opacity-30">|</span>
+          <span class="hidden sm:inline">Weather: 26°C Clear Skies</span>
+          <span class="opacity-30">|</span>
+          <span class="font-bold text-primary flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">verified</span> 45-Acre National Landmark
+          </span>
+        </div>
+        <div class="hidden md:flex items-center gap-4 font-label-sm text-on-surface-variant">
+          <span class="flex items-center gap-1 text-tertiary-container font-semibold">
+            <span class="material-symbols-outlined text-[16px]">military_tech</span> Seth Group Flagship Enterprise
+          </span>
+          <span class="opacity-30">|</span>
+          <span class="flex items-center gap-1 text-emerald-700 font-semibold">
+            <span class="material-symbols-outlined text-[16px]">restaurant</span> 8+ Gourmet Venues
+          </span>
+          <span class="opacity-30">|</span>
+          <a class="hover:text-primary transition-colors font-medium" href="tickets.html#diningPass">All-Day Dining Pass Available</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <div class="h-20 max-w-7xl mx-auto px-gutter-sm lg:px-gutter flex items-center justify-between gap-4">
+      <a class="flex items-center gap-3 group shrink-0" href="index.html">
+        <img alt="Merciado Park Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XuoE2-h6lUG9ePnmBdWmSZaTSndIYQhmnKgkx1ISq_fzOiQm0Otc2JI0IWZ0HHYC63DbXbWVF2pLk3tv2WfpUOhV3f219IB6jR1D79DTflSLZm4QPbaqMaXidC4kPKHumI-hq1I_Nx15dGuH_d2EVNRdFQ4Zw0bZqmGrZmYQHa01rGVcBIqVUnx4aDT8o6W0Sw5WW4zr5YRdjMUzXxPyhbxlKaWc5vfTJuqJ1uRs8"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-primary font-extrabold leading-none tracking-tight group-hover:text-primary-container transition-colors">Merciado</span>
+          <span class="font-label-sm text-[11px] text-on-surface-variant font-bold tracking-widest uppercase">Amusement Park</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden xl:flex items-center gap-1 2xl:gap-2">
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="index.html">Home</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="zones.html">Zones &amp; Attractions</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-sm" href="restaurants.html">Dining</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="entertainment.html">Entertainment</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="tickets.html">Tickets &amp; Prices</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="gallery.html">Gallery</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="about.html">About Us</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="contact.html">Contact Us</a>
+        <a class="px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="sitemap.html">Sitemap</a>
+      </nav>
+
+      <!-- Right Action CTAs -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a id="navUserBtn" class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-sm border border-outline-variant/30" href="account.html">
+          <span class="material-symbols-outlined text-[19px] text-primary">person</span>
+          <span class="hidden sm:inline">Log In</span>
+        </a>
+        <a class="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md text-label-md font-bold shadow-[0_8px_20px_-4px_rgba(255,87,34,0.45)] hover:shadow-[0_12px_28px_-4px_rgba(255,87,34,0.6)] hover:scale-105 transition-all" href="tickets.html">
+          <span class="material-symbols-outlined text-[20px]">confirmation_number</span>
+          <span class="whitespace-nowrap">Book Tickets</span>
+        </a>
+        <button id="mobileMenuToggle" aria-label="Toggle Navigation Menu" class="xl:hidden w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OUT DRAWER -->
+  <div id="mobileNavBackdrop" class="hidden fixed inset-0 z-50 bg-on-surface/60 backdrop-blur-sm transition-opacity"></div>
+  <div id="mobileNavDrawer" class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-surface-container-lowest shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div class="p-5 flex items-center justify-between border-b border-outline-variant/30">
+      <div class="flex items-center gap-2">
+        <span class="font-headline-sm text-primary font-bold">Merciado Menu</span>
+      </div>
+      <button id="closeMobileNav" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high">
+        <span class="material-symbols-outlined text-[22px]">close</span>
+      </button>
+    </div>
+
+    <div class="flex-1 overflow-y-auto p-5 space-y-1">
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="index.html">
+        <span class="material-symbols-outlined text-primary">home</span> Home
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="zones.html">
+        <span class="material-symbols-outlined text-secondary">explore</span> Zones &amp; Attractions
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-primary bg-primary-fixed/30 font-bold transition-colors" href="restaurants.html">
+        <span class="material-symbols-outlined text-tertiary-container">restaurant</span> Dining &amp; Food
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="entertainment.html">
+        <span class="material-symbols-outlined text-secondary-container">celebration</span> Live Entertainment
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="tickets.html">
+        <span class="material-symbols-outlined text-primary-container">confirmation_number</span> Tickets &amp; Prices
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="gallery.html">
+        <span class="material-symbols-outlined text-primary">photo_library</span> Park Gallery
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="about.html">
+        <span class="material-symbols-outlined text-tertiary">history_edu</span> About Seth Group
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="contact.html">
+        <span class="material-symbols-outlined text-secondary">contact_support</span> Contact Us
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="disclaimer.html">
+        <span class="material-symbols-outlined text-outline">gavel</span> Disclaimer &amp; Safety
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="sitemap.html">
+        <span class="material-symbols-outlined text-primary">account_tree</span> Sitemap
+      </a>
+      <a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors" href="account.html">
+        <span class="material-symbols-outlined text-primary">person</span> Guest Portal / My Account
+      </a>
+    </div>
+
+    <div class="p-5 border-t border-outline-variant/30 bg-surface-container-low">
+      <a class="w-full flex items-center justify-center gap-2 py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold shadow-lg text-center" href="tickets.html">
+        <span class="material-symbols-outlined">confirmation_number</span> Book Tickets Online
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="w-full pt-20">
+    
+    <!-- HERO SECTION -->
+    <section class="relative w-full overflow-hidden bg-primary py-16 sm:py-24 text-on-primary">
+      <div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmkozmBKgqxQ6lSqm1qhianDuTi-8kck_ysMkkDkEUUzl8Ys')"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-gutter-sm lg:px-gutter text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-4 border border-white/20">
+          <span class="material-symbols-outlined text-[16px]">restaurant_menu</span> 45-Acre Gastronomic Destination
+        </div>
+        <h1 class="font-display-hero text-4xl sm:text-5xl lg:text-6xl font-black text-white max-w-3xl leading-tight">
+          Feast &amp; Savor Across Themed Wonderlands
+        </h1>
+        <p class="mt-4 font-body-lg text-primary-fixed max-w-2xl font-medium">
+          From opulent royal castle banquets and slow-cooked prehistoric smokehouse grills to neon cyberpunk diners and artisanal sweets — dining at Merciado is an unforgettable culinary adventure.
+        </p>
+
+        <div class="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+          <a href="#cuisine-filter" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold shadow-lg hover:scale-105 transition-all">
+            Explore Restaurants
+          </a>
+          <button onclick="openTableReserveModal('The Grand Sovereign Banquet')" class="px-7 py-3.5 rounded-full bg-white/15 hover:bg-white/25 text-white font-label-md font-semibold border border-white/30 backdrop-blur-md transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-[18px]">table_bar</span> Reserve a Table
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GASTRONOMY SECTION FROM DESIGN -->
+    <section class="max-w-7xl mx-auto w-full px-gutter-sm lg:px-gutter py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+          Flavor Destinations
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Themed Gastronomy</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Immerse your senses inside deeply themed environments, crafted by award-winning resort chefs.</p>
+</div>
+<!-- Cuisine Filter Pills -->
+<div class="flex flex-wrap gap-2 p-1.5 bg-surface-container rounded-full shadow-inner" id="cuisine-filter">
+<button class="cuisine-btn px-space-md py-space-xs rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-md transition-all" onclick="filterCuisine('all', this)">All Kitchens</button>
+<button class="cuisine-btn px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:text-primary transition-all" onclick="filterCuisine('themed', this)">Themed Fine Dining</button>
+<button class="cuisine-btn px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:text-primary transition-all" onclick="filterCuisine('quick', this)">Quick Bites &amp; Street</button>
+<button class="cuisine-btn px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:text-primary transition-all" onclick="filterCuisine('sweets', this)">Sweet Treats</button>
+<button class="cuisine-btn px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:text-primary transition-all" onclick="filterCuisine('vegan', this)">Healthy &amp; Vegan</button>
+</div>
+</div>
+<!-- Featured Restaurants Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="restaurant-grid">
+<!-- 1. The Galleon Pirate Tavern -->
+<article class="restaurant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col group" data-cuisine="themed">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A grand dimly-lit 18th-century pirate tavern restaurant with rustic wooden galleon ship ribs, glowing warm amber lanterns, rich roasted BBQ platters, and ocean-themed banquet tables in a high-end theme park resort setting, cinematic vibrant color." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmkozmBKgqxQ6lSqm1qhianDuTi-8kck_ysMkkDkEUUzl8YsddY__1_nxeAVv0i76nAUI7zgAeFBcXtxzU9rjvqZlPRNHy2ZnKzLz3IdMnyV8Oj1tf9DGl48JQn021o1mqvHB9cMrCf8z5dMHjjf47zMDOsYuHuE_GbtAdMFJ-e6H6AkquiXb79YukpabVu69HjpB09hCT1vtAyX8xgK1rqGfMD_tz6zYXHLTA7P0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-space-md py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">anchor</span> Neptune Bay
+          </span>
+<span class="absolute top-4 right-4 px-space-md py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold shadow-md">
+            $$$ • Tavern &amp; Bar
+          </span>
+<span class="absolute bottom-3 left-4 px-space-sm py-0.5 rounded-full bg-emerald-700 text-white font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span> 8m Mobile Pickup Ready
+          </span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">The Galleon Pirate Tavern</h3>
+<div class="flex items-center text-tertiary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span> 4.9
+              </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Smoked hickory rack of ribs, flame-seared seafood chowder, spiced spiced rum cocktails in barrel steins, and swashbuckling table service.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-xl mb-space-md flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">lunch_dining</span> Buccaneer Platter ($32)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Chef Pick</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md shadow-md transition-all flex items-center justify-center gap-1" onclick="openBookingModal('The Galleon Pirate Tavern')">
+<span class="material-symbols-outlined text-[18px]">table_bar</span> Reserve Table
+            </button>
+<button class="p-space-sm rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface transition-all shadow-sm" title="Mobile Order">
+<span class="material-symbols-outlined text-[20px]">phone_iphone</span>
+</button>
+</div>
+</div>
+</article>
+<!-- 2. Jurassic Bistro & Grill -->
+<article class="restaurant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col group" data-cuisine="themed">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A lush prehistoric themed rainforest jungle steakhouse with animatronic foliage, giant fossil chandeliers, flame-grilled tomahawk steaks on slate slabs, glowing emerald ambient lighting, family visitors enjoying dinner in a luxury amusement park setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9nTbg_twNL_izLbwMtvI3FcKKkDQAsGRLJR21sN0ysDNLdwRFWcqcAQPpXe_vH95yEaZIhfcLIhqY7AQzvKShdhhdAGrqNnlin1wWE-rt8QnbllFBQD0hMQfFHdOWn-mNbTD6HePqjLKmPOkpA3GzT3NBJnv94muJDl74NvK2PsOrU5DDECKbRIFw98vQdQwT49ZHrcBzXO8TMguCsaSx5qr6aGuXCOMHsO1zlZE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-space-md py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">explore</span> Dino Safari
+          </span>
+<span class="absolute top-4 right-4 px-space-md py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold shadow-md">
+            $$$ • Smokehouse
+          </span>
+<span class="absolute bottom-3 left-4 px-space-sm py-0.5 rounded-full bg-emerald-700 text-white font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Mobile Order Ready
+          </span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Jurassic Bistro &amp; Grill</h3>
+<div class="flex items-center text-tertiary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span> 4.8
+              </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Sizzling volcanic dry-aged steaks, monolithic Raptor burgers with brioche buns, and dry-ice smoking Jungle Mocktails with tropical fruits.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-xl mb-space-md flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">skillet</span> Volcanic Tomahawk ($44)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Signature</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md shadow-md transition-all flex items-center justify-center gap-1" onclick="openBookingModal('Jurassic Bistro &amp; Grill')">
+<span class="material-symbols-outlined text-[18px]">table_bar</span> Reserve Table
+            </button>
+<button class="p-space-sm rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface transition-all shadow-sm" title="Mobile Order">
+<span class="material-symbols-outlined text-[20px]">phone_iphone</span>
+</button>
+</div>
+</div>
+</article>
+<!-- 3. Starlight Cloud Terrace -->
+<article class="restaurant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col group" data-cuisine="themed vegan">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An ethereal high-elevation glass observatory terrace restaurant overlooking the illuminated roller coasters of an amusement park at dusk, wood-fired gourmet pizzas, handmade pasta bowls, glowing celestial globe lamps, luxury romantic resort ambiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt6mJ6S1tCFL2jTHrWhGHyGOuKysBV6kM9bshX-tWDsLIzudwjQ-SRXdHVuGPzAeG5VLSq1T20_cbXjCMlYYZVMp8ne5RyWXlseAnhEQIXA97CCx3XIg5DbpnM6D9fSf-wIhBCohMNmdzMC1pohyZCuzk_S0xCV_HgH8AiP3O5hfeINpNyW8qjUMxlf2BgzV3vieajATVjJvi8YqId0UcHYQusIrAvuwrv0cGgp2k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-space-md py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span> Fantasy Realm
+          </span>
+<span class="absolute top-4 right-4 px-space-md py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold shadow-md">
+            $$$$ • Fine Italian
+          </span>
+<span class="absolute bottom-3 left-4 px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center gap-1 shadow-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">visibility</span> Fireworks Viewfront
+          </span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Starlight Cloud Terrace</h3>
+<div class="flex items-center text-tertiary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span> 5.0
+              </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Panoramic 360-degree views, artisanal sourdough pizza baked in volcanic stone, truffle fettuccine, and plant-based Tuscan risottos.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-xl mb-space-md flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">local_pizza</span> Truffle Burrata Pie ($28)</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Vegan Opt.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md shadow-md transition-all flex items-center justify-center gap-1" onclick="openBookingModal('Starlight Cloud Terrace')">
+<span class="material-symbols-outlined text-[18px]">table_bar</span> Reserve Table
+            </button>
+<button class="p-space-sm rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface transition-all shadow-sm" title="Mobile Order">
+<span class="material-symbols-outlined text-[20px]">phone_iphone</span>
+</button>
+</div>
+</div>
+</article>
+<!-- 4. Cyber Diner 2099 -->
+<article class="restaurant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col group" data-cuisine="quick">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic cyberpunk neon themed Asian street food hall inside an amusement park with glowing blue and ultraviolet lighting, robotic cocktail arm dispensers, steaming ramen and bao bun counters, sleek metallic bar stools, guests marveling at holographic signs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhHXywtwjM6R229EjFZFZkCdOYAuRNBPENJDAKx-px78FFECxFrTu44X3m55bsACVfgUF5FDd7V_tX6pcnLw4XyNJOSS6Vym8aaJAHRXJQ0WbmElBXYEBkTlBOlRK7VgnLYJBpUslzQSoLo0IyR47qZIKvNsCwoGgnJ8l6nxvm2I9xbLxIZm0KDiaL3LKtoW25bgQkAQw4k1sNXfEntic7WuqGnXLudIm39WALc5c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-space-md py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">memory</span> Neon Metropolis
+          </span>
+<span class="absolute top-4 right-4 px-space-md py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold shadow-md">
+            $$ • Asian Street Fusion
+          </span>
+<span class="absolute bottom-3 left-4 px-space-sm py-0.5 rounded-full bg-emerald-700 text-white font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">smart_toy</span> Robotic Pour Hub
+          </span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cyber Diner 2099</h3>
+<div class="flex items-center text-tertiary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span> 4.7
+              </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Automated robotic cocktail &amp; boba mixology, Korean glazed short rib bao buns, Tokyo black garlic ramen, and interactive digital table ordering.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-xl mb-space-md flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">ramen_dining</span> Cyber Szechuan Bowl ($19)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Fast Grab</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md shadow-md transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Mobile Order Now
+            </button>
+<button class="p-space-sm rounded-full bg-surface-container hover:bg-secondary-container hover:text-on-secondary text-on-surface transition-all shadow-sm" onclick="openBookingModal('Cyber Diner 2099')" title="Reserve Booth">
+<span class="material-symbols-outlined text-[20px]">event_seat</span>
+</button>
+</div>
+</div>
+</article>
+<!-- 5. Sweet Carousel Confectionery -->
+<article class="restaurant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col group" data-cuisine="sweets">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Charming pastel wonderland carnival confectionery with spiral candy poles, freshly dusted golden funnel cakes topped with strawberries and cream, glowing cotton candy towers, soft serve ice cream swirls, happy families enjoying desserts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0xjmDtFoZECw2EauwepKU90y7243gcI2pUNC-8DEHXgr1NPtHS8Lj4KAJ_UD7U3fmLx-xZOawoOgM9bZjf5uKGkCEmDuznX0nPg4PvG9Toy8-CAZs9TErBhlIWH1OquQtnhwM7RyzoG7fiMj3atPh6VrEqj5J3kGwbGhvjo1lTu_2u6g0UTbPiFMORMcwLQ5CRuVE0txq0tR4EPrUjAnjGOJ_L5hC2yuhYG3cuoM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-space-md py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">attractions</span> Carnival Plaza
+          </span>
+<span class="absolute top-4 right-4 px-space-md py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold shadow-md">
+            $ • Sweets &amp; Bakery
+          </span>
+<span class="absolute bottom-3 left-4 px-space-sm py-0.5 rounded-full bg-emerald-700 text-white font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span> 3m Express Line
+          </span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sweet Carousel Confectionery</h3>
+<div class="flex items-center text-tertiary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span> 4.9
+              </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Legendary 12-inch powdered funnel cakes, glow-in-the-dark cotton candy spires, artisan waffle cones, and Belgian hot chocolate fondue.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-xl mb-space-md flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">cake</span> Colossal Funnel Cake ($12)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Fan Favorite</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md shadow-md transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Mobile Order Now
+            </button>
+<button class="p-space-sm rounded-full bg-surface-container hover:bg-secondary-container hover:text-on-secondary text-on-surface transition-all shadow-sm" title="View Nutrition Info">
+<span class="material-symbols-outlined text-[20px]">nutrition</span>
+</button>
+</div>
+</div>
+</article>
+<!-- 6. Oasis Green Kitchen (Healthy & Vegan Anchor) -->
+<article class="restaurant-card bg-surface-container-lowest rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col group" data-cuisine="vegan">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sunny botanical glass greenhouse bistro filled with hanging ferns, vibrant plant-based harvest grain bowls with avocado and edamame, freshly cold-pressed fruit juices in glass decanters, modern organic theme park dining." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDil4qQc0ohgw6vuYQtYXe6uVRSKunNaq2iZBtg1cwwxD9UIoXtHI28JEkcWXG2IWiJ8PYcNV9J9LeqgZDLxqdmhDf9POdRDwiVDdntypoERRdD5mZcPtbLBZ8F0XhSNNvk_98aLTls4XfSd-yqCnGRejn3GOQCmYe-SzjfVrSkva1apSFggfQNv4JA-TsRI7qJEO33OxRdo_SoV9fwaMxrJVnGOw-FdN1Y1-shLyo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-space-md py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">eco</span> Botanical Garden
+          </span>
+<span class="absolute top-4 right-4 px-space-md py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold shadow-md">
+            $$ • 100% Plant &amp; Gluten-Free
+          </span>
+<span class="absolute bottom-3 left-4 px-space-sm py-0.5 rounded-full bg-emerald-700 text-white font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Ready in 5m
+          </span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Oasis Green Kitchen</h3>
+<div class="flex items-center text-tertiary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span> 4.8
+              </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Certified allergen-friendly kitchen offering superfood quinoa bowls, cold-pressed citrus boosters, gluten-free flatbreads, and dairy-free mango soft serve.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-xl mb-space-md flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">spa</span> Emerald Harvest Bowl ($17)</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">100% Organic</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-space-sm px-space-md rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md shadow-md transition-all flex items-center justify-center gap-1" onclick="openBookingModal('Oasis Green Kitchen')">
+<span class="material-symbols-outlined text-[18px]">table_bar</span> Reserve Table
+            </button>
+<button class="p-space-sm rounded-full bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface transition-all shadow-sm" title="Mobile Order">
+<span class="material-symbols-outlined text-[20px]">phone_iphone</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+
+    <!-- MEAL PACKAGES & ALL-DAY DINING PASS -->
+    <section class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter py-16">
+      <div class="bg-gradient-to-r from-surface-container to-surface-container-high rounded-3xl p-8 lg:p-12 shadow-xl border border-outline-variant/30">
+        <div class="max-w-3xl mb-8">
+          <span class="text-secondary font-label-md font-bold uppercase tracking-wider">Dining Value Passes</span>
+          <h2 class="font-headline-lg text-3xl sm:text-4xl text-on-surface font-extrabold mt-1">
+            Unlimited Dining Plans &amp; Meal Vouchers
+          </h2>
+          <p class="font-body-lg text-on-surface-variant mt-2">
+            Fuel your adventure all day long with guaranteed savings across every participating park eatery.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between">
+            <div>
+              <span class="px-3 py-1 rounded-full bg-primary-fixed text-primary text-xs font-bold uppercase">Single Day</span>
+              <h3 class="font-headline-sm text-xl font-bold mt-2">All-Day Dining Pass</h3>
+              <p class="text-xs text-on-surface-variant mt-1">1 entrée, 1 side, and 1 drink every 90 minutes all day.</p>
+              <div class="mt-4 font-headline-md text-3xl font-extrabold text-primary">$29.99</div>
+              <div class="text-xs text-emerald-700 font-semibold">Weekday &amp; Weekend Valid</div>
+            </div>
+            <a href="tickets.html" class="mt-6 w-full py-2.5 rounded-full bg-primary-container text-on-primary font-label-md font-bold text-center block">Add to Ticket</a>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-lg border-2 border-secondary-container flex flex-col justify-between relative">
+            <span class="absolute -top-3 right-4 bg-secondary-container text-on-secondary px-3 py-0.5 rounded-full text-[11px] font-bold uppercase">Popular</span>
+            <div>
+              <span class="px-3 py-1 rounded-full bg-secondary-fixed text-secondary text-xs font-bold uppercase">Family Value</span>
+              <h3 class="font-headline-sm text-xl font-bold mt-2">Family Feast Voucher</h3>
+              <p class="text-xs text-on-surface-variant mt-1">Covers 4 complete meals, 4 souvenir cups with free refills &amp; 1 dessert basket.</p>
+              <div class="mt-4 font-headline-md text-3xl font-extrabold text-secondary">$64.99</div>
+              <div class="text-xs text-secondary font-semibold">Save $22 vs individual orders</div>
+            </div>
+            <a href="tickets.html" class="mt-6 w-full py-2.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold text-center block shadow">Add to Ticket</a>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-outline-variant/30 flex flex-col justify-between">
+            <div>
+              <span class="px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary-container text-xs font-bold uppercase">Unlimited Drinks</span>
+              <h3 class="font-headline-sm text-xl font-bold mt-2">Souvenir Tumbler Pass</h3>
+              <p class="text-xs text-on-surface-variant mt-1">Free fountain refills all day across 15 beverage stations park-wide.</p>
+              <div class="mt-4 font-headline-md text-3xl font-extrabold text-on-surface">$14.99</div>
+              <div class="text-xs text-on-surface-variant font-semibold">Keep collectible cup</div>
+            </div>
+            <a href="tickets.html" class="mt-6 w-full py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md font-bold text-center block">Add to Ticket</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIETARY AMENITIES SECTION FROM DESIGN -->
+    <section class="w-full bg-surface-container py-space-xl px-gutter-sm lg:px-gutter">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            Care &amp; Hospitality
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Dietary &amp; Family Amenities</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Certified allergen protocols, toddler care hubs, bottle warmers, and peaceful quiet rooms so every member of your family relaxes without stress.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-primary-fixed text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">egg_alt</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Allergen Safety Guarantee</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            All 5 major restaurants maintain dedicated gluten-free and peanut-free prep bays. Certified dietary chefs available on request.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">child_care</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Baby &amp; Toddler Dining Care</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Complimentary sanitized highchairs, organic purée pouches, baby-bottle warmers, and private nursing lounges next to every eatery.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">local_drink</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Free Chilled Hydration</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            32 contactless touch-screen purified cold water bottle filling stations located across all 45 park acres.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">table_restaurant</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Group &amp; Reunion Pavilions</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Spacious sheltered picnic terraces for larger families, corporate retreats, and school celebrations with catering options.
+          </p>
+</div>
+</div>
+</div>
+</section>
+
+  </main>
+
+  <!-- TABLE RESERVATION MODAL -->
+  <div id="tableReserveModal" class="hidden fixed inset-0 z-50 items-center justify-center bg-on-surface/60 backdrop-blur-md p-4">
+    <div class="bg-surface-container-lowest rounded-2xl w-full max-w-lg p-6 sm:p-8 shadow-2xl relative border border-outline-variant/30 animate-soft-float">
+      <button onclick="closeTableReserveModal()" class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface p-2 rounded-full hover:bg-surface-container">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <div class="mb-5">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary text-xs font-bold uppercase mb-2">
+          <span class="material-symbols-outlined text-[15px]">table_restaurant</span> Table Reservation
+        </div>
+        <h3 id="reserveRestaurantTitle" class="font-headline-sm text-2xl font-bold text-on-surface">The Grand Sovereign Banquet</h3>
+        <p class="text-xs text-on-surface-variant mt-1">Skip the waiting queue and guarantee priority table seating.</p>
+      </div>
+
+      <form onsubmit="handleTableReservation(event)" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Reservation Date</label>
+            <input type="date" required id="reserveDate" class="w-full px-3 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold"/>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Time Slot</label>
+            <select required id="reserveTime" class="w-full px-3 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold">
+              <option>12:30 PM (Lunch)</option>
+              <option>01:30 PM (Lunch)</option>
+              <option>06:00 PM (Dinner)</option>
+              <option>07:30 PM (Dinner &amp; Fireworks View)</option>
+              <option>08:45 PM (Starlight Dessert Seating)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Party Size</label>
+            <select required id="reserveParty" class="w-full px-3 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold">
+              <option>2 Guests</option>
+              <option>4 Guests (Family)</option>
+              <option>6 Guests</option>
+              <option>8+ Guests (Group)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Dietary Preferences</label>
+            <select id="reserveDiet" class="w-full px-3 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm font-semibold">
+              <option>Standard Gourmet</option>
+              <option>Certified Halal</option>
+              <option>100% Vegan / Plant-Based</option>
+              <option>Gluten-Free Only</option>
+              <option>Nut Allergy Safe</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Contact Name &amp; Phone</label>
+          <div class="grid grid-cols-2 gap-2">
+            <input type="text" required placeholder="Guest Name" id="reserveName" value="Alexander Wright" class="px-3 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm"/>
+            <input type="tel" required placeholder="Phone Number" id="reservePhone" value="+1 (555) 234-5678" class="px-3 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/40 text-sm"/>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md font-bold shadow-lg hover:scale-[1.02] transition-transform">
+          Confirm Priority Table Reservation
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= GLOBAL COMPREHENSIVE FOOTER ================= -->
+  <footer class="bg-on-surface text-on-surface-variant pt-16 pb-12 border-t border-outline-variant/20">
+    <div class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <a class="flex items-center gap-3" href="index.html">
+            <img alt="Merciado Park Logo" class="h-9 w-auto brightness-200" src="https://lh3.googleusercontent.com/aida/AEtjO1XuoE2-h6lUG9ePnmBdWmSZaTSndIYQhmnKgkx1ISq_fzOiQm0Otc2JI0IWZ0HHYC63DbXbWVF2pLk3tv2WfpUOhV3f219IB6jR1D79DTflSLZm4QPbaqMaXidC4kPKHumI-hq1I_Nx15dGuH_d2EVNRdFQ4Zw0bZqmGrZmYQHa01rGVcBIqVUnx4aDT8o6W0Sw5WW4zr5YRdjMUzXxPyhbxlKaWc5vfTJuqJ1uRs8"/>
+            <div class="flex flex-col">
+              <span class="font-headline-sm text-2xl text-white font-extrabold leading-none">Merciado</span>
+              <span class="text-[10px] text-tertiary-fixed uppercase tracking-widest font-bold">Amusement Park</span>
+            </div>
+          </a>
+          <p class="text-sm text-white/70 max-w-sm leading-relaxed">
+            A crowning 45-acre national achievement developed over 5 dedicated years by Seth Group of Companies. Delivering safe, world-class entertainment with 99.98% operational uptime.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">The 6 Wonderlands</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="zones.html#zone-adrenaline" class="hover:text-tertiary-fixed transition-colors">Adrenaline Peak</a></li>
+            <li><a href="zones.html#zone-neptune" class="hover:text-tertiary-fixed transition-colors">Neptune's Tidal Bay</a></li>
+            <li><a href="zones.html#zone-jurassic" class="hover:text-tertiary-fixed transition-colors">Jurassic Prime Safari</a></li>
+            <li><a href="zones.html#zone-fantasy" class="hover:text-tertiary-fixed transition-colors">Enchanted Fantasy Realm</a></li>
+            <li><a href="zones.html#zone-cyber" class="hover:text-tertiary-fixed transition-colors">Cyber Neon Metropolis</a></li>
+            <li><a href="zones.html#zone-carnival" class="hover:text-tertiary-fixed transition-colors">Carnival Fiesta Plaza</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">Plan Your Visit</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="tickets.html" class="hover:text-tertiary-fixed transition-colors">Tickets &amp; Pricing Calculator</a></li>
+            <li><a href="tickets.html#tierSelector" class="hover:text-tertiary-fixed transition-colors">Weekday vs Weekend Passes</a></li>
+            <li><a href="tickets.html#familyBundle" class="hover:text-tertiary-fixed transition-colors">Family 4-Pack Saver</a></li>
+            <li><a href="restaurants.html" class="hover:text-tertiary-fixed transition-colors">Themed Dining &amp; Banquets</a></li>
+            <li><a href="entertainment.html" class="hover:text-tertiary-fixed transition-colors">Live Shows &amp; Parades</a></li>
+            <li><a href="gallery.html" class="hover:text-tertiary-fixed transition-colors">Park Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-headline-sm text-sm uppercase tracking-wider font-bold text-white">Company &amp; Legal</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="about.html" class="hover:text-tertiary-fixed transition-colors">About Us &amp; Seth Group</a></li>
+            <li><a href="contact.html" class="hover:text-tertiary-fixed transition-colors">Contact Support &amp; Helpdesk</a></li>
+            <li><a href="disclaimer.html" class="hover:text-tertiary-fixed transition-colors">Disclaimer &amp; Safety Rules</a></li>
+            <li><a href="sitemap.html" class="hover:text-tertiary-fixed transition-colors">Complete Website Sitemap</a></li>
+            <li><a href="account.html" class="hover:text-tertiary-fixed transition-colors">Guest Member Portal</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/60">
+        <div class="flex items-center gap-3">
+          <span class="flex items-center gap-1 text-emerald-400 font-semibold">
+            <span class="material-symbols-outlined text-[15px]">verified</span> ISO 9001:2015 &amp; ASTM F24 Certified
+          </span>
+          <span>•</span>
+          <span>Triple Daily Structural Inspection</span>
+        </div>
+        <p class="text-center md:text-right">
+          © 2026 Merciado Amusement Park. Built &amp; Operated with Pride by Seth Groups of Companies. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="back-to-top" title="Back to Top"><span class="material-symbols-outlined text-[24px]">keyboard_arrow_up</span></div>
+  <div id="toast-container"></div>
+
+  <script src="assets/js/common.js"></script>
+  <script>
+    function filterCuisine(cuisine, btn) {
+      const buttons = document.querySelectorAll('.cuisine-btn');
+      buttons.forEach(b => {
+        b.className = 'cuisine-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all';
+      });
+      btn.className = 'cuisine-btn px-4 py-2 rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-all';
+
+      const cards = document.querySelectorAll('.dining-card');
+      cards.forEach(card => {
+        const types = card.getAttribute('data-cuisine') || '';
+        if (cuisine === 'all' || types.includes(cuisine)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    function openTableReserveModal(restaurantName) {
+      document.getElementById('reserveRestaurantTitle').textContent = restaurantName || 'The Grand Sovereign Banquet';
+      const today = new Date().toISOString().split('T')[0];
+      document.getElementById('reserveDate').value = today;
+      const modal = document.getElementById('tableReserveModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeTableReserveModal() {
+      const modal = document.getElementById('tableReserveModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function handleTableReservation(e) {
+      e.preventDefault();
+      const restaurant = document.getElementById('reserveRestaurantTitle').textContent;
+      const date = document.getElementById('reserveDate').value;
+      const time = document.getElementById('reserveTime').value;
+      const party = document.getElementById('reserveParty').value;
+      const ref = 'RES-' + Math.floor(10000 + Math.random() * 90000);
+
+      closeTableReserveModal();
+      showToast(`Table confirmed at ${restaurant} for ${party} on ${date} at ${time}! Booking Ref: ${ref}`, 'gold', 5500);
+    }
+  </script>
+</body>
+</html>

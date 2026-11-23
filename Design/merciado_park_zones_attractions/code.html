@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#faf8ff", "tertiary": "#553e00", "surface": "#faf8ff", "on-tertiary-fixed": "#261a00", "on-surface": "#131b2e", "on-primary": "#ffffff", "tertiary-fixed-dim": "#fabd00", "primary": "#0031b1", "outline": "#747687", "on-surface-variant": "#434655", "on-tertiary": "#ffffff", "on-error": "#ffffff", "surface-bright": "#faf8ff", "surface-container-low": "#f2f3ff", "secondary-fixed-dim": "#ffb5a0", "on-secondary-fixed": "#3b0900", "on-tertiary-fixed-variant": "#5b4300", "outline-variant": "#c4c5d8", "secondary": "#b02f00", "on-background": "#131b2e", "surface-container-lowest": "#ffffff", "tertiary-container": "#725500", "inverse-on-surface": "#eef0ff", "on-primary-fixed": "#001355", "on-secondary-container": "#541100", "primary-container": "#1246e2", "surface-container-high": "#e2e7ff", "on-secondary": "#ffffff", "primary-fixed-dim": "#b8c3ff", "on-tertiary-container": "#ffc949", "on-primary-fixed-variant": "#0035bd", "error": "#ba1a1a", "inverse-surface": "#283044", "secondary-container": "#ff5722", "tertiary-fixed": "#ffdf9e", "surface-container": "#eaedff", "on-error-container": "#93000a", "secondary-fixed": "#ffdbd1", "on-secondary-fixed-variant": "#862200", "on-primary-container": "#c6ceff", "surface-dim": "#d2d9f4", "surface-tint": "#1d4ce7", "primary-fixed": "#dde1ff", "surface-container-highest": "#dae2fd", "inverse-primary": "#b8c3ff", "error-container": "#ffdad6", "surface-variant": "#dae2fd" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter-sm": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-sm": "1rem", "margin": "2rem" }, "fontFamily": { "headline-lg-mobile": [ "Outfit" ], "body-lg": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "label-lg": [ "Plus Jakarta Sans" ], "headline-sm": [ "Outfit" ], "label-sm": [ "Plus Jakarta Sans" ], "display-hero-mobile": [ "Outfit" ], "display-hero": [ "Outfit" ], "headline-md": [ "Outfit" ], "headline-lg": [ "Outfit" ], "body-md": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "title-md": [ "18px", { "lineHeight": "24px", "fontWeight": "700" } ], "label-lg": [ "15px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" } ], "headline-sm": [ "22px", { "lineHeight": "28px", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "800" } ], "display-hero-mobile": [ "36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-surface-container-high px-gutter-sm lg:px-gutter py-space-xs text-center"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm font-label-md text-label-md text-on-surface-variant mx-auto sm:mx-0"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-container"></span></span><span>Park Open Today: 10:00 AM – 10:00 PM</span><span class="opacity-40">|</span><span>Weather: 26°C Sunny</span><span class="opacity-40">|</span><span class="font-label-md text-primary font-bold">45-Acre National Landmark</span></div><div class="hidden md:flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-tertiary-container">military_tech</span>Seth Group Heritage</span><span class="opacity-40">|</span><a class="hover:text-primary transition-colors" href="#tickets">Guest FastPass Status: Active</a></div></div></div><div class="h-20 max-w-7xl mx-auto px-gutter-sm lg:px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" href="#home"><img alt="Merciado Park Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XuoE2-h6lUG9ePnmBdWmSZaTSndIYQhmnKgkx1ISq_fzOiQm0Otc2JI0IWZ0HHYC63DbXbWVF2pLk3tv2WfpUOhV3f219IB6jR1D79DTflSLZm4QPbaqMaXidC4kPKHumI-hq1I_Nx15dGuH_d2EVNRdFQ4Zw0bZqmGrZmYQHa01rGVcBIqVUnx4aDT8o6W0Sw5WW4zr5YRdjMUzXxPyhbxlKaWc5vfTJuqJ1uRs8"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none group-hover:text-primary-container transition-colors">Merciado</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Amusement Park</span></div></a></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-lg text-label-lg rounded-full px-space-md py-space-xs"><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="home" href="#home">Home</a><a aria-current="page" class="transition-all bg-primary-container text-on-primary font-label-lg text-label-lg rounded-full px-space-md py-space-xs" data-path="zones-&amp;-attractions" href="#attractions">Zones &amp; Attractions</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="tickets-&amp;-booking" href="#tickets">Tickets &amp; Booking</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="dining-&amp;-entertainment" href="#dining">Dining &amp; Entertainment</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="gallery-&amp;-about" href="#gallery">Gallery &amp; About</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="sitemap" href="#sitemap">Sitemap</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md"><a class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="user-account" href="#account"><span class="material-symbols-outlined text-[18px] text-primary">person</span><span>Log In</span></a><a class="flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-lg text-label-lg shadow-[0_8px_20px_-4px_rgba(255,87,34,0.45)] hover:shadow-[0_12px_28px_-4px_rgba(255,87,34,0.6)] hover:scale-105 transition-all" data-path="tickets-&amp;-booking" href="#tickets"><span class="material-symbols-outlined text-[20px]">confirmation_number</span><span class="whitespace-nowrap">Book Tickets Now</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Ambient Banner & Header Exploration -->
+<section class="relative w-full bg-gradient-to-b from-surface-container-high via-surface-container to-background px-gutter-sm lg:px-gutter pt-8 pb-12 overflow-hidden">
+<!-- Atmospheric glows -->
+<div class="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-10 right-0 w-[500px] h-[500px] rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10 flex flex-col gap-6">
+<!-- Breadcrumb & Tagline -->
+<div class="flex flex-wrap items-center justify-between gap-4">
+<nav class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#home">
+<span class="material-symbols-outlined text-[16px]">home</span>
+            Home
+          </a>
+<span>/</span>
+<span class="text-primary font-bold">Zones &amp; Attractions</span>
+<span class="opacity-40">|</span>
+<span class="text-tertiary-container font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> 45-Acre Master Reserve
+          </span>
+</nav>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            18/18 Rides Inspected &amp; Certified
+          </span>
+<div class="hidden sm:flex items-center gap-1 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+            Average Wait: 18 Mins
+          </div>
+</div>
+</div>
+<!-- Hero Title -->
+<div class="max-w-4xl flex flex-col gap-3">
+<div class="inline-flex items-center gap-2 self-start px-3.5 py-1 rounded-full bg-secondary-container/15 text-secondary font-label-md text-label-md font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+          Interactive Park Directory
+        </div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">
+          Explore Our 45-Acre Wonderlands — <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">Zones &amp; World-Class Attractions</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+          Engineered over 5 dedicated years by Seth Group of Companies. Journey through 6 meticulously themed territories loaded with world-first roller coasters, family lagoons, sensory dark rides, and vintage carnivals.
+        </p>
+</div>
+<!-- Quick Status & Operations Legend Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 bg-surface-container-lowest p-4 rounded-2xl shadow-sm mt-2">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-emerald-500/15 text-emerald-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Operational</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Smooth dispatches</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-amber-500/15 text-amber-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Short Delay (&lt;10m)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Routine switch-in</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary/15 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">FastPass Active</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Express entry queue</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary/15 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Seth Engineering</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">TÜV / ISO 9001 Seal</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Controls: Filter Bar, Sliders, Category Pills & Search -->
+<section class="sticky top-20 z-40 bg-surface/95 backdrop-blur-md px-gutter-sm lg:px-gutter py-4 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+<div class="max-w-7xl mx-auto flex flex-col gap-4">
+<!-- Search & High-Level Category Filter Tabs -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+<!-- Search Input -->
+<div class="relative w-full lg:w-80 shrink-0">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface-container-low pl-11 pr-4 py-2.5 rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="ride-search" oninput="filterAttractions()" placeholder="Search rides (e.g. Titan, VR, Wave)..." type="text"/>
+</div>
+<!-- Filter Category Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0 scrollbar-none" id="category-tabs">
+<button class="category-btn active-filter px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-primary-container text-on-primary shadow-sm transition-all" onclick="setCategory('all', this)">
+            All Attractions (18)
+          </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="setCategory('thrill', this)">
+            Extreme Thrill Coasters
+          </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="setCategory('family', this)">
+            Family &amp; Kids
+          </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="setCategory('water', this)">
+            Water &amp; Splash
+          </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="setCategory('darkride', this)">
+            Immersive 4D Dark Rides
+          </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="setCategory('show', this)">
+            Live Shows
+          </button>
+</div>
+</div>
+<!-- Micro Controls: Thrill Intensity Slider & Height Gate Pills -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-2 bg-surface-container-low/60 p-3 rounded-2xl">
+<!-- Thrill Level Slider -->
+<div class="flex items-center gap-4 min-w-[260px]">
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+<span>Intensity:</span>
+</div>
+<input class="accent-secondary-container w-32 cursor-pointer" id="thrill-slider" max="5" min="1" oninput="handleThrillSlider(this.value)" step="1" type="range" value="1"/>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-bold min-w-[70px] text-center" id="thrill-label">
+            All (1-5★)
+          </span>
+</div>
+<!-- Minimum Height Selector Pills -->
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">accessibility_new</span> Rider Height:
+          </span>
+<button class="height-btn active-height px-3 py-1 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-bold shadow-sm" onclick="setHeightFilter('any', this)">
+            Any
+          </button>
+<button class="height-btn px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-semibold" onclick="setHeightFilter('under90', this)">
+            Under 90cm
+          </button>
+<button class="height-btn px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-semibold" onclick="setHeightFilter('90-120', this)">
+            90 – 120cm
+          </button>
+<button class="height-btn px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-semibold" onclick="setHeightFilter('120plus', this)">
+            120cm+
+          </button>
+</div>
+<!-- Jump to Zone Quick Links -->
+<div class="hidden xl:flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Jump to:</span>
+<a class="hover:text-primary transition-colors" href="#zone-adrenaline">Adrenaline</a> •
+          <a class="hover:text-primary transition-colors" href="#zone-neptune">Neptune</a> •
+          <a class="hover:text-primary transition-colors" href="#zone-jurassic">Jurassic</a> •
+          <a class="hover:text-primary transition-colors" href="#zone-fantasy">Fantasy</a> •
+          <a class="hover:text-primary transition-colors" href="#zone-cyber">Cyber</a> •
+          <a class="hover:text-primary transition-colors" href="#zone-carnival">Carnival</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Attractions Explorer Container -->
+<div class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter py-10 flex flex-col gap-16 w-full">
+<!-- ============================================== -->
+<!-- ZONE 1: ADRENALINE PEAK -->
+<!-- ============================================== -->
+<section class="zone-block flex flex-col gap-6 scroll-mt-36" data-zone="adrenaline" id="zone-adrenaline">
+<!-- Zone Headline Card -->
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-primary to-primary-container text-on-primary p-6 md:p-8 shadow-md">
+<div class="absolute -right-10 -bottom-10 w-64 h-64 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm uppercase tracking-wider font-extrabold">Zone 01</span>
+<span class="font-label-md text-label-md text-on-primary/80">Extreme Coaster Realm</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-primary">Adrenaline Peak</h2>
+<p class="font-body-md text-body-md text-on-primary/90">
+              Suspended 220 feet above the tree-line, Adrenaline Peak is engineered for uncompromising speed, massive negative-G ejector airtime, and aerodynamic heartline rolls.
+            </p>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-2 shrink-0 bg-white/10 backdrop-blur-md p-4 rounded-xl">
+<div class="flex items-center gap-1 font-headline-sm text-headline-sm font-bold text-on-primary">
+<span class="material-symbols-outlined text-[26px] text-tertiary-fixed-dim">stars</span>
+              3 Coasters
+            </div>
+<span class="font-label-sm text-label-sm text-on-primary/80">Max G-Force: 4.8G</span>
+</div>
+</div>
+</div>
+<!-- Ride Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Ride: Titan Skyloop -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="thrill" data-height="135" data-name="Titan Skyloop" data-thrill="5">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A colossal blue and orange hyper roller coaster plunging vertically down an immense steel drop under bright blue sky, thrilling passengers with wind-swept motion and radiant outdoor daylight in an amusement park." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZBSPr6MPlBjYlHS4BUbdG2802CA3fKu0Ps4iNCIPHU1u3zp1f_FVxpWeNxZzuG0gzhyPl45AdcZig1tqaxaJv2T6VKqyD-uctW7JlcL3sxlThjbp3vNFRqn-tFD7yYYPXy2QWJyFmAtJzZqR1G5Z5RaAzV7NVHH04kBxlBxiht_HqEH45XIor6g4RhAwVfixNdaWCmSRnWbJLA44OekIydSOlT0cX4Qx1ZUPxrbI"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-primary/90 text-on-primary font-label-sm text-label-sm font-bold backdrop-blur-sm">
+                  FastPass Active
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_empty</span>
+                15 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Titan Skyloop</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★★★★ <span class="text-on-surface-variant ml-1 font-normal">(5/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                The park's flagship 200ft record-breaker. Features a 95° beyond-vertical plummet into a quadruple heartline inversion series.
+              </p>
+</div>
+<!-- Ride Spec Badges -->
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 135 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">2m 45s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Top Speed</span>
+<span class="font-bold text-secondary">118 km/h</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Titan Skyloop', 'Riders must be at least 135 cm tall. Not recommended for guests with spinal conditions, recent surgery, cardiovascular vulnerabilities, or expectant mothers. Loose items strictly prohibited in dedicated baggage bays.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<a class="px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-bold shadow-sm hover:scale-105 transition-all" href="#tickets">
+              FastPass
+            </a>
+</div>
+</article>
+<!-- Ride: Vortex Inversion Coaster -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="thrill" data-height="130" data-name="Vortex Inversion Coaster" data-thrill="5">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Intense twisting yellow and dark blue steel roller coaster executing a high-speed zero-gravity roll surrounded by landscaped rocky cliffs and crowd lookouts under crisp daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpoM_0Jyqb5cg0q5sODHUZA3_stBAyMMlbtqDYEpNJDCJt8YHTDImycfC6a_FR0C2vcUoXbISA1fCvn3CIqMt0dO5AwwZejY94aJ4fjWj0_VM584iHj-We5Nj-Clz_pPwTmV8IQBKbWtWrtZB2r_4Ot68b_VQQSwjxckT3bR08OSHDRihSWQBw87GRR9cZe2wa3WnER5gvdPKilj3yxJxf3kZEI-3QaByKe81SSLI"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_empty</span>
+                25 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Vortex Inversion Coaster</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★★★★ <span class="text-on-surface-variant ml-1 font-normal">(5/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                Floorless multi-launch thrill coaster boasting seven seamless inversions, including a massive Batwing and zero-G barrel roll.
+              </p>
+</div>
+<!-- Ride Spec Badges -->
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 130 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">2m 15s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Top Speed</span>
+<span class="font-bold text-secondary">102 km/h</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Vortex Inversion Coaster', 'Riders must be at least 130 cm tall. Over-the-shoulder hydraulic locking harness required. Guests with heart conditions, epilepsy, or motion-triggered inner ear issues must exercise caution.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<a class="px-3.5 py-1.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold hover:bg-surface-container-high transition-all" href="#tickets">
+              Queue Info
+            </a>
+</div>
+</article>
+<!-- Ride: Apex Drop Tower -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="thrill" data-height="125" data-name="Apex Drop Tower" data-thrill="5">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Towering 250-foot free fall drop tower structure piercing a sunny azure sky with circular gondola of thrilled riders caught in mid-drop deceleration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOAsGC8dc4gtRgwEa1z5Euv5Ygmfxj6Tx26U46CKhWAZTQVCOqAJNmJqXKEoTMAQqAhpIIjFwJkxXHZHVpClRkhFQo9K05zXqm61QUd9q3qDPExSw_zSAZbVbDTi_FMZyE2qENQQq0eOKdxDbU8go5ClIUcTvpbKyZP6isIIAmRgvhngF7IWbHuxhPUAJbFR6jy-1sKMEqMRcqmvaayQ46SDdAc1jU2O9NPUVuTWg"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-primary/90 text-on-primary font-label-sm text-label-sm font-bold backdrop-blur-sm">
+                  FastPass Active
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_empty</span>
+                10 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Apex Drop Tower</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★★★★ <span class="text-on-surface-variant ml-1 font-normal">(5/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                Ascend 260 feet for panoramic vistas of all 45 park acres before experiencing 3.5 seconds of unadulterated magnetic-brake freefall.
+              </p>
+</div>
+<!-- Ride Spec Badges -->
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 125 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">1m 40s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Drop Height</span>
+<span class="font-bold text-secondary">79 Meters</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Apex Drop Tower', 'Minimum rider height 125 cm. Automatic magnetic eddy current brakes ensure fail-safe stop. Riders must remain seated with feet planted firmly on footrests.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<a class="px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-bold shadow-sm hover:scale-105 transition-all" href="#tickets">
+              FastPass
+            </a>
+</div>
+</article>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- ZONE 2: NEPTUNE'S TIDAL BAY -->
+<!-- ============================================== -->
+<section class="zone-block flex flex-col gap-6 scroll-mt-36" data-zone="neptune" id="zone-neptune">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-surface-container-highest to-surface-container-high p-6 md:p-8 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-extrabold">Zone 02</span>
+<span class="font-label-md text-label-md text-primary font-bold">Mega Aquatic Wonderland</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface">Neptune's Tidal Bay</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Cool off inside our multi-million gallon water park territory. Heated crystal basins, extreme high-speed hydro-flumes, and massive tidal surge chambers.
+            </p>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-2 shrink-0 bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="flex items-center gap-1 font-headline-sm text-headline-sm font-bold text-primary">
+<span class="material-symbols-outlined text-[26px] text-primary">water_drop</span>
+              3 Aquatic Rides
+            </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Filtered Freshwater</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Ride: Tsunami Wave Basin -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="water" data-height="0" data-name="Tsunami Wave Basin" data-thrill="2">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Massive glistening turquoise wave pool filled with happy families swimming and relaxing, framed by palm trees, white sand beaches, and elegant resort cabanas on a sunny afternoon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxVrhC5OBGyvVpXCL0dYr6lfZ_zoABxasAhbN7qyAtURicDKLarUmPApvkGyK56eQWmDBbDKAhDPgPKb7I4eQuFTb0QfyYwZAA7GXkDmd6th7Yg3Lx-OJajnvC5j9FsLGtXM_faqel4LBnzBK0BUJUXouqthQrYMCEzhCo48OPGEGypCbA7eBl4etFH8uOsNSrtiPCBQ_QuNIVb9BPblbwh424TFLukUCIq4tNz-0"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">waves</span>
+                Walk-On Entry
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Tsunami Wave Basin</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★☆☆☆ <span class="text-on-surface-variant ml-1 font-normal">(2/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                45,000 sq ft zero-depth entry ocean simulator releasing 6-foot rolling swells every 15 minutes. Perfect for all swimming proficiencies.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">All Ages</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Lifeguards</span>
+<span class="font-bold text-emerald-600">On Duty (14)</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Water Temp</span>
+<span class="font-bold text-primary">28°C Constant</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Tsunami Wave Basin', 'Guests under 120cm must wear complimentary Coast Guard certified life vests. Full lifeguard coverage continuously on deck. Dedicated shallow wading shelf provided for toddlers.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Swimwear Required</span>
+</div>
+</article>
+<!-- Ride: Serpent Cyclone Tube -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="water" data-height="115" data-name="Serpent Cyclone Tube" data-thrill="4">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Colossal spiraling enclosed waterslide tube in emerald green and bright orange snaking high across a luxury water park landscape, spraying sparkling mist under radiant sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyPasEFNQfU6RJpXYkVk7x_ZuKHRRrZeV55o83IemdKnDlGjXF2OvXhRvEDeCbtSY5JvMdlOHWX_kfE4DYn29MTJkChaaqH_jlrbm_3lp5xDdrJumQp8ccRaUWachIKFbNo3YcKwC6lgjaUJjPdQYPrgJCz8jraLGCGjZWNdUlWWY35whxg2Bs8A3PbuNwc9Ykf65JcmfwBViPpZ7CakbFJgQTWsdmDjhIVFxKc2Q"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-primary/90 text-on-primary font-label-sm text-label-sm font-bold backdrop-blur-sm">
+                  FastPass Active
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_empty</span>
+                20 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Serpent Cyclone Tube</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★★★☆ <span class="text-on-surface-variant ml-1 font-normal">(4/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                Multi-person raft slide featuring light-sync speed funnels, vertical banking curves, and a dizzying vortex drain drop.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 115 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">1m 10s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Vehicle</span>
+<span class="font-bold text-secondary">4-Person Raft</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Serpent Cyclone Tube', 'Minimum height 115 cm. Maximum combined raft weight limit: 320 kg. Riders must grip side handles firmly throughout the run.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<a class="px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-bold shadow-sm hover:scale-105 transition-all" href="#tickets">
+              FastPass
+            </a>
+</div>
+</article>
+<!-- Ride: Sunken Galleon Splash -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="water" data-height="105" data-name="Sunken Galleon Splash" data-thrill="3">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Massive wooden themed pirate galleon flume boat careening into an immense turquoise splash zone with water curtains exploding skyward against sunny park trees." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLnz7vNKAmGNSdnSySyqb_rIsdQ9o3CbId0Ows0JMb_HVv_gtuaHGR921FiimNtMDFyp5_0hoNpISBLmkx8La1SUldtyw4RP-nCj4KLrIcA7PjbC2YB6d9FzZ8F4fHtOjyizA31u7Bc6zoCjor0Td4SJvfVQYsqfBZhAGfOtZWR9GZbIYIYKT4py6onCspZGA2qjs8FV4zMKpa2JTrOb4Bhcjmunc8VTDt9P5jRQI"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-amber-500 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span>
+                  Short Delay (8m)
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_empty</span>
+                18 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Sunken Galleon Splash</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★★☆☆ <span class="text-on-surface-variant ml-1 font-normal">(3/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                A scenic pirate ship dark-flume journey climaxing in a breathtaking 50-foot wave surge into the lagoon. Ponchos recommended!
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 105 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">4m 00s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Wetness Index</span>
+<span class="font-bold text-primary">100% Soaked</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Sunken Galleon Splash', 'Minimum height 105 cm (supervised if under 120 cm). Waterproof electronic pouches advised. Lap bars securely monitored at embarkation.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Free Lockers Nearby</span>
+</div>
+</article>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- ZONE 3: JURASSIC PRIME SAFARI -->
+<!-- ============================================== -->
+<section class="zone-block flex flex-col gap-6 scroll-mt-36" data-zone="jurassic" id="zone-jurassic">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-tertiary-container to-tertiary text-on-tertiary p-6 md:p-8 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider font-extrabold">Zone 03</span>
+<span class="font-label-md text-label-md text-on-tertiary/90">Prehistoric Jungle</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-tertiary">Jurassic Prime Safari</h2>
+<p class="font-body-md text-body-md text-on-tertiary/90">
+              Traverse dense Cretaceous rainforest canopies populated by life-sized animatronic titans, high-octane mine trains, and tactile 4D predator encounters.
+            </p>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-2 shrink-0 bg-black/20 backdrop-blur-md p-4 rounded-xl">
+<div class="flex items-center gap-1 font-headline-sm text-headline-sm font-bold text-tertiary-fixed">
+<span class="material-symbols-outlined text-[26px]">pets</span>
+              3 Prime Encounters
+            </div>
+<span class="font-label-sm text-label-sm text-on-tertiary/80">32 Robotic Dinosaurs</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Ride: Raptor Chase Mine Train -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="thrill" data-height="110" data-name="Raptor Chase Mine Train" data-thrill="4">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="High-speed runaway mine train coaster speeding through dense jungle foliage past lifelike animatronic velociraptors in volcanic rock caverns in bright daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoyp7TMNzc_1oml9GUiCTADnnn1gTxWubCGu_nVyBe9NzvambfRhBTq6FEZmS_w-fcsoBtSfqBZPPb70SSXs9SHvZKt4qH-95DQglS9nmjvkJ-BpogWwU45PFwuBdLQOMMCpaMZJlYxNThROCXjpl1jW-xbsZa5VZmN4tzwgs7rvE1-u7fAcBgqjl2GRXZvhKtwED5M_Zbl8wrVQLSHXnqLDbr2esUDfWzojlQl60"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-primary/90 text-on-primary font-label-sm text-label-sm font-bold backdrop-blur-sm">
+                  FastPass Active
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_empty</span>
+                20 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Raptor Chase Mine Train</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★★★☆ <span class="text-on-surface-variant ml-1 font-normal">(4/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                Dual-helix terrain coaster roaring through volcanic chasms while dodging agile hunting packs of Velociraptors.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 110 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">3m 10s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Top Speed</span>
+<span class="font-bold text-secondary">75 km/h</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Raptor Chase Mine Train', 'Min 110 cm. Children 110-120cm require adult chaperone. Lap restraint mechanism tested every cycle.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<a class="px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-bold shadow-sm hover:scale-105 transition-all" href="#tickets">
+              FastPass
+            </a>
+</div>
+</article>
+<!-- Ride: Pterodactyl Glider -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="family" data-height="95" data-name="Pterodactyl Glider" data-thrill="3">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Suspended inverted flying family coaster soaring over lush exotic tropical greenery and waterfalls with riders kicking their feet freely in the air." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALcXefP7ZhzCkFh1vGl22sm2VE_igoovl_LhVSFiPc8hg3VuJkSHBlzMgWvc9I1129T85QEnP2Hg5IY3uuuzTgn5Z1dvvkPkiQKlhP1audFhxfbDUTuB136hxt9Zs6YderJ27EWBOkVSGk1is0HRIdt4hMFXohgaOoHQURKBHQui3ePZ67Nr5FPHkGCVO1xx8wQ0EonfgweS2j0UnP9VOzjRlwYWi1P2wYLWJNCuA"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_empty</span>
+                12 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Pterodactyl Glider</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★★☆☆ <span class="text-on-surface-variant ml-1 font-normal">(3/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                Suspended cable glider mimicking prehistoric winged flight, swooping over jungle tree-houses and misty waterfalls.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 95 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">2m 20s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Type</span>
+<span class="font-bold text-primary">Inverted Flight</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Pterodactyl Glider', 'Min 95 cm. Suspended seating with overhead harness bar. Ideal for families and young adventurers seeking aerial sensations.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<span class="font-label-sm text-label-sm text-emerald-600 font-bold">Family Favorite</span>
+</div>
+</article>
+<!-- Ride: T-Rex Encounter 4D -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="darkride" data-height="90" data-name="T-Rex Encounter 4D" data-thrill="3">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Immersive dark ride simulator with futuristic safari jeep encountering a massive realistic roaring Tyrannosaurus Rex in a stormy prehistoric rainforest with 3D effects." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChn5AuGSzG0z4MO9W0vJcuNpS13tQlSWy2gmpqSOW6AwU5Zk0F3EQ696Baw4IdSDrW_Ad0WGFa7SdOV7YFn1Fub6lS_QM-I3PHIuOtzWufoNDH__gbpzaybkjmNeKingmARWtxeDA4IxfoDoa_CYHs_CF4vWonenj_zmO3LDG6UoZLppjfKftByyLG_bllzz7XhtouUGdfh4jUt_6xFgjgoySxgaEBvil08yfmEAs"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-primary/90 text-on-primary font-label-sm text-label-sm font-bold backdrop-blur-sm">
+                  FastPass Active
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_empty</span>
+                25 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">T-Rex Encounter 4D</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★★☆☆ <span class="text-on-surface-variant ml-1 font-normal">(3/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                Trackless robotic rovers equipped with spatial audio, haptic seats, real water spray, and scent effects plunging into a T-Rex habitat.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 90 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">5m 30s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Technology</span>
+<span class="font-bold text-primary">Trackless 4D</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('T-Rex Encounter 4D', 'Min 90 cm. Uses sensory strobe lighting, water mist, sudden movements, and high decibel acoustic effects. May frighten very young children.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<a class="px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-bold shadow-sm hover:scale-105 transition-all" href="#tickets">
+              FastPass
+            </a>
+</div>
+</article>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- ZONE 4: ENCHANTED FANTASY REALM -->
+<!-- ============================================== -->
+<section class="zone-block flex flex-col gap-6 scroll-mt-36" data-zone="fantasy" id="zone-fantasy">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-surface-container-highest via-surface-container to-surface-container-low p-6 md:p-8 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-extrabold">Zone 04</span>
+<span class="font-label-md text-label-md text-primary font-bold">Fairy Tales &amp; Myth</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface">Enchanted Fantasy Realm</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Delight for the entire family. Handcrafted fairy-tale castles, gilded carousels, bioluminescent pixie pathways, and tranquil illuminated boat journeys.
+            </p>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-2 shrink-0 bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="flex items-center gap-1 font-headline-sm text-headline-sm font-bold text-primary">
+<span class="material-symbols-outlined text-[26px]">auto_awesome</span>
+              3 Storybook Rides
+            </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">All Ages Friendly</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Ride: Celestial Grand Carousel -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="family" data-height="0" data-name="Celestial Grand Carousel" data-thrill="1">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Magnificent double-decker antique carousel glowing with thousands of warm golden lights, featuring ornate hand-carved horses and mythical creatures spinning happily in daytime park light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-rKJWXBdGNu1Q4U8JVly2qsDQUpM2tBCCJqVk5JS1VYf_7_9wY0ZbSzm31PlbnI5qKXkEOhq1RCisjjZTTCgBqSHLRQwRY_BVuA-H20C9s2oY5ANkluKcsm84mAcpYXSQeD801PASGrc-Bl_vcDDSKRtIxFJ60wa_runFaj3Rwq9ZpGmGHE06Usvy1SlmQjfd0CVVPXiVWYfvqJpAHpadmTqr7TsOI6cWR-cB76o"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">alarm_on</span>
+                5 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Celestial Grand Carousel</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★☆☆☆☆ <span class="text-on-surface-variant ml-1 font-normal">(1/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                World's largest handcrafted double-decker carousel featuring 72 individually painted mythical pegasi and carriages.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">None (All)</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">3m 30s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Tier</span>
+<span class="font-bold text-tertiary">Double Decker</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Celestial Grand Carousel', 'All heights welcomed. Toddlers under 90 cm must be accompanied by an adult guardian on outer stationary or stirrup horses.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Stroller Parking Adjacent</span>
+</div>
+</article>
+<!-- Ride: Pixie Forest Flight -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="family" data-height="85" data-name="Pixie Forest Flight" data-thrill="2">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Charming whimsical family coaster train themed as glowing winged forest dragons gently dipping and soaring through blooming giant fairy-tale mushrooms and glowing flora." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSfXefmq99YvSNrdCWq_CUTwztSgl1FYvX2k4-gk6RWLHbFrySPo_oMG8VL2yaz-0WCL1tXVX_Adco6ob7fNRb8e3_Y6jguN_dEuQCFzQDiD4vY3auT_MehCIBkqEQvu3fi1P2I7MoRXcaKJgV_LX6HeGbgu4R5w14litt55oQGPYvWnFoqlKCKl3hnkVyXis_s-opXe2TLNvBWjdEJp9bGB8pHSHUxCcpyWLItfU"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_empty</span>
+                10 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Pixie Forest Flight</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★☆☆☆ <span class="text-on-surface-variant ml-1 font-normal">(2/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                A gentle, joyful junior coaster gliding smoothly through hollow enchanted trees, singing blossom groves, and pixie waterfalls.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 85 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">2m 05s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Audience</span>
+<span class="font-bold text-secondary">Ages 3+</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Pixie Forest Flight', 'Min 85 cm with guardian (105 cm solo). Smooth acceleration curves engineered explicitly for first-time young roller coaster riders.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<span class="font-label-sm text-label-sm text-primary font-bold">First Coaster Badge</span>
+</div>
+</article>
+<!-- Ride: Royal River Cruise -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="family" data-height="0" data-name="Royal River Cruise" data-thrill="1">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Enchanted gentle canal boat gliding through an indoor cavern adorned with shimmering crystal stalactites, glowing fiber optics, and magical animatronic fairy characters." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEomLN7i8HmcDXAZvG_nvvaqZyOT-u_oIc-TMrIg6jNcRhaxQuetMZi30y6G-tlHUWD_0jEKqneuwBFHFfjXN3p32aIts1CjTALToGD2J3AoiLbBYw-8IYAZyVDVM8l3Vh7i6kUtYfda1ONlqKumc5bRKgtgGG5_nBci8JjCPUXsM9j13saWDlfXRTZI1o8cmOuav3fF4OpcQ_CgJZ4T0GwHTY4m6gqDZaN5SFZBE"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">alarm_on</span>
+                10 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Royal River Cruise</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★☆☆☆☆ <span class="text-on-surface-variant ml-1 font-normal">(1/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                Serene covered boat tour through glowing crystal caverns depicting timeless fairy tales with orchestral musical accompaniment.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">No Min</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">8m 15s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Access</span>
+<span class="font-bold text-emerald-600">Wheelchair OK</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Royal River Cruise', 'No height restriction. Flat ramp boarding with full roll-on wheelchair accessibility boat bay. Relaxing air-conditioned environment.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Air Conditioned</span>
+</div>
+</article>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- ZONE 5: CYBER NEON METROPOLIS -->
+<!-- ============================================== -->
+<section class="zone-block flex flex-col gap-6 scroll-mt-36" data-zone="cyber" id="zone-cyber">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-inverse-surface to-on-surface text-inverse-on-surface p-6 md:p-8 shadow-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-secondary text-white font-label-sm text-label-sm uppercase tracking-wider font-extrabold">Zone 05</span>
+<span class="font-label-md text-label-md text-primary-fixed-dim">Futuristic Sci-Fi City</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-white">Cyber Neon Metropolis</h2>
+<p class="font-body-md text-body-md text-inverse-on-surface/80">
+              Step into year 2145. Neon skyscrapers, holographic sensory arenas, hyperdrive VR simulators, and interactive competitive laser combat.
+            </p>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-2 shrink-0 bg-white/10 backdrop-blur-md p-4 rounded-xl">
+<div class="flex items-center gap-1 font-headline-sm text-headline-sm font-bold text-white">
+<span class="material-symbols-outlined text-[26px] text-secondary-container">memory</span>
+              2 Sci-Fi Rides
+            </div>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/70">8K OLED Spatial Audio</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Ride: Hyperdrive VR Simulator -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="darkride" data-height="110" data-name="Hyperdrive VR Simulator" data-thrill="4">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Futuristic cybernetic capsule pods glowing in neon cyan and magenta lights inside a sleek space station hangar as riders experience synchronized VR flight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKpoDj-47bUrQZvNtVgRiCCdTb5-q4JCIzuXDCWyYJ_-9Du7imbP38M92KvaqChyLcvCGQ6x8sLdV01Fr_5MT7P8b8IICIVGmzUeltEohmzgg_-kzCYs8ZocqpTG3sH1oGUKOWSIe-gYh8jUbaGCOnAwT7s9J1mZl3YzEq7NZhcQgfv4jItqVav64tkGSvxvGaSYmGsveVjI6ZX25v0L2HfwfZNlpdRbzBysHiGbg"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-primary/90 text-on-primary font-label-sm text-label-sm font-bold backdrop-blur-sm">
+                  FastPass Active
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_empty</span>
+                20 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Hyperdrive VR Simulator</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★★★☆ <span class="text-on-surface-variant ml-1 font-normal">(4/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                Full 6-DOF hydraulic cockpit simulating intergalactic warp jumps, asteroid evasion maneuvers, and deep-space dogfights.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 110 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">4m 45s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Display</span>
+<span class="font-bold text-secondary">4K Per Eye VR</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Hyperdrive VR Simulator', 'Min 110 cm. VR headsets sanitized via medical UV-C ovens between all runs. Guests prone to severe simulation motion sickness may opt for 2D exterior screen viewing.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<a class="px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-bold shadow-sm hover:scale-105 transition-all" href="#tickets">
+              FastPass
+            </a>
+</div>
+</article>
+<!-- Ride: Quantum Laser Arena -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="show" data-height="100" data-name="Quantum Laser Arena" data-thrill="2">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Atmospheric multi-tier cyber laser battle arena with glowing neon catwalks, smoke effects, and players clad in futuristic sensory suits aiming phasers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsRhaUqpPnoEb7fyHl37uu8_pcutyuuSOsYRupgbmp8msSAYmAHm5tWVYiyL0HUu27zd6YEXmKf1_hp8KC-qFwrFFPlu9dMtdZoE-bkXL9Ltj8gcVpLHJOsnelp1EEhJmshca5Hl5Ah9_t-FkSHGuke27O_D8Bn89tC_CZGf5_T-wC2SPMZqcecPoszxx9_JSA5OdeYxlFIOJgNlDnOBOSxhfOmo_5Odz1saL_E1M"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">alarm_on</span>
+                15 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Quantum Laser Arena</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★☆☆☆ <span class="text-on-surface-variant ml-1 font-normal">(2/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                A massive 3-story neon battleground. Teams clash in tactical photon combat featuring real-time live digital scoring and interactive base towers.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 100 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">12m Match</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Capacity</span>
+<span class="font-bold text-primary">40 Players</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Quantum Laser Arena', 'Min 100 cm. Closed-toe shoes required. Running strictly monitored to prevent indoor collision hazards. Safe low-intensity optical laser sensors.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Team Scoreboard</span>
+</div>
+</article>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- ZONE 6: CARNIVAL FIESTA PLAZA -->
+<!-- ============================================== -->
+<section class="zone-block flex flex-col gap-6 scroll-mt-36" data-zone="carnival" id="zone-carnival">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-secondary-fixed via-surface-container-high to-surface-container p-6 md:p-8 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm uppercase tracking-wider font-extrabold">Zone 06</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Classic Vintage Fairground</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface">Carnival Fiesta Plaza</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              The heart of park joy! Nostalgic carnival energy upgraded with modern safety engineering. Gourmet popcorn, retro bumper dashes, and our iconic giant Ferris wheel.
+            </p>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between gap-2 shrink-0 bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="flex items-center gap-1 font-headline-sm text-headline-sm font-bold text-secondary">
+<span class="material-symbols-outlined text-[26px]">festival</span>
+              2 Vintage Icons
+            </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Iconic Photo Spot</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Ride: Colossal Ferris Wheel -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="family" data-height="0" data-name="Colossal Ferris Wheel" data-thrill="1">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Spectacular giant Ferris wheel towering over colorful carnival tents with fully glass-enclosed modern air-conditioned observation cabins illuminated in sunset hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtEigSbIJ-tBQZg-7rbSE0A1e2gi_zTizuzQ0Gt0ljQe9Y-jeUeiWkc1zzTlgS0bO1RsCuRFYLxobrSDvjKC5GyNn9i5tJqRD_MXUKPPcXTEg3N38ybXKlVJhpbXxe1K307WJplQZnW1UkSK01wdsL4QLoScDTJ27Vn1x69rKToj0xpTOAKTNEq6gO9jZm8C9_IhSD5FlF7qEVGYNUHL-V-4w-14SgsvtDFE6rmos"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">alarm_on</span>
+                10 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Colossal Ferris Wheel</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★☆☆☆☆ <span class="text-on-surface-variant ml-1 font-normal">(1/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                180-foot giant wheel featuring 36 climate-controlled glass cabins offering panoramic 360-degree views across all 45 park acres and the mountain horizon.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">None (All)</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">14m 00s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Cabins</span>
+<span class="font-bold text-secondary">A/C Climate</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Colossal Ferris Wheel', 'Universal accessibility. Stroller and motorized mobility device capable cabins. Automated dual-lock glass doors on all gondolas.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sunset Views</span>
+</div>
+</article>
+<!-- Ride: Bumper Blitz -->
+<article class="attraction-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between" data-category="family" data-height="90" data-name="Bumper Blitz" data-thrill="2">
+<div class="flex flex-col gap-4">
+<div class="relative h-52 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Vibrant modern electric bumper car pavilion with illuminated reflective rubber bumpers, colorful metallic paint finishes, and laughing family riders in bright festive sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh9B0dJv0CVFs6dw5MKW0Z_s-o6q6D1TFh4Uke5_E2UM7QGIKcEDXs81RYekXqMqPY-_5S9N7XXmHsTz2eGMRWhX7A-h-KLLJLhq-aWjl3OfLHONbQdOY2IULn-HaGA8tlms0XhvEptIvDz_VTYXx35O8MuJc3bGMDUjzBEvKPGCsAElYg1HlNX8odXyGoFbxHQwuxvhBi2aExyEmC7Y3JNV3aa0Q4dGFLGZAnQ0M"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  Operational
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_empty</span>
+                15 Mins Wait
+              </div>
+</div>
+<div>
+<div class="flex items-center justify-between gap-2">
+<h3 class="font-title-md text-title-md text-primary font-bold">Bumper Blitz</h3>
+<span class="flex items-center text-amber-500 font-label-sm text-label-sm font-bold">
+                  ★★☆☆☆ <span class="text-on-surface-variant ml-1 font-normal">(2/5)</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+                Floor-powered electric bumper vehicles with responsive 360-degree turning wheels and cushion perimeter buffers for safe impact excitement.
+              </p>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-xl font-label-sm text-label-sm">
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Min Height</span>
+<span class="font-bold text-on-surface">Min 90 cm</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="font-bold text-on-surface">3m 00s</span>
+</div>
+<div class="flex flex-col text-center">
+<span class="text-on-surface-variant">Power</span>
+<span class="font-bold text-primary">Floor Induction</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" onclick="toggleSafetyModal('Bumper Blitz', 'Min 90 cm (passengers 90-120cm must ride with adult driver). Dual lap belt harness system mandatory on all cars.')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Safety Guidelines
+            </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pure Fun</span>
+</div>
+</article>
+</div>
+</section>
+<!-- Empty Search State -->
+<div class="hidden flex-col items-center justify-center p-12 text-center bg-surface-container rounded-2xl" id="no-results">
+<span class="material-symbols-outlined text-[48px] text-outline mb-2">search_off</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">No attractions matched your criteria</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-md">
+        Try resetting the thrill intensity slider or clearing the keyword search bar to discover all 18 experiences.
+      </p>
+<button class="mt-4 px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-md hover:scale-105 transition-all" onclick="resetFilters()">
+        Reset All Filters
+      </button>
+</div>
+<!-- ============================================== -->
+<!-- ENGINEERING CERTIFICATION & FASTPASS BANNER -->
+<!-- ============================================== -->
+<section class="rounded-2xl bg-surface-container p-6 md:p-10 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-sm">
+<div class="flex items-start gap-4">
+<div class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[32px]">verified_user</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">Operational Excellence</span>
+<span class="opacity-40">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Seth Group of Companies</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            Triple Safety Inspection Certification
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+            Every coaster, water flume, and dark simulator undergoes mandatory pre-opening structural tests, magnetic brake calibrations, and dual ultrasound track scanning every 24 hours. Certified compliant with ISO 9001:2015 theme park standards.
+          </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full lg:w-auto">
+<a class="w-full sm:w-auto text-center px-6 py-3 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container-high transition-all shadow-sm" href="#safety">
+          View Inspection Logs
+        </a>
+<a class="w-full sm:w-auto text-center px-6 py-3 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary font-label-md text-label-md font-bold shadow-md hover:scale-105 transition-all" href="#tickets">
+          Upgrade to FastPass VIP
+        </a>
+</div>
+</section>
+</div>
+<!-- Safety Guidelines Modal Overlay -->
+<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden items-center justify-center p-4" id="safety-modal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl p-6 shadow-2xl flex flex-col gap-4 relative animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<h4 class="font-title-md text-title-md font-bold" id="modal-ride-title">Ride Safety Protocol</h4>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" onclick="closeSafetyModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">info</span>
+<p class="font-body-md text-body-md text-on-surface" id="modal-ride-text">
+          Safety details loading...
+        </p>
+</div>
+<div class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-bold text-on-surface">Universal Guest Code:</span>
+<ul class="list-disc pl-5 flex flex-col gap-1">
+<li>Ensure all loose items (phones, caps, glasses) are deposited in complimentary bins.</li>
+<li>Remain firmly seated with restraints locked until ride comes to a complete halt.</li>
+<li>Listen attentively to all ride operators in high-visibility uniforms.</li>
+</ul>
+</div>
+<div class="pt-2 flex justify-end">
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container transition-all" onclick="closeSafetyModal()">
+          Understood &amp; Close
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript -->
+<script>
+    let currentCategory = 'all';
+    let currentMinThrill = 1;
+    let currentHeightRange = 'any';
+
+    function setCategory(cat, btn) {
+      currentCategory = cat;
+      document.querySelectorAll('.category-btn').forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      filterAttractions();
+    }
+
+    function handleThrillSlider(val) {
+      currentMinThrill = parseInt(val, 10);
+      const label = document.getElementById('thrill-label');
+      if (currentMinThrill === 1) {
+        label.textContent = 'All (1-5★)';
+      } else {
+        label.textContent = 'Min ' + currentMinThrill + '★';
+      }
+      filterAttractions();
+    }
+
+    function setHeightFilter(range, btn) {
+      currentHeightRange = range;
+      document.querySelectorAll('.height-btn').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'font-bold');
+        b.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary', 'font-bold');
+      btn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      filterAttractions();
+    }
+
+    function filterAttractions() {
+      const searchTerm = (document.getElementById('ride-search').value || '').toLowerCase().trim();
+      const cards = document.querySelectorAll('.attraction-card');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const name = card.getAttribute('data-name').toLowerCase();
+        const cat = card.getAttribute('data-category');
+        const thrill = parseInt(card.getAttribute('data-thrill'), 10);
+        const heightReq = parseInt(card.getAttribute('data-height'), 10);
+
+        let matchesSearch = !searchTerm || name.includes(searchTerm);
+        let matchesCat = currentCategory === 'all' || cat === currentCategory;
+        let matchesThrill = thrill >= currentMinThrill;
+
+        let matchesHeight = true;
+        if (currentHeightRange === 'under90') {
+          matchesHeight = heightReq === 0 || heightReq <= 90;
+        } else if (currentHeightRange === '90-120') {
+          matchesHeight = heightReq <= 120;
+        } else if (currentHeightRange === '120plus') {
+          matchesHeight = heightReq >= 120;
+        }
+
+        if (matchesSearch && matchesCat && matchesThrill && matchesHeight) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Update Zone container visibility if no rides match
+      document.querySelectorAll('.zone-block').forEach(zone => {
+        const remainingRides = zone.querySelectorAll('.attraction-card:not(.hidden)');
+        if (remainingRides.length === 0) {
+          zone.classList.add('hidden');
+        } else {
+          zone.classList.remove('hidden');
+        }
+      });
+
+      // Toggle Empty State banner
+      const noResults = document.getElementById('no-results');
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+        noResults.classList.add('flex');
+      } else {
+        noResults.classList.add('hidden');
+        noResults.classList.remove('flex');
+      }
+    }
+
+    function resetFilters() {
+      document.getElementById('ride-search').value = '';
+      const allCatBtn = document.querySelector('#category-tabs button:first-child');
+      setCategory('all', allCatBtn);
+
+      const slider = document.getElementById('thrill-slider');
+      slider.value = 1;
+      handleThrillSlider(1);
+
+      const anyHeightBtn = document.querySelector('.height-btn');
+      setHeightFilter('any', anyHeightBtn);
+    }
+
+    function toggleSafetyModal(title, text) {
+      document.getElementById('modal-ride-title').innerText = title + ' — Safety Guidelines';
+      document.getElementById('modal-ride-text').innerText = text;
+      const modal = document.getElementById('safety-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeSafetyModal() {
+      const modal = document.getElementById('safety-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface mt-margin" id="sitemap"><div class="bg-surface-container-high/60 py-space-lg px-gutter-sm lg:px-gutter"><div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div><h4 class="font-headline-sm text-headline-sm text-primary">Merciado Amusement Park</h4><p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl">Built over 5 dedicated years, spanning 45 pristine acres of national pride and thrilling entertainment. A premier destination flagship by Seth Group of Companies.</p></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-2 px-space-md py-space-xs rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-tertiary-container text-[18px]">verified</span>ISO 9001 Certified Theme Park</div></div></div></div><div class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter py-space-xl grid grid-cols-2 md:grid-cols-4 gap-gutter"><div class="flex flex-col gap-space-sm"><h5 class="font-title-md text-title-md text-primary flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">attractions</span>Park Experience</h5><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a href="#attractions">Grand Welcome</a></li><li class="hover:text-primary transition-colors"><a href="#attractions">Themed Zones</a></li><li class="hover:text-primary transition-colors"><a href="#attractions">Thrill Rides</a></li><li class="hover:text-primary transition-colors"><a href="#attractions">Family Attractions</a></li><li class="hover:text-primary transition-colors"><a href="#attractions">Water World</a></li></ul></div><div class="flex flex-col gap-space-sm"><h5 class="font-title-md text-title-md text-primary flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">calendar_month</span>Plan Your Visit</h5><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a href="#tickets">Tickets &amp; Pricing</a></li><li class="hover:text-primary transition-colors"><a href="#visit">Hours &amp; Calendar</a></li><li class="hover:text-primary transition-colors"><a href="#map">Interactive Park Map</a></li><li class="hover:text-primary transition-colors"><a href="#accessibility">Accessibility Guide</a></li><li class="hover:text-primary transition-colors"><a href="#vip">VIP Express Passes</a></li></ul></div><div class="flex flex-col gap-space-sm"><h5 class="font-title-md text-title-md text-primary flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">restaurant</span>Food &amp; Fun</h5><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a href="#dining">Gourmet Restaurants</a></li><li class="hover:text-primary transition-colors"><a href="#dining">Snack Kiosks &amp; Cafes</a></li><li class="hover:text-primary transition-colors"><a href="#entertainment">Daily Parades &amp; Shows</a></li><li class="hover:text-primary transition-colors"><a href="#entertainment">Night Fireworks Spectacular</a></li><li class="hover:text-primary transition-colors"><a href="#merchandise">Merchandise &amp; Souvenirs</a></li></ul></div><div class="flex flex-col gap-space-sm"><h5 class="font-title-md text-title-md text-primary flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">apartment</span>Company &amp; Policies</h5><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a href="#about">About Seth Group</a></li><li class="hover:text-primary transition-colors"><a href="#about">5-Year Heritage Story</a></li><li class="hover:text-primary transition-colors"><a href="#careers">Careers &amp; Auditions</a></li><li class="hover:text-primary transition-colors"><a href="#contact">Contact Us</a></li><li class="hover:text-primary transition-colors"><a href="#press">Press Room</a></li><li class="hover:text-primary transition-colors"><a href="#legal">Legal &amp; Safety Disclaimer</a></li><li class="hover:text-primary transition-colors"><a href="#terms">Terms of Service</a></li><li class="hover:text-primary transition-colors"><a href="#privacy">Privacy Policy</a></li></ul></div></div><div class="max-w-7xl mx-auto px-gutter-sm lg:px-gutter pb-space-lg"><div class="bg-surface-container p-space-md rounded-xl flex items-start gap-space-sm"><span class="material-symbols-outlined text-secondary-container text-[22px] shrink-0 mt-0.5">shield</span><p class="font-body-sm text-body-sm text-on-surface-variant"><strong class="text-on-surface">Safety First:</strong> All rides undergo stringent daily certified inspections. Height, age, and health restrictions apply on thrill rides. Prices subject to change according to weekday, weekend, or holiday tiers.</p></div></div><div class="bg-surface-container py-space-md px-gutter-sm lg:px-gutter text-center font-label-md text-label-md text-on-surface-variant"><div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-xs"><span>© 2025 Merciado Amusement Park. A Seth Group of Companies Enterprise. All Rights Reserved.</span><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><a class="hover:text-primary transition-colors" href="#terms">Terms</a><span>•</span><a class="hover:text-primary transition-colors" href="#privacy">Privacy</a><span>•</span><a class="hover:text-primary transition-colors" href="#safety">Ride Regulations</a></div></div></div></footer></body></html>
